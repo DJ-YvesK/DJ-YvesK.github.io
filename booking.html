@@ -4,37 +4,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Booking – YvesK Official</title>
+
+  <!-- gleiche Ressourcen wie auf der Startseite -->
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   <header>
-    <h1>YvesK Official</h1>
+    <h1>YvesK <span class="glow">Official</span></h1>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="music.html">Music</a>
-      <a href="booking.html">Booking</a>
+      <a href="index.html" class="hover-glow">Home</a>
+      <a href="music.html" class="hover-glow">Music</a>
+      <a href="booking.html" class="hover-glow">Booking</a>
     </nav>
   </header>
 
-  <section class="booking">
+  <section class="booking fade-in">
     <h2>Booking Anfrage</h2>
     <p>Für Club-Gigs, Events oder private Veranstaltungen:</p>
+
     <form action="https://formspree.io/f/xyzzzz" method="POST">
       <label>Name:
         <input type="text" name="name" required>
       </label>
+
       <label>Email:
         <input type="email" name="email" required>
       </label>
+
       <label>Nachricht:
         <textarea name="message" required></textarea>
       </label>
+
       <button type="submit">Absenden</button>
     </form>
   </section>
 
-  <footer>
+  <footer class="fade-in">
     <p>© 2025 YvesK Official</p>
   </footer>
+
+  <!-- wichtig: Skript auch laden -->
+  <script src="script.js"></script>
 </body>
 </html>
