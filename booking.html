@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Booking – YvesK Official</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YvesK – Booking</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>YvesK Official</h1>
+  <!-- NAVIGATION -->
+  <header class="navbar">
+    <h1 class="logo">YvesK</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="music.html">Music</a>
@@ -16,23 +17,32 @@
     </nav>
   </header>
 
-  <section class="booking">
+  <!-- PAGE HEADER -->
+  <section class="page-header">
     <h2>Booking Anfrage</h2>
-    <p>Für Club-Gigs, Events oder private Veranstaltungen:</p>
+    <p>Für Club-Gigs, Events und private Veranstaltungen.</p>
+  </section>
+
+  <!-- BOOKING FORM -->
+  <section class="booking-form">
     <form action="https://formspree.io/f/xyzzzz" method="POST">
-      <label>Name:
-        <input type="text" name="name" required>
+      <label>Name
+        <input type="text" name="name" required />
       </label>
-      <label>Email:
-        <input type="email" name="email" required>
+
+      <label>Email
+        <input type="email" name="email" required />
       </label>
-      <label>Nachricht:
+
+      <label>Nachricht
         <textarea name="message" required></textarea>
       </label>
-      <button type="submit">Absenden</button>
+
+      <button class="btn" type="submit">Absenden</button>
     </form>
   </section>
 
+  <!-- FOOTER -->
   <footer>
     <p>© 2025 YvesK Official</p>
   </footer>
