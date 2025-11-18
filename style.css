@@ -1,40 +1,201 @@
+/* ===================== */
+/* GLOBAL STYLES */
+/* ===================== */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #111;
-  color: #fff;
+  background: #0a0a0a;
+  color: white;
+  overflow-x: hidden;
 }
-header {
-  background: #000;
-  padding: 20px;
+
+h1, h2, h3 {
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ===================== */
+/* NAVIGATION BAR */
+/* ===================== */
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px 30px;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  backdrop-filter: blur(10px);
 }
-nav a {
-  color: #fff;
-  margin-left: 20px;
-  text-decoration: none;
-  font-weight: bold;
+
+.logo {
+  font-size: 1.8em;
+  color: #ff0099;
+  text-shadow: 0 0 10px #ff0099;
 }
+
+.navbar a {
+  margin-left: 25px;
+  font-size: 1.1em;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #ff0099;
+  text-shadow: 0 0 8px #ff0099;
+}
+
+/* ===================== */
+/* HERO SECTION */
+/* ===================== */
 .hero {
-  padding: 100px 20px;
+  height: 100vh;
+  background: url('YvesK-hero.jpg') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  background: linear-gradient(135deg, #222, #000);
+  position: relative;
 }
-section {
-  padding: 40px 20px;
-  max-width: 800px;
-  margin: auto;
+
+/* Dark overlay */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
 }
-button {
-  padding: 10px 20px;
-  background: #ff5500;
-  color: #fff;
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content h2 {
+  font-size: 4em;
+  margin: 0;
+  text-shadow: 0 0 15px #ff0099;
+}
+
+.hero-content p {
+  font-size: 1.4em;
+  margin: 10px 0 30px;
+}
+
+.btn {
+  padding: 12px 30px;
+  background: #ff0099;
+  color: white;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.25s;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: white;
+  color: #ff0099;
+  box-shadow: 0 0 10px #ff0099;
+}
+
+/* ===================== */
+/* INTRO SECTION */
+/* ===================== */
+.intro {
+  padding: 90px 20px;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.intro h2 {
+  font-size: 2.4em;
+  margin-bottom: 10px;
+}
+
+.intro p {
+  font-size: 1.2em;
+  margin-bottom: 25px;
+}
+
+/* ===================== */
+/* MUSIC PAGE */
+/* ===================== */
+.page-header {
+  padding: 140px 20px 40px;
+  text-align: center;
+}
+
+.music-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 20px;
+}
+
+.music-card {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 12px rgba(255, 0, 153, 0.3);
+}
+
+.music-card iframe {
+  width: 100%;
+  border-radius: 6px;
+}
+
+/* ===================== */
+/* BOOKING FORM */
+/* ===================== */
+.booking-form {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.booking-form label {
+  display: block;
+  margin-bottom: 18px;
+  font-size: 1.1em;
+}
+
+.booking-form input,
+.booking-form textarea {
+  width: 100%;
+  padding: 12px;
   border: none;
-  cursor: pointer;
-  font-size: 16px;
+  border-radius: 6px;
+  background: #222;
+  color: white;
+  margin-top: 6px;
+  font-size: 1em;
 }
-button:hover {
-  background: #ff3300;
+
+.booking-form textarea {
+  height: 140px;
+  resize: vertical;
+}
+
+/* ===================== */
+/* FOOTER */
+/* ===================== */
+footer {
+  text-align: center;
+  padding: 25px;
+  margin-top: 40px;
+  background: #111;
+  font-size: 0.9em;
+  color: #bbb;
 }
