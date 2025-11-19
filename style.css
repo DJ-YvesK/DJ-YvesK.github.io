@@ -23,7 +23,7 @@ a {
 /* ===================== */
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 20px 30px;
   background: rgba(0, 0, 0, 0.8);
@@ -42,7 +42,7 @@ a {
 }
 
 .navbar a {
-  margin-left: 25px;
+  margin-left: 0 25px;
   font-size: 1.1em;
   transition: 0.3s;
 }
