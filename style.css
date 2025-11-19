@@ -49,13 +49,22 @@ body {
   text-shadow: 0 0 8px #ff0099;
 }
 
+/* INTRO SECTION */
+.intro {
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5); /* Optional: Hintergrund für die Intro-Sektion */
+  margin-top: 20px; /* Damit der Abstand zur Hero-Sektion nicht zu groß ist */
+}
+
 /* HERO SECTION */
 .hero {
-  height: 100vh; /* Stellt sicher, dass die Sektion die volle Höhe des Viewports einnimmt */
+  height: 100vh; /* Hero-Sektion nimmt die volle Höhe des Bildschirms */
   background: url('YvesK.3.1.png') center/cover no-repeat;
   display: flex;
   justify-content: center;
-  align-items: center; /* Vertikale Zentrierung */
+  align-items: center;
   flex-direction: column;
   text-align: center;
   color: white;
@@ -67,12 +76,6 @@ body {
   color: #ff0099;
   text-shadow: 0 0 15px #ff0099;
   margin-bottom: 10px;
-}
-
-.hero p {
-  font-size: 1.5rem;
-  color: white;
-  margin: 10px 0;
 }
 
 .hero .btn {
@@ -87,8 +90,8 @@ body {
   color: black;
   box-shadow: 0 0 15px #ff00c8;
   text-decoration: none;
-  margin-top: 20px; /* Button weiter unten verschieben */
-  margin-bottom: 20px; /* Abstand unter dem Button */
+  margin-top: 20px; /* Button weiter nach oben verschieben */
+  margin-bottom: 20px;
 }
 
 .hero .btn:hover {
