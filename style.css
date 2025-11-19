@@ -28,6 +28,7 @@ body {
 
 .logo-container {
   margin-right: auto;
+  display: none;
 }
 
 .logo {
