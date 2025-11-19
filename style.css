@@ -60,27 +60,26 @@ body {
 }
 
 .dj-name {
-  font-size: 4rem; /* Größerer Text für „DJ YvesK.“ */
+  font-size: 4rem; /* Größeren Text für „DJ YvesK.“ */
   color: #ff0099; /* Farbe für DJ YvesK */
   text-shadow: 0 0 15px #ff0099; /* Glühender Effekt */
   margin-bottom: 5px; /* Abstand nach unten */
 }
 
-/* LOCATION */
 .location {
-  font-size: 5rem; /* Erhöhe die Schriftgröße für „Leipzig“ */
+  font-size: 2.8rem; /* Leipzig etwas größer */
   color: white;
-  margin: 15px 0; /* Abstand von der vorherigen Zeile */
+  margin: 10px 0; /* Abstand von der vorherigen Zeile */
 }
 
 .description {
-  font-size: 2rem;
+  font-size: 2.5rem; /* Größe für "Leidenschaft für House und gute Energie." */
   color: white;
   margin: 10px 0;
 }
 
 .motto {
-  font-size: 1.5rem;
+  font-size: 2.3rem; /* Größe für "Musik ist kein Trend, Musik ist ein Gefühl." */
   color: white;
   margin: 10px 0;
 }
