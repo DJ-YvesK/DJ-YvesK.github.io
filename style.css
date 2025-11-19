@@ -66,10 +66,11 @@ body {
   margin-bottom: 5px; /* Abstand nach unten */
 }
 
+/* LOCATION */
 .location {
-  font-size: 5rem; /* Leipzig etwas größer */
+  font-size: 5rem; /* Erhöhe die Schriftgröße für „Leipzig“ */
   color: white;
-  margin: 10px 0; /* Abstand von der vorherigen Zeile */
+  margin: 15px 0; /* Abstand von der vorherigen Zeile */
 }
 
 .description {
