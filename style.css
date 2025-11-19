@@ -90,7 +90,7 @@ body {
   color: black;
   box-shadow: 0 0 15px #ff00c8;
   text-decoration: none;
-  margin-top: 20px;
+  margin-top: 50px; /* Button weiter nach unten verschieben */
 }
 
 /* HERO SECTION */
@@ -118,7 +118,7 @@ body {
   color: black;
   box-shadow: 0 0 15px #ff00c8;
   text-decoration: none;
-  margin-top: 20px;
+  margin-top: 50px; /* Button weiter nach unten verschieben */
 }
 
 /* BUTTON STYLES */
