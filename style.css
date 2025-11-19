@@ -134,7 +134,7 @@ body {
   color: black;
   box-shadow: 0 0 15px #ff00c8;
   text-decoration: none;
-  margin: 10px;
+  margin-top: 100px; /* Button weiter nach unten verschieben */
 }
 
 .btn:hover {
