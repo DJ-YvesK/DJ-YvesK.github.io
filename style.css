@@ -51,19 +51,20 @@ body {
 
 /* HERO SECTION */
 .hero {
-  height: 100vh;
+  height: 100vh; /* Stellt sicher, dass die Sektion die volle Höhe des Viewports einnimmt */
   background: url('YvesK.3.1.png') center/cover no-repeat;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; /* Vertikale Zentrierung */
   flex-direction: column;
   text-align: center;
-  color: white; /* Textfarbe auf weiß setzen */
+  color: white;
+  padding: 20px;
 }
 
 .hero h2 {
   font-size: 3rem;
-  color: #ff0099; /* Glühende Farbe */
+  color: #ff0099;
   text-shadow: 0 0 15px #ff0099;
   margin-bottom: 10px;
 }
@@ -86,7 +87,8 @@ body {
   color: black;
   box-shadow: 0 0 15px #ff00c8;
   text-decoration: none;
-  margin: 20px;
+  margin-top: 20px; /* Button weiter unten verschieben */
+  margin-bottom: 20px; /* Abstand unter dem Button */
 }
 
 .hero .btn:hover {
