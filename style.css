@@ -7,7 +7,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background: #0a0a0a;
+  background-color: #0a0a0a;
   color: #fff;
   padding-top: 90px; /* space for fixed navbar */
 }
@@ -24,14 +24,15 @@ body {
   top: 0;
   left: 0;
   z-index: 10;
-  backdrop-filter: blur(10px);
+}
+
+.logo-container {
+  margin-right: auto;
 }
 
 .logo {
-  margin-right: auto;
-  font-size: 1.8em;
-  color: #ff0099;
-  text-shadow: 0 0 10px #ff0099;
+  width: 100px;
+  height: auto;
 }
 
 .navbar a {
@@ -58,13 +59,33 @@ body {
   text-align: center;
 }
 
-.hero h1 {
-  font-size: 5rem;
-  text-shadow: 0 0 20px #ff00c8;
-  margin-bottom: 20px;
+.hero h2 {
+  font-size: 3rem;
+  color: #ff0099;
+  text-shadow: 0 0 15px #ff0099;
 }
 
-/* Buttons */
+.hero p {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.hero .btn {
+  background: #ff00c8;
+  color: black;
+  padding: 10px 30px;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.hero .btn:hover {
+  background: #ff0099;
+  transform: scale(1.05);
+}
+
+/* BUTTON STYLES */
 .btn {
   padding: 15px 35px;
   border-radius: 40px;
@@ -90,4 +111,5 @@ section {
   scroll-margin-top: 90px;
   padding: 60px 20px;
   text-align: center;
+  color: white;
 }
