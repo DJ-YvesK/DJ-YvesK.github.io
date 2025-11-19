@@ -67,7 +67,7 @@ body {
 }
 
 .location {
-  font-size: 2.2rem; /* Leipzig etwas größer */
+  font-size: 3rem; /* Leipzig etwas größer */
   color: white;
   margin: 10px 0; /* Abstand von der vorherigen Zeile */
 }
