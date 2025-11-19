@@ -23,7 +23,7 @@ a {
 /* ===================== */
 .navbar {
   display: flex;
-  justify-content: center;
+  justify-content: center; 
   align-items: center;
   padding: 20px 30px;
   background: rgba(0, 0, 0, 0.8);
@@ -36,13 +36,14 @@ a {
 }
 
 .logo {
+  margin-right: auto;        
   font-size: 1.8em;
   color: #ff0099;
   text-shadow: 0 0 10px #ff0099;
 }
 
 .navbar a {
-  margin-left: 0 25px;
+  margin: 0 25px;           
   font-size: 1.1em;
   transition: 0.3s;
 }
@@ -52,20 +53,6 @@ a {
   text-shadow: 0 0 8px #ff0099;
 }
 
-/* ===================== */
-/* HERO SECTION */
-/* ===================== */
-.hero {
-  height: 100vh;
-  background: url('YvesK-hero.jpg') center/cover no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  position: relative;
-}
-
-/* Dark overlay */
 .hero::before {
   content: "";
   position: absolute;
