@@ -55,12 +55,31 @@ body {
   text-align: center;
   color: white;
   background-color: rgba(0, 0, 0, 0.5); /* Optional: Hintergrund für die Intro-Sektion */
-  margin-top: 20px; /* Damit der Abstand zur Hero-Sektion nicht zu groß ist */
+  margin-top: 20px; /* Abstand zur Hero-Sektion */
+}
+
+.dj-name {
+  font-size: 4rem; /* Größerer Text für „DJ YvesK.“ */
+  color: #ff0099; /* Farbe für DJ YvesK */
+  text-shadow: 0 0 15px #ff0099; /* Glühender Effekt */
+  margin-bottom: 15px; /* Abstand nach unten */
+}
+
+.description {
+  font-size: 1.6rem; /* Etwas größerer Text für den Rest */
+  color: white;
+  margin: 10px 0;
+}
+
+.motto {
+  font-size: 1.5rem; /* Größe für das Motto */
+  color: white;
+  margin: 10px 0;
 }
 
 /* HERO SECTION */
 .hero {
-  height: 100vh; /* Hero-Sektion nimmt die volle Höhe des Bildschirms */
+  height: 100vh;
   background: url('YvesK.3.1.png') center/cover no-repeat;
   display: flex;
   justify-content: center;
@@ -69,13 +88,6 @@ body {
   text-align: center;
   color: white;
   padding: 20px;
-}
-
-.hero h2 {
-  font-size: 3rem;
-  color: #ff0099;
-  text-shadow: 0 0 15px #ff0099;
-  margin-bottom: 10px;
 }
 
 .hero .btn {
@@ -90,14 +102,14 @@ body {
   color: black;
   box-shadow: 0 0 15px #ff00c8;
   text-decoration: none;
-  margin-top: 20px; /* Button weiter nach oben verschieben */
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .hero .btn:hover {
   box-shadow: 0 0 30px #ff00c8, 0 0 60px #ff00c8;
   transform: scale(1.07);
 }
+
 
 /* BUTTON STYLES */
 .btn {
