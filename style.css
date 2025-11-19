@@ -103,6 +103,7 @@ body {
 .hero {
   height: 100vh;
   background: url('YvesK.3.1.png') center/cover no-repeat;
+  background-size: contain; /* Macht das Hintergrundbild kleiner */
   display: flex;
   justify-content: center;
   align-items: center;
