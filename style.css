@@ -52,38 +52,46 @@ body {
 /* HERO SECTION */
 .hero {
   height: 100vh;
-  background: url('dein-logo-oder-bild.jpg') center/cover no-repeat;
+  background: url('YvesK.3.1.png') center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
+  color: white; /* Textfarbe auf weiß setzen */
 }
 
 .hero h2 {
   font-size: 3rem;
-  color: #ff0099;
+  color: #ff0099; /* Glühende Farbe */
   text-shadow: 0 0 15px #ff0099;
+  margin-bottom: 10px;
 }
 
 .hero p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: white;
+  margin: 10px 0;
 }
 
 .hero .btn {
+  padding: 15px 35px;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  transition: 0.3s;
   background: #ff00c8;
   color: black;
-  padding: 10px 30px;
-  font-size: 1.1rem;
-  border-radius: 50px;
+  box-shadow: 0 0 15px #ff00c8;
   text-decoration: none;
-  transition: 0.3s;
+  margin: 20px;
 }
 
 .hero .btn:hover {
-  background: #ff0099;
-  transform: scale(1.05);
+  box-shadow: 0 0 30px #ff00c8, 0 0 60px #ff00c8;
+  transform: scale(1.07);
 }
 
 /* BUTTON STYLES */
