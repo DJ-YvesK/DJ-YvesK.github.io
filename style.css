@@ -143,3 +143,21 @@ footer {
     padding-bottom: 40px;
   }
 }
+/* Button für "Website im Aufbau" */
+.btn-under-construction {
+  display: inline-block;
+  background-color: #ff0099; /* Farbe des Buttons */
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-under-construction:hover {
+  background-color: #e60073; /* Dunklere Farbe beim Hover */
+  text-decoration: underline;
+}
+
