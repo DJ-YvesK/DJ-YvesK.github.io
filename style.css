@@ -152,13 +152,24 @@ footer {
   text-decoration: none;
   font-size: 1.2rem;
   border-radius: 5px;
-  margin-top: 100px; /* Größerer Abstand nach oben */
+  margin-top: 60px; /* Abstand für PC-Version */
   transition: background-color 0.3s ease;
 }
 
 .btn-under-construction:hover {
   background-color: #e60073; /* Dunklere Farbe beim Hover */
-  text-decoration: underline;
+  text-decoration: underline;  /* Unterstreicht den Text beim Hover */
+}
+
+/* Anpassungen für mobile Geräte */
+@media (max-width: 768px) {
+  .btn-under-construction {
+    margin-top: 100px;  /* Größerer Abstand auf mobilen Geräten */
+    font-size: 1rem;    /* Kleinere Schrift auf Handys */
+    background-color: #ff0099;  /* Sicherstellen, dass die Hintergrundfarbe auch auf mobilen Geräten da ist */
+    padding: 12px 24px;  /* Größere Klickfläche auf Mobilgeräten */
+    border-radius: 5px;  /* Runde Ecken für den Button */
+  }
 }
 
 
