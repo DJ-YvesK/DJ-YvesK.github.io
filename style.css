@@ -22,7 +22,7 @@ body {
 
 .navbar {
   display: flex;
-  justify-content: space-between;  /* Verhindert, dass Links zu nah aneinander stehen */
+  justify-content: space-between;
   align-items: center;
   padding: 20px 10px;
   background: rgba(0, 0, 0, 0.9);
@@ -40,10 +40,10 @@ body {
 }
 
 .navbar a {
-  font-size: 1.2rem;
+  font-size: 1.5rem; /* Größere Schriftgröße für die Buttons */
   color: white;
   text-decoration: none;
-  padding: 0 15px;  /* Etwas mehr Abstand zwischen den Links */
+  padding: 15px 30px;  /* Größeres Padding für die Buttons */
   transition: 0.3s;
 }
 
@@ -54,18 +54,9 @@ body {
 
 /* MOBILE VIEW */
 @media (max-width: 768px) {
-  .navbar {
-    padding: 15px 20px;  /* Weniger Platz oben und unten für Mobilgeräte */
-  }
-
-  .nav-center {
-    justify-content: center;  /* Zentriert die Links auf mobilen Geräten */
-    width: 100%;
-  }
-
   .navbar a {
-    font-size: 1.1rem;  /* Kleinere Schrift für mobile Ansicht */
-    padding: 0 20px;  /* Etwas mehr Abstand zwischen den Links */
+    font-size: 1.2rem;  /* Auf Mobilgeräten kleinere Schriftgröße */
+    padding: 12px 25px; /* Angepasster Abstand auf Mobilgeräten */
   }
 }
 
