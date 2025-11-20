@@ -195,4 +195,70 @@ footer {
   }
 }
 
+/* BOOKING SECTION */
+.booking {
+  padding: 20px;
+  text-align: center;
+}
+
+.booking form {
+  max-width: 600px; /* Maximale Breite des Formulars */
+  margin: 0 auto;   /* Zentriert das Formular */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.booking form label {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.booking form input, .booking form textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+}
+
+.booking form textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.booking form button {
+  padding: 12px;
+  font-size: 1.2rem;
+  background-color: #ff0099;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.booking form button:hover {
+  background-color: #e60073;
+}
+
+/* MOBILE VIEW */
+@media (max-width: 768px) {
+  .booking form {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .booking form input, .booking form textarea {
+    font-size: 1rem;
+  }
+
+  .booking form button {
+    font-size: 1.1rem;
+    padding: 15px;
+  }
+}
 
