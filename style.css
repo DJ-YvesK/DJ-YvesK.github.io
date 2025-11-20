@@ -152,7 +152,7 @@ footer {
   text-decoration: none;
   font-size: 1.2rem;
   border-radius: 5px;
-  margin-top: 20px;
+  margin-top: 60px; /* Größerer Abstand nach oben */
   transition: background-color 0.3s ease;
 }
 
@@ -160,4 +160,5 @@ footer {
   background-color: #e60073; /* Dunklere Farbe beim Hover */
   text-decoration: underline;
 }
+
 
