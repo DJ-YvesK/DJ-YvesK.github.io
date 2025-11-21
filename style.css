@@ -87,6 +87,9 @@ body {
 .dj-name:hover .hover-logo {
   opacity: 1;
 }
+.dj-name.logo-visible .hover-logo {
+  opacity: 1;
+}
 
 /* GLOW ANIMATION FÜR DEN NAMEN */
 .animated-glow {
