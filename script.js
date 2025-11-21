@@ -10,13 +10,13 @@ document.addEventListener('DOMContentLoaded', () => {
     navigator.msMaxTouchPoints > 0;
 
   if (isTouchDevice) {
-    // Handy / Tablet: Tap = Logo an/aus
+    // Handy / Tablet: Tippen = Logo an/aus
     djName.addEventListener('click', (e) => {
       e.preventDefault();
       djName.classList.toggle('logo-visible');
     });
   } else {
-    // Desktop: klassisch mit Hover
+    // Desktop: Hover
     djName.addEventListener('mouseenter', () => {
       djName.classList.add('logo-visible');
     });
