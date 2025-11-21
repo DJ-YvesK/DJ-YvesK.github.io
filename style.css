@@ -59,7 +59,7 @@ body {
 /* HOVER-LOGO */
 .hover-logo {
   position: absolute;
-  width: 180px;              /* Logo-Größe – kannst du anpassen */
+  width: 200px;              /* Logo-Größe – kannst du anpassen */
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);  /* genau in die Mitte vom h1 */
