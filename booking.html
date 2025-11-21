@@ -4,55 +4,71 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Booking – DJ YvesK</title>
+
   <link rel="stylesheet" href="style.css">
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
 
-<header class="navbar">
-  <nav class="nav-center">
-    <a href="index.html">HOME</a>
-    <a href="music.html">MUSIC</a>
-    <a href="booking.html">BOOKING</a>
-  </nav>
-</header>
+  <!-- NAVIGATION -->
+  <header class="navbar">
+    <nav class="nav-center">
+      <a href="index.html">HOME</a>
+      <a href="music.html">MUSIC</a>
+      <a href="booking.html">BOOKING</a>
+    </nav>
+  </header>
 
-<section class="page-title">
-  <h2>BOOKING</h2>
-</section>
+  <main>
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+      <h2 class="page-title-text">BOOKING</h2>
+      <p class="page-subtitle">Anfragen für Clubs, Events & private Veranstaltungen.</p>
+    </section>
 
-<section class="booking">
-  <form action="https://formspree.io/f/xyzzzz" method="POST">
+    <!-- BOOKING FORM -->
+    <section class="booking">
+      <form action="https://formspree.io/f/xyzzzz" method="POST">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input id="name" type="text" name="name" required>
+        </div>
 
-    <label>Name</label>
-    <input type="text" name="name" required>
+        <div class="form-group">
+          <label for="email">E-Mail</label>
+          <input id="email" type="email" name="email" required>
+        </div>
 
-    <label>Email</label>
-    <input type="email" name="email" required>
+        <div class="form-group">
+          <label for="message">Nachricht</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
 
-    <label>Nachricht</label>
-    <textarea name="message" required></textarea>
+        <button type="submit" class="btn-glow">Absenden</button>
+      </form>
+    </section>
+  </main>
 
-    <button type="submit" class="btn-glow">Absenden</button>
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <p>© 2025 DJ YvesK – All Rights Reserved</p>
 
-  </form>
-</section>
-
-<footer>
-  <div class="footer-inner">
-    <p>© 2025 DJ YvesK. – All Rights Reserved</p>
-
-    <div class="footer-social">
-      <!-- Instagram -->
-      <a href="#" target="_blank" rel="noopener" aria-label="Instagram">
-        <i class="fab fa-instagram"></i>
-      </a>
-
-      <!-- SoundCloud -->
-      <a href="https://soundcloud.com/yv3sk" target="_blank" rel="noopener" aria-label="SoundCloud">
-        <i class="fab fa-soundcloud"></i>
-      </a>
+      <div class="footer-social">
+        <a href="#" target="_blank" rel="noopener" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://soundcloud.com/yv3sk" target="_blank" rel="noopener" aria-label="SoundCloud">
+          <i class="fab fa-soundcloud"></i>
+        </a>
+        <a href="#" target="_blank" rel="noopener" aria-label="YouTube">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
     </div>
-  </div>
-</footer>
+  </footer>
+
+</body>
+</html>
