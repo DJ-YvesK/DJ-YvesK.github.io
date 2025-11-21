@@ -69,6 +69,8 @@ body {
   font-size: 4rem;
   color: #ff0099;
   text-shadow: 0 0 25px #ff0099;
+  -webkit-text-stroke: 1px #000;  /* schwarze Umrandung für WebKit (Chrome, Safari, Mobile) */
+  text-stroke: 1px #000;          /* Fallback, wo unterstützt */
 }
 
 /* Logo hinter dem Namen */
