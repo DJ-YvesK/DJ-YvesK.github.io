@@ -193,3 +193,6 @@ footer {
     top: 70px;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
