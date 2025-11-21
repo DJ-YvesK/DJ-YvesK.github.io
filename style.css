@@ -59,12 +59,18 @@ body {
 /* HOVER-LOGO */
 .hover-logo {
   position: absolute;
-  width: 150px;
+  width: 180px;              /* Logo-Größe – kannst du anpassen */
   left: 50%;
-  transform: translateX(-50%);
-  top: 80px;
+  top: 50%;
+  transform: translate(-50%, -50%);  /* genau in die Mitte vom h1 */
   opacity: 0;
+  z-index: -1;               /* Logo hinter dem Text */
+  pointer-events: none;      /* Hover bleibt auf dem Text */
   transition: opacity 0.4s ease;
+}
+
+.dj-name:hover .hover-logo {
+  opacity: 1;
 }
 
 /* Logo erscheint beim Hover */
