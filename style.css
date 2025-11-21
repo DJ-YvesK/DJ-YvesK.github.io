@@ -288,10 +288,25 @@ footer {
   transition: 0.2s ease;
 }
 
+/* Allgemeiner Hover-Effekt: leichter Move & Glow in der jeweiligen Farbe */
 .footer-social a:hover {
-  color: #ff0099;
-  text-shadow: 0 0 10px #ff0099;
   transform: translateY(-1px);
+  text-shadow: 0 0 10px currentColor;
+}
+
+/* Insta: typisches Pink */
+.footer-social a.instagram:hover {
+  color: #E4405F;
+}
+
+/* Facebook: klassisches Blau */
+.footer-social a.facebook:hover {
+  color: #1877F2;
+}
+
+/* SoundCloud: Orange */
+.footer-social a.soundcloud:hover {
+  color: #ff5500;
 }
 
 /* RESPONSIVE */
