@@ -8,5 +8,11 @@ window.addEventListener('scroll', function() {
     if(sectionTop < triggerBottom){
       section.classList.add('visible');
     }
+  document.addEventListener('DOMContentLoaded', () => {
+  const djName = document.querySelector('.dj-name');
+  if (!djName) return;
+
+  djName.addEventListener('click', () => {
+    djName.classList.toggle('logo-visible');
   });
 });
