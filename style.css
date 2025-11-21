@@ -74,19 +74,21 @@ body {
 }
 
 /* Logo hinter dem Namen */
+/* Logo ist standardmäßig unsichtbar */
 .hover-logo {
   position: absolute;
-  width: 200px;
+  width: 200px;              /* Größe kannst du anpassen */
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   opacity: 0;
   z-index: -1;
   pointer-events: none;
-  transition: opacity 0.4s ease;
+  transition: opacity 0.3s ease;
 }
 
-.dj-name:hover .hover-logo {
+/* Nur diese Klasse steuert Sichtbarkeit – für Desktop & Mobile */
+.dj-name.logo-visible .hover-logo {
   opacity: 1;
 }
 
