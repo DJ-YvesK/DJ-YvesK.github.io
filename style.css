@@ -5,11 +5,15 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #000;
   font-family: Arial, sans-serif;
   color: white;
-  padding-top: 90px;
+  padding-top: 90px; /* Platz für fixe Navigation */
 }
 
 /* NAVIGATION */
@@ -18,7 +22,7 @@ body {
   top: 0;
   width: 100%;
   padding: 20px 0;
-  background: rgba(0,0,0,0.65);
+  background: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(8px);
   z-index: 100;
 }
@@ -47,6 +51,16 @@ body {
 .intro {
   text-align: center;
   padding: 80px 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: introFade 0.7s ease-out forwards;
+}
+
+@keyframes introFade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .dj-name {
@@ -57,16 +71,16 @@ body {
   text-shadow: 0 0 25px #ff0099;
 }
 
-/* HOVER-LOGO */
+/* Logo hinter dem Namen */
 .hover-logo {
   position: absolute;
-  width: 200px;              /* Logo-Größe – kannst du anpassen */
+  width: 200px;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);  /* genau in die Mitte vom h1 */
+  transform: translate(-50%, -50%);
   opacity: 0;
-  z-index: -1;               /* Logo hinter dem Text */
-  pointer-events: none;      /* Hover bleibt auf dem Text */
+  z-index: -1;
+  pointer-events: none;
   transition: opacity 0.4s ease;
 }
 
@@ -74,12 +88,7 @@ body {
   opacity: 1;
 }
 
-/* Logo erscheint beim Hover */
-.dj-name:hover .hover-logo {
-  opacity: 1;
-}
-
-/* GLOW ANIMATED */
+/* GLOW ANIMATION FÜR DEN NAMEN */
 .animated-glow {
   cursor: pointer;
   transition: 0.3s ease;
@@ -104,7 +113,6 @@ body {
   }
 }
 
-/* TEXT UNDER NAME */
 .location {
   font-size: 2.5rem;
   margin-top: 10px;
@@ -121,7 +129,7 @@ body {
   opacity: 0.8;
 }
 
-/* UNDER CONSTRUCTION */
+/* UNDER CONSTRUCTION BUTTON */
 .btn-under-construction {
   display: inline-block;
   margin-top: 40px;
@@ -139,6 +147,7 @@ body {
 .btn-under-construction:hover {
   animation: pulseBtn 1.2s infinite alternate ease-in-out;
 }
+
 @keyframes pulseBtn {
   0% {
     box-shadow: 0 0 20px #ff0099;
@@ -150,19 +159,117 @@ body {
   }
 }
 
-/* HERO SECTION */
+/* HERO SECTION – leichter Licht-Shift */
 .hero {
   height: 40vh;
-  background: linear-gradient(#000, #111);
+  background: radial-gradient(circle at 10% 0%, #ff0099 0, #000 40%, #000 100%);
+  background-size: 200% 200%;
+  animation: heroGlow 8s infinite alternate ease-in-out;
+}
+
+@keyframes heroGlow {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 80% 20%;
+  }
+}
+
+/* PAGE HEADER (für Music & Booking) */
+.page-header {
+  text-align: center;
+  padding: 80px 20px 20px;
+}
+
+.page-title-text {
+  font-size: 3rem;
+  color: #ff0099;
+  text-shadow: 0 0 20px #ff0099;
+}
+
+.page-subtitle {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  opacity: 0.8;
+}
+
+/* MUSIC SECTION */
+.music-section {
+  padding: 40px 20px 60px;
+}
+
+.music-embed {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* BOOKING SECTION */
+.booking {
+  padding: 40px 20px 80px;
+}
+
+.booking form {
+  max-width: 600px;
+  margin: 40px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  text-align: left;
+}
+
+.booking label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 6px;
+}
+
+.booking input,
+.booking textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #ff0099;
+  background: #111;
+  color: white;
+  font-size: 1rem;
+}
+
+.booking textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* Booking Button */
+.btn-glow {
+  align-self: center;
+  background: #ff0099;
+  color: white;
+  padding: 14px 40px;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  text-shadow: 0 0 10px #000;
+  box-shadow: 0 0 20px #ff0099;
+  transition: 0.3s;
+}
+
+.btn-glow:hover {
+  animation: pulseBtn 1.2s infinite alternate ease-in-out;
 }
 
 /* FOOTER */
 footer {
   text-align: center;
-  padding: 25px;
+  padding: 25px 20px;
   font-size: 1rem;
   opacity: 0.8;
 }
+
 .footer-inner {
   display: flex;
   flex-direction: column;
@@ -187,22 +294,19 @@ footer {
   transform: translateY(-1px);
 }
 
-/* Mobile Footer Tweaks */
+/* RESPONSIVE */
 @media (max-width: 768px) {
-  .footer-social {
-    gap: 16px;
-  }
 
-  .footer-social a {
-    font-size: 1.3rem;
+  body {
+    padding-top: 80px;
   }
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
 
   .nav-center {
     gap: 20px;
+  }
+
+  .navbar a {
+    font-size: 1.1rem;
   }
 
   .dj-name {
@@ -223,10 +327,22 @@ footer {
   }
 
   .hover-logo {
-    width: 120px;
-    top: 70px;
+    width: 140px;
   }
-}
-html {
-  scroll-behavior: smooth;
+
+  .music-embed iframe {
+    height: 380px;
+  }
+
+  .booking form {
+    max-width: 100%;
+  }
+
+  .footer-social {
+    gap: 16px;
+  }
+
+  .footer-social a {
+    font-size: 1.3rem;
+  }
 }
