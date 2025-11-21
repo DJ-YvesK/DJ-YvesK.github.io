@@ -135,8 +135,19 @@ body {
   transition: 0.3s;
 }
 
+/* Hover: Puls-Effekt */
 .btn-under-construction:hover {
-  box-shadow: 0 0 40px #ff0099;
+  animation: pulseBtn 1.2s infinite alternate ease-in-out;
+}
+@keyframes pulseBtn {
+  0% {
+    box-shadow: 0 0 20px #ff0099;
+    transform: scale(1);
+  }
+  100% {
+    box-shadow: 0 0 40px #ff0099;
+    transform: scale(1.03);
+  }
 }
 
 /* HERO SECTION */
