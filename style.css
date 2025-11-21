@@ -49,14 +49,58 @@ body {
 }
 
 .dj-name {
+  position: relative;
+  display: inline-block;
   font-size: 4rem;
   color: #ff0099;
   text-shadow: 0 0 25px #ff0099;
 }
 
+/* HOVER-LOGO */
+.hover-logo {
+  position: absolute;
+  width: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 80px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+/* Logo erscheint beim Hover */
+.dj-name:hover .hover-logo {
+  opacity: 1;
+}
+
+/* GLOW ANIMATED */
+.animated-glow {
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.animated-glow:hover {
+  animation: glowPulse 1.6s infinite alternate ease-in-out;
+}
+
+@keyframes glowPulse {
+  0% {
+    text-shadow:
+      0 0 10px #ff0099,
+      0 0 20px #ff0099,
+      0 0 30px #ff0099;
+  }
+  100% {
+    text-shadow:
+      0 0 25px #ff33cc,
+      0 0 45px #ff33cc,
+      0 0 70px #ff0099;
+  }
+}
+
+/* TEXT UNDER NAME */
 .location {
   font-size: 2.5rem;
-  margin: 10px 0;
+  margin-top: 10px;
 }
 
 .description {
@@ -66,17 +110,11 @@ body {
 
 .motto {
   font-size: 1.2rem;
-  margin: 10px 0;
+  margin-top: 10px;
   opacity: 0.8;
 }
 
-/* HERO SECTION */
-.hero {
-  height: 40vh;
-  background: linear-gradient(#000, #111);
-}
-
-/* UNDER CONSTRUCTION BUTTON */
+/* UNDER CONSTRUCTION */
 .btn-under-construction {
   display: inline-block;
   margin-top: 40px;
@@ -94,57 +132,10 @@ body {
   box-shadow: 0 0 40px #ff0099;
 }
 
-/* PAGE TITLES */
-.page-title {
-  text-align: center;
-  padding-top: 40px;
-}
-
-.page-title h2 {
-  font-size: 3rem;
-  color: #ff0099;
-  text-shadow: 0 0 20px #ff0099;
-}
-
-/* BOOKING FORM */
-.booking form {
-  max-width: 600px;
-  margin: 40px auto;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.booking input,
-.booking textarea {
-  padding: 12px;
-  border: none;
-  border-radius: 5px;
-  background: #111;
-  color: white;
-  font-size: 1.1rem;
-  border: 1px solid #ff0099;
-}
-
-.booking textarea {
-  min-height: 120px;
-}
-
-.btn-glow {
-  background: #ff0099;
-  color: white;
-  padding: 14px;
-  border-radius: 10px;
-  border: none;
-  cursor: pointer;
-  font-size: 1.3rem;
-  text-shadow: 0 0 10px #000;
-  box-shadow: 0 0 20px #ff0099;
-  transition: 0.3s;
-}
-
-.btn-glow:hover {
-  box-shadow: 0 0 35px #ff0099;
+/* HERO SECTION */
+.hero {
+  height: 40vh;
+  background: linear-gradient(#000, #111);
 }
 
 /* FOOTER */
@@ -178,54 +169,9 @@ footer {
     font-size: 1rem;
     padding: 12px 25px;
   }
-}
 
-.dj-name {
-  position: relative;
-  display: inline-block;
-}
-
-.hover-logo {
-  position: absolute;
-  width: 140px;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 70px;
-  opacity: 0;
-  transition: opacity 0.4s ease-in-out;
-}
-
-.dj-name:hover .hover-logo {
-  opacity: 1;
-}
-/* ANIMIERTER NEON-GLOW */
-.animated-glow {
-  position: relative;
-  color: #ff0099;
-  text-shadow: 0 0 10px #ff0099;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-/* Hover startet die Animation */
-.animated-glow:hover {
-  animation: glowPulse 1.5s infinite alternate ease-in-out;
-}
-
-/* Keyframe: Glow pulsiert */
-@keyframes glowPulse {
-  0% {
-    text-shadow: 
-      0 0 10px #ff0099,
-      0 0 20px #ff0099,
-      0 0 30px #ff0099;
-  }
-  100% {
-    text-shadow: 
-      0 0 25px #ff33cc,
-      0 0 45px #ff33cc,
-      0 0 70px #ff0099;
+  .hover-logo {
+    width: 120px;
+    top: 70px;
   }
 }
-
-
