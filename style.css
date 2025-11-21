@@ -1,7 +1,4 @@
-/* ---------------------------- */
-/*   GLOBAL STYLES              */
-/* ---------------------------- */
-
+/* GLOBAL */
 * {
   margin: 0;
   padding: 0;
@@ -9,247 +6,176 @@
 }
 
 body {
+  background: #000;
   font-family: Arial, sans-serif;
-  background-color: #000;
-  color: #fff;
-  padding-top: 80px; /* Platz für die Navigation */
+  color: white;
+  padding-top: 90px;
 }
 
-
-/* ---------------------------- */
-/*   NAVIGATION                 */
-/* ---------------------------- */
-
+/* NAVIGATION */
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 10px;
-  background: rgba(0, 0, 0, 0.9);
   position: fixed;
-  width: 100%;
   top: 0;
-  left: 0;
-  z-index: 20;
+  width: 100%;
+  padding: 20px 0;
+  background: rgba(0,0,0,0.65);
+  backdrop-filter: blur(8px);
+  z-index: 100;
 }
 
 .nav-center {
   display: flex;
-  justify-content: space-around; /* Links gleichmäßig verteilen */
-  width: 100%;
+  justify-content: center;
+  gap: 40px;
 }
 
 .navbar a {
-  font-size: 1.5rem; /* Größere Schriftgröße für die Buttons */
+  font-size: 1.3rem;
+  letter-spacing: 2px;
   color: white;
   text-decoration: none;
-  padding: 15px 30px;  /* Größeres Padding für die Buttons */
   transition: 0.3s;
 }
 
 .navbar a:hover {
   color: #ff0099;
-  text-shadow: 0 0 8px #ff0099;
+  text-shadow: 0 0 10px #ff0099;
 }
 
-/* MOBILE VIEW */
-@media (max-width: 768px) {
-  .navbar a {
-    font-size: 1.2rem;  /* Auf Mobilgeräten kleinere Schriftgröße */
-    padding: 12px 25px; /* Angepasster Abstand auf Mobilgeräten */
-  }
-}
-
-/* ---------------------------- */
-/*   INTRO SECTION              */
-/* ---------------------------- */
-
+/* INTRO SECTION */
 .intro {
-  padding: 40px 20px;
   text-align: center;
+  padding: 80px 20px;
 }
 
 .dj-name {
   font-size: 4rem;
   color: #ff0099;
-  text-shadow: 0 0 20px #ff0099;
-  margin-bottom: 10px;
+  text-shadow: 0 0 25px #ff0099;
 }
 
 .location {
-  font-size: 3rem;
-  font-weight: 300;
-  margin-bottom: 20px;
+  font-size: 2.5rem;
+  margin: 10px 0;
 }
 
 .description {
-  font-size: 2rem;
-  margin-bottom: 10px;
+  font-size: 1.6rem;
+  margin-top: 10px;
 }
 
 .motto {
-  font-size: 1.5rem;
-}
-
-
-/* ---------------------------- */
-/*   HERO SECTION (black only)  */
-/* ---------------------------- */
-
-.hero {
-  height: 70vh;
-  background: #000; /* Schwarzer Hintergrund – kein Logo mehr */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  padding-top: 40px;
-  text-align: center;
-}
-
-
-/* ---------------------------- */
-/*   FOOTER                     */
-/* ---------------------------- */
-
-footer {
-  padding: 20px;
-  text-align: center;
+  font-size: 1.2rem;
+  margin: 10px 0;
   opacity: 0.8;
-  font-size: 1rem;
 }
 
-
-
-/* ---------------------------- */
-/*   MOBILE RESPONSIVE DESIGN   */
-/* ---------------------------- */
-
-@media (max-width: 768px) {
-
-  body {
-    padding-top: 90px;
-  }
-
-  .dj-name {
-    font-size: 3rem;
-  }
-
-  .location {
-    font-size: 2.2rem;
-  }
-
-  .description {
-    font-size: 1.4rem;
-  }
-
-  .motto {
-    font-size: 1.1rem;
-  }
-
-  .navbar a {
-    font-size: 1rem;
-  }
-
-  .hero {
-    height: auto;
-    padding-top: 20px;
-    padding-bottom: 40px;
-  }
+/* HERO SECTION */
+.hero {
+  height: 40vh;
+  background: linear-gradient(#000, #111);
 }
-/* Button für "Website im Aufbau" */
+
+/* UNDER CONSTRUCTION BUTTON */
 .btn-under-construction {
   display: inline-block;
-  background-color: #ff0099; /* Farbe des Buttons */
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
+  margin-top: 40px;
+  padding: 15px 40px;
   font-size: 1.2rem;
-  border-radius: 5px;
-  margin-top: 60px; /* Abstand für PC-Version */
-  transition: background-color 0.3s ease;
+  color: white;
+  background: #ff0099;
+  border-radius: 40px;
+  text-decoration: none;
+  box-shadow: 0 0 20px #ff0099;
+  transition: 0.3s;
 }
 
 .btn-under-construction:hover {
-  background-color: #e60073; /* Dunklere Farbe beim Hover */
-  text-decoration: underline;  /* Unterstreicht den Text beim Hover */
+  box-shadow: 0 0 40px #ff0099;
 }
 
-/* Anpassungen für mobile Geräte */
-@media (max-width: 768px) {
-  .btn-under-construction {
-    margin-top: 100px;  /* Größerer Abstand auf mobilen Geräten */
-    font-size: 1rem;    /* Kleinere Schrift auf Handys */
-    background-color: #ff0099;  /* Sicherstellen, dass die Hintergrundfarbe auch auf mobilen Geräten da ist */
-    padding: 12px 24px;  /* Größere Klickfläche auf Mobilgeräten */
-    border-radius: 5px;  /* Runde Ecken für den Button */
-  }
-}
-
-/* BOOKING SECTION */
-.booking {
-  padding: 20px;
+/* PAGE TITLES */
+.page-title {
   text-align: center;
+  padding-top: 40px;
 }
 
+.page-title h2 {
+  font-size: 3rem;
+  color: #ff0099;
+  text-shadow: 0 0 20px #ff0099;
+}
+
+/* BOOKING FORM */
 .booking form {
-  max-width: 600px; /* Maximale Breite des Formulars */
-  margin: 0 auto;   /* Zentriert das Formular */
+  max-width: 600px;
+  margin: 40px auto;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.booking form label {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-  color: white;
-}
-
-.booking form input, .booking form textarea {
-  width: 100%;
+.booking input,
+.booking textarea {
   padding: 12px;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #333;
-  color: white;
-}
-
-.booking form textarea {
-  min-height: 150px;
-  resize: vertical;
-}
-
-.booking form button {
-  padding: 12px;
-  font-size: 1.2rem;
-  background-color: #ff0099;
-  color: white;
   border: none;
   border-radius: 5px;
+  background: #111;
+  color: white;
+  font-size: 1.1rem;
+  border: 1px solid #ff0099;
+}
+
+.booking textarea {
+  min-height: 120px;
+}
+
+.btn-glow {
+  background: #ff0099;
+  color: white;
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  font-size: 1.3rem;
+  text-shadow: 0 0 10px #000;
+  box-shadow: 0 0 20px #ff0099;
+  transition: 0.3s;
 }
 
-.booking form button:hover {
-  background-color: #e60073;
+.btn-glow:hover {
+  box-shadow: 0 0 35px #ff0099;
 }
 
-/* MOBILE VIEW */
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 25px;
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+/* MOBILE */
 @media (max-width: 768px) {
-  .booking form {
-    max-width: 100%;
-    padding: 20px;
+
+  .nav-center {
+    gap: 20px;
   }
 
-  .booking form input, .booking form textarea {
+  .dj-name {
+    font-size: 2.8rem;
+  }
+
+  .location {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1.3rem;
+  }
+
+  .btn-under-construction {
     font-size: 1rem;
-  }
-
-  .booking form button {
-    font-size: 1.1rem;
-    padding: 15px;
+    padding: 12px 25px;
   }
 }
-
