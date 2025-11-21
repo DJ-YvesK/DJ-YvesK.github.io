@@ -179,3 +179,24 @@ footer {
     padding: 12px 25px;
   }
 }
+
+.dj-name {
+  position: relative;
+  display: inline-block;
+}
+
+.hover-logo {
+  position: absolute;
+  width: 140px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 70px;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.dj-name:hover .hover-logo {
+  opacity: 1;
+}
+
+
