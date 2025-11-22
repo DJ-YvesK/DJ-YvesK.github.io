@@ -118,8 +118,9 @@ body {
 }
 
 .location {
-  font-size: 2.5rem;
-  margin-top: 10px;
+  font-size: 2rem;       /* vorher 2.5rem */
+  margin-top: 6px;
+  opacity: 0.9;          /* minimal zurückgenommen */
 }
 
 .description {
