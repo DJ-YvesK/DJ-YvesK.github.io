@@ -350,6 +350,30 @@ footer {
   font-size: 1rem;
   opacity: 0.8;
 }
+/* --- HERO QUOTE UNTERHALB DER SEITE --- */
+.quote-section {
+  padding: 30px 20px 10px;
+  text-align: center;
+}
+
+.hero-quote {
+  font-size: 1.3rem;
+  color: #ff0099;
+  text-shadow: 0 0 12px #ff0099;
+  opacity: 0;
+  animation: fadeQuote 2.5s ease-in-out forwards;
+}
+
+@keyframes fadeQuote {
+  0% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 .footer-inner {
   display: flex;
@@ -392,6 +416,15 @@ footer {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
+  /* MOBILE VERSION DES QUOTES */
+  .quote-section {
+    padding: 20px 16px 5px;
+  }
+
+  .hero-quote {
+    font-size: 1.1rem;
+    text-shadow: 0 0 8px #ff0099;
+  }
 
   body {
     padding-top: 80px;
