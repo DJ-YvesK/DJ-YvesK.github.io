@@ -146,13 +146,22 @@ body {
 }
 
 @keyframes heroGlow {
-  0% { background-position: 0% 0%; }
-  100% { background-position: 80% 20%; }
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
+
 @keyframes textGlowFade {
   0%   { opacity: 1; }
-  45%  { opacity: 0.45; }  /* halb sichtbar beim Glow */
+  25%  { opacity: 0.35; }
+  50%  { opacity: 0.15; } /* Welle trifft Mitte */
+  75%  { opacity: 0.35; }
   100% { opacity: 1; }
+}
+@keyframes textFloat {
+  0%   { transform: translate(-50%, -50%) translateY(0px); }
+  50%  { transform: translate(-50%, -50%) translateY(-4px); }
+  100% { transform: translate(-50%, -50%) translateY(0px); }
 }
 
 /* QUOTE IN HERO */
@@ -172,11 +181,11 @@ body {
   text-shadow: 0 0 25px #ff0099;
   opacity: 0;
 
-  animation: 
-    fadeQuote 1.5s ease-out forwards,   /* Einblenden */
-    textGlowFade 8s infinite ease-in-out; /* Mitschwinden */
+ animation:
+    fadeQuote 1.5s ease-out forwards,
+    textGlowFade 8s infinite ease-in-out,
+    textFloat 6s infinite ease-in-out;
 }
-
 @keyframes fadeQuote {
   0% { opacity: 0; transform: translateY(8px); }
   100% { opacity: 1; transform: translateY(0); }
