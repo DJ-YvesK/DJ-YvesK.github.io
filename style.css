@@ -186,7 +186,7 @@ body {
 
  animation:
     fadeQuote 1.5s ease-out forwards,
-    textGlowFade 8s infinite ease-in-out 0.2s,  /* Verzögerung */
+    textGlowFade 8s infinite ease-in-out 0.15s,  /* Verzögerung */
     textFloat 6s infinite ease-in-out;
 }
 @keyframes fadeQuote {
