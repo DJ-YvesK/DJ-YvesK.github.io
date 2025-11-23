@@ -149,6 +149,11 @@ body {
   0% { background-position: 0% 0%; }
   100% { background-position: 80% 20%; }
 }
+@keyframes textGlowFade {
+  0%   { opacity: 1; }
+  45%  { opacity: 0.45; }  /* halb sichtbar beim Glow */
+  100% { opacity: 1; }
+}
 
 /* QUOTE IN HERO */
 .quote-section {
@@ -162,11 +167,14 @@ body {
 }
 
 .hero-quote {
-  font-size: 1.6rem;
+  font-size: 2.2rem;
   color: #ff0099;
-  text-shadow: 0 0 20px #ff0099;
+  text-shadow: 0 0 25px #ff0099;
   opacity: 0;
-  animation: fadeQuote 2.5s ease-in-out forwards;
+
+  animation: 
+    fadeQuote 1.5s ease-out forwards,   /* Einblenden */
+    textGlowFade 8s infinite ease-in-out; /* Mitschwinden */
 }
 
 @keyframes fadeQuote {
@@ -193,7 +201,7 @@ footer {
 @media (max-width: 768px) {
 
   .quote-section { top: 60%; transform: translate(-50%, -50%); }
-  .hero-quote { font-size: 1.3rem; }
+  .hero-quote { font-size: 1.8rem; }
 
   .music-section { padding: 30px 16px 70px; }
   .music-card { padding: 24px 14px 22px; border-radius: 18px; }
