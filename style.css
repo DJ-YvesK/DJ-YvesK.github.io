@@ -154,9 +154,9 @@ body {
 @keyframes textGlowFade {
   0%   { opacity: 1; }
   20%  { opacity: 0.6; }
-  40%  { opacity: 0.2; }   /* deutlich dunkler */
-  50%  { opacity: 0.05; }  /* fast verschwunden */
-  60%  { opacity: 0.2; }
+  40%  { opacity: 0.25; }
+  50%  { opacity: 0.05; }  /* WELLE DRÜBER – fast unsichtbar */
+  60%  { opacity: 0.25; }
   80%  { opacity: 0.6; }
   100% { opacity: 1; }
 }
@@ -186,7 +186,7 @@ body {
 
  animation:
     fadeQuote 1.5s ease-out forwards,
-    textGlowFade 8s infinite ease-in-out 0.3s,  /* Verzögerung */
+    textGlowFade 8s infinite ease-in-out 0.2s,  /* Verzögerung */
     textFloat 6s infinite ease-in-out;
 }
 @keyframes fadeQuote {
