@@ -352,7 +352,9 @@ footer {
 }
 /* --- HERO QUOTE UNTERHALB DER SEITE --- */
 .quote-section {
-  padding: 5px 20px 0;
+  margin-top: -40px;   /* WICHTIG: Text IN die Animation schieben */
+  padding-top: 0;
+  padding-bottom: 20px;
   text-align: center;
 }
 
@@ -362,7 +364,7 @@ footer {
   text-shadow: 0 0 12px #ff0099;
   opacity: 0;
   animation: fadeQuote 2.5s ease-in-out forwards;
-  margin-top: -12px;  /* NEU: zieht den Text optisch IN die Animation hinein */
+  margin-top: 0;  /* NEU: zieht den Text optisch IN die Animation hinein */
 }
 
 @keyframes fadeQuote {
@@ -419,9 +421,10 @@ footer {
 @media (max-width: 768px) {
   /* MOBILE VERSION DES QUOTES */
   .quote-section {
-    padding: 8px 16px 0;
-  }
-
+  margin-top: -25px;   /* etwas weniger für Mobile */
+  padding-top: 0;
+  padding-bottom: 16px;
+}
   .hero-quote {
     font-size: 1.1rem;
     text-shadow: 0 0 8px #ff0099;
