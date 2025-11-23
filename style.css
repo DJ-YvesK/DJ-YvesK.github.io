@@ -322,9 +322,16 @@ body {
 
 /* Mobile-Anpassungen */
 @media (max-width: 768px) {
-  .music-section {
-    padding: 30px 16px 70px;
+  .quote-section {
+    top: 60%;
+    transform: translate(-50%, -50%);
   }
+
+  .hero-quote {
+    font-size: 1.3rem;
+  }
+}
+
 
   .music-card {
     padding: 24px 14px 22px;
