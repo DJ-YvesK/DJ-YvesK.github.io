@@ -352,7 +352,7 @@ footer {
 }
 /* --- HERO QUOTE UNTERHALB DER SEITE --- */
 .quote-section {
-  margin-top: -40px;   /* WICHTIG: Text IN die Animation schieben */
+  margin-top: -80px;   /* WICHTIG: Text IN die Animation schieben */
   padding-top: 0;
   padding-bottom: 20px;
   text-align: center;
@@ -421,7 +421,7 @@ footer {
 @media (max-width: 768px) {
   /* MOBILE VERSION DES QUOTES */
   .quote-section {
-  margin-top: -25px;   /* etwas weniger für Mobile */
+  margin-top: -50px;   /* etwas weniger für Mobile */
   padding-top: 0;
   padding-bottom: 16px;
 }
