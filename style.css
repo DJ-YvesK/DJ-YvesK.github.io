@@ -98,7 +98,8 @@ body {
   transition: 0.3s ease;
 }
 
-.animated-glow:hover {
+/* Animation läuft nur, wenn logo-visible gesetzt ist */
+.dj-name.logo-visible {
   animation: glowPulse 1.6s infinite alternate ease-in-out;
 }
 
