@@ -423,20 +423,65 @@ footer {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-  /* MOBILE VERSION DES QUOTES */
+
   .quote-section {
-    top: 60%; /* etwas tiefer, damit es auf Handy mittiger wirkt */
+    top: 60%; /* etwas tiefer für Handy */
     transform: translate(-50%, -50%);
   }
 
   .hero-quote {
     font-size: 1.3rem;
   }
-}
 
   body {
     padding-top: 80px;
   }
+
+  .nav-center {
+    gap: 20px;
+  }
+
+  .navbar a {
+    font-size: 1.1rem;
+  }
+
+  .dj-name {
+    font-size: 3.2rem;
+  }
+
+  .location {
+    font-size: 1.7rem;
+  }
+
+  .description {
+    font-size: 1.3rem;
+  }
+
+  .btn-under-construction {
+    font-size: 1rem;
+    padding: 12px 25px;
+  }
+
+  .hover-logo {
+    width: 140px;
+  }
+
+  .music-embed iframe {
+    height: 380px;
+  }
+
+  .booking form {
+    max-width: 100%;
+  }
+
+  .footer-social {
+    gap: 16px;
+  }
+
+  .footer-social a {
+    font-size: 1.3rem;
+  }
+}
 
   .nav-center {
     gap: 20px;
