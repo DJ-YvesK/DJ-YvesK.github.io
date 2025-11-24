@@ -129,7 +129,7 @@ body {
   height: 40vh;
   background: radial-gradient(circle at 10% 0%, #ff0099 0, #000 40%, #000 100%);
   background-size: 200% 200%;
-  animation: heroGlow 8s infinite alternate ease-in-out;
+  animation: heroGlow 8s infinite linear;
 }
 
 @keyframes heroGlow {
@@ -158,7 +158,7 @@ body {
 
   animation:
     fadeQuote 1.5s ease-out forwards,
-    textGlowFade 8s infinite ease-in-out 0.15s;
+    textGlowFade 8s infinite ease-in-out;
 }
 
 @keyframes fadeQuote {
@@ -241,8 +241,8 @@ footer {
     transform: translate(-50%, -50%);
   }
 
-  .hero-quote { font-size: 2rem; }
-
+  .hero-quote { font-size: 2.4rem; }
+   line-height: 1.25;
   .music-section { padding: 30px 16px 70px; }
   .music-card { padding: 24px 14px 22px; border-radius: 18px; }
   .music-card-title { font-size: 1.4rem; }
