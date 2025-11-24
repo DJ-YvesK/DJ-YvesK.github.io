@@ -8,12 +8,12 @@ body {
   font-family: Arial, sans-serif;
   color: white;
   padding-top: 90px;
-
-  .hero-quote {
+}
+/* TESTBLOCK – BITTE GENAU SO */
+.hero-quote {
   opacity: 1 !important;
   color: white !important;
 }
-
 
 /* ====== NAVIGATION ====== */
 .navbar {
