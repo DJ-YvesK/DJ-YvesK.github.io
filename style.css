@@ -159,7 +159,6 @@ body {
   animation:
     fadeQuote 1.5s ease-out forwards,
     textGlowFade 8s infinite ease-in-out 0.15s,
-    textFloat 6s infinite ease-in-out;
 }
 
 @keyframes fadeQuote {
@@ -179,9 +178,7 @@ body {
 }
 
 @keyframes textFloat {
-  0%   { transform: translate(-50%, -50%) translateY(0px); }
-  50%  { transform: translate(-50%, -50%) translateY(-4px); }
-  100% { transform: translate(-50%, -50%) translateY(0px); }
+  
 }
 
 
