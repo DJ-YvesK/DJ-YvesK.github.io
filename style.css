@@ -171,11 +171,12 @@ body {
   0%   { opacity: 1; }
   20%  { opacity: 0.6; }
   40%  { opacity: 0.25; }
-  50%  { opacity: 0.05; }   /* fast komplett weg */
+  50%  { opacity: 0; }      /* 👉 HIER: komplett unsichtbar */
   60%  { opacity: 0.25; }
   80%  { opacity: 0.6; }
   100% { opacity: 1; }
 }
+
 
 
   50%  { transform: translate(-50%, -50%) translateY(-4px); }
