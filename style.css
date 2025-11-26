@@ -318,7 +318,7 @@ body {
   }
 
   .hero-quote {
-    font-size: 1.6rem !important;  /* Schriftgröße anpassen */
+    font-size: 1.5rem !important;  /* Schriftgröße anpassen */
     line-height: 1.5 !important;   /* Optimale Zeilenhöhe */
     white-space: normal !important; /* Sauberer Umbruch */
     text-align: center;             /* Text bleibt mittig */
