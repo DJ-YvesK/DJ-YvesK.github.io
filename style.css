@@ -71,11 +71,7 @@ body {
   color: #ff0099;
   cursor: pointer;
   transition: 0.3s ease;
-
-  /* leichter Outline für bessere Kante */
   -webkit-text-stroke: 1px #000;
-
-  /* Grund-Glow leicht */
   text-shadow: 0 0 15px #ff0099;
 }
 
@@ -109,10 +105,7 @@ body {
   opacity: 0;
   z-index: -1;
   pointer-events: none;
-
-  /* verhindert dunkle Bildkanten */
   mix-blend-mode: screen;
-
   transition: opacity 0.3s ease;
 }
 
@@ -164,7 +157,6 @@ body {
   animation: heroWave 8s infinite ease-in-out;
 }
 
-/* viel dynamischere Wellenbewegung */
 @keyframes heroWave {
   0%   { background-position: 0% 40%; }
   30%  { background-position: 50% 60%; }
@@ -172,6 +164,7 @@ body {
   80%  { background-position: 50% 40%; }
   100% { background-position: 0% 40%; }
 }
+
 /* =========================
    PC: QUOTE ZENTRIEREN
 ========================= */
@@ -185,23 +178,16 @@ body {
   pointer-events: none;
 }
 
-/* Smooth-Slide + Fade, synchron mit der hellen Welle */
 .hero-quote {
   font-size: 2.6rem;
   color: #000;
   opacity: 0;
   transform: translateY(20px); /* Startposition weiter unten */
-
-  /* dezenter 3D-Look */
   -webkit-text-stroke: 0.8px rgba(255,255,255,0.12);
-  text-shadow:
-    1px 1px 2px rgba(0,0,0,0.9),
-    0px 0px 4px rgba(0,0,0,0.7);
-
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.9), 0px 0px 4px rgba(0,0,0,0.7);
   animation: textSmoothSlide 8s infinite ease-in-out;
 }
 
-/* Perfektes Smooth-Entry Timing */
 @keyframes textSmoothSlide {
   0% {
     opacity: 0;
@@ -239,10 +225,10 @@ body {
   border: 1px solid rgba(255,0,153,0.45);
   box-shadow: 0 0 25px rgba(255,0,153,0.25);
 }
+
 /* =======================================
    CLEAN MUSIC PAGE – APPLE STYLE
 ======================================= */
-
 .music-wrapper {
   max-width: 900px;
   margin: 140px auto 80px auto;
@@ -275,7 +261,6 @@ body {
   transform: translateY(-4px);
 }
 
-/* Text in Cards */
 .music-info h2 {
   font-size: 1.8rem;
   margin-bottom: 8px;
@@ -319,8 +304,8 @@ body {
 
   .hero-quote {
     font-size: 1.6rem !important;  /* Schriftgröße auf Mobile anpassen */
-    line-height: 1.5 !important;   /* Saubere Zeilenhöhe */
-    white-space: normal !important; /* Zeilenumbruch sauber */
+    line-height: 1.5 !important;   /* Zeilenhöhe sauber */
+    white-space: normal !important; /* Umbruch sauber */
     text-align: center;             /* Text bleibt mittig */
     max-width: 90%;                 /* Weniger Platz für saubere Umbrüche */
   }
@@ -328,26 +313,25 @@ body {
 }
 
 .music-title {
-    font-size: 2.4rem;
-    margin-bottom: 40px;
-  }
+  font-size: 2.4rem;
+  margin-bottom: 40px;
+}
 
-  .music-item {
-    padding: 26px 18px;
-    border-radius: 18px;
-  }
+.music-item {
+  padding: 26px 18px;
+  border-radius: 18px;
+}
 
-  .music-info h2 {
-    font-size: 1.5rem;
-  }
+.music-info h2 {
+  font-size: 1.5rem;
+}
 
-  .music-info p {
-    font-size: 0.95rem;
-  }
+.music-info p {
+  font-size: 0.95rem;
+}
 
-  .music-player iframe {
-    height: 170px;
-  }
+.music-player iframe {
+  height: 170px;
 }
 
 /* =========================
