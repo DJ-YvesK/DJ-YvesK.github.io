@@ -299,12 +299,12 @@ body {
 @media (max-width: 768px) {
 
   .quote-section {
-    top: 58%;  /* Position nach unten verschieben */
+    top: 60%;  /* Position nach unten verschieben */
   }
 
   .hero-quote {
     font-size: 1.6rem !important;  /* Schriftgröße auf Mobile anpassen */
-    line-height: 1.5 !important;   /* Zeilenhöhe sauber */
+    line-height: 1.5 !important;   /* Saubere Zeilenhöhe */
     white-space: normal !important; /* Umbruch sauber */
     text-align: center;             /* Text bleibt mittig */
     max-width: 90%;                 /* Weniger Platz für saubere Umbrüche */
