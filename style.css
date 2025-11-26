@@ -314,15 +314,15 @@ body {
 
   /* FIX: Quote auf Mobile sauber umbrechen */
   .hero-quote {
-    font-size: 1.5rem !important;   /* kleiner für bessere Lesbarkeit */
-    line-height: 1.3 !important;    /* sorgt für sauberen Abstand */
-    white-space: normal !important; /* erlaubt den Zeilenumbruch */
-    text-align: center;             /* sicherstellen, dass es mittig bleibt */
+    font-size: 1.4rem !important;   /* kleineren Text für Mobile */
+    line-height: 1.4 !important;    /* sauberen Abstand schaffen */
+    text-align: center;             /* mittig */
+    max-width: 80%;                 /* weniger Platz, mehr Übersicht */
   }
 
   /* Zitat auf Mobile tiefer setzen */
   .quote-section {
-    top: 55%;   /* jetzt etwas weiter unten */
+    top: 58%;   /* weiter nach unten, damit es besser passt */
   }
 
 }
