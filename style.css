@@ -172,15 +172,14 @@ body {
   80%  { background-position: 50% 40%; }
   100% { background-position: 0% 40%; }
 }
-
 /* =========================
    PC: QUOTE ZENTRIEREN
 ========================= */
 .quote-section {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);  /* Perfekte Zentrierung */
+  top: 50%; /* zentriert vertikal */
+  left: 50%; /* zentriert horizontal */
+  transform: translate(-50%, -50%); /* perfekter Fix */
   width: 100%;
   text-align: center;
   pointer-events: none;
@@ -315,14 +314,14 @@ body {
 @media (max-width: 768px) {
 
   .quote-section {
-    top: 60%;  /* Etwas weiter nach unten verschieben */
+    top: 60%;  /* Position weiter nach unten verschieben */
   }
 
   .hero-quote {
-    font-size: 1.6rem !important;   /* Schriftgröße für Mobile weiter anpassen */
-    line-height: 1.4 !important;    /* Bessere Zeilenhöhe für Mobile */
+    font-size: 1.5rem !important;  /* Schriftgröße anpassen */
+    line-height: 1.4 !important;   /* Optimale Zeilenhöhe */
+    white-space: normal !important; /* Sauberer Umbruch */
     text-align: center;             /* Text bleibt mittig */
-    white-space: normal !important; /* Sauberer Zeilenumbruch */
   }
 
 }
