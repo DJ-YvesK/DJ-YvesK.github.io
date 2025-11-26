@@ -3,83 +3,109 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Music – DJ YvesK.</title>
-
+  <title>Music – DJ YvesK</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <!-- Favicon -->
-<link rel="icon" type="image/png" sizes="32x32" href="yvesk-favicon-32.png">
-<link rel="icon" type="image/png" sizes="512x512" href="yvesk-favicon-512.png">
-
-<!-- Optional für Handy-Homebildschirm -->
-<link rel="apple-touch-icon" href="yvesk-favicon-512.png">
-
 </head>
 
 <body>
 
-  <!-- NAVIGATION -->
-  <header class="navbar">
-    <nav class="nav-center">
-      <a href="index.html">HOME</a>
-      <a href="music.html">MUSIC</a>
-      <a href="booking.html">BOOKING</a>
-    </nav>
-  </header>
+<!-- NAVIGATION -->
+<nav class="navbar">
+  <div class="nav-center">
+    <a href="index.html">Home</a>
+    <a href="music.html" class="active">Music</a>
+    <a href="booking.html">Booking</a>
+  </div>
+</nav>
 
- <main>
-  <!-- PAGE HEADER -->
-  <section class="page-header">
-    <h2 class="page-title-text">MUSIC</h2>
-    <p class="page-subtitle">Aktuelle DJ-Sets & Mixes von DJ YvesK.</p>
-  </section>
+<!-- MUSIC WRAPPER -->
+<section class="music-wrapper">
 
-  <!-- MUSIC CARD -->
-  <section class="music-section">
-    <div class="music-card">
-      <div class="music-embed">
-        <iframe
-          width="100%"
-          height="450"
-          scrolling="no"
-          frameborder="0"
-          allow="autoplay"
-          src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/yv3sk&color=%23ff0099&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
-        </iframe>
-      </div>
+  <h1 class="music-title">Latest Mixes</h1>
+
+  <!-- SET 1 -->
+  <div class="music-item">
+    <div class="music-info">
+      <h2>Level 40 – B-Day Mix</h2>
+      <p>Geburtstagsmix mit viel Energie und einem fetten House-Fokus.</p>
     </div>
-  </section>
-</main>
 
-  <!-- FOOTER -->
-  <footer>
-  <div class="footer-inner">
-    <p>© 2025 DJ YvesK. – All Rights Reserved</p>
+    <div class="music-player">
+      <iframe
+        width="100%" height="180"
+        scrolling="no" frameborder="no"
+        allow="autoplay"
+        src="https://w.soundcloud.com/player/?url=https://soundcloud.com/yv3sk/level-40-b-day-mix&color=%23ff0099&inverse=false&auto_play=false&show_user=true">
+      </iframe>
+    </div>
+  </div>
 
-    <div class="footer-social">
-  <!-- Instagram -->
-  <a href="https://www.instagram.com/dj.yvesk/?hl=de"
-     class="instagram"
-     target="_blank" rel="noopener" aria-label="Instagram">
-    <i class="fab fa-instagram"></i>
-  </a>
+  <!-- SET 2 -->
+  <div class="music-item">
+    <div class="music-info">
+      <h2>Einzigartig ist besser als perfekt</h2>
+      <p>Ein einzigartiger Mix – treibende Beats, ehrliche Emotionen.</p>
+    </div>
 
-  <!-- Facebook -->
-  <a href="https://www.facebook.com/profile.php?id=100089274927366"
-     class="facebook"
-     target="_blank" rel="noopener" aria-label="Facebook">
-    <i class="fab fa-facebook-f"></i>
-  </a>
+    <div class="music-player">
+      <iframe
+        width="100%" height="180"
+        scrolling="no" frameborder="no"
+        allow="autoplay"
+        src="https://w.soundcloud.com/player/?url=https://soundcloud.com/yv3sk/einzigartig-ist-besser-als&color=%23ff0099&inverse=false&auto_play=false&show_user=true">
+      </iframe>
+    </div>
+  </div>
 
-  <!-- SoundCloud -->
-  <a href="https://soundcloud.com/yv3sk"
-     class="soundcloud"
-     target="_blank" rel="noopener" aria-label="SoundCloud">
-    <i class="fab fa-soundcloud"></i>
-  </a>
-</div>
-</div>
+  <!-- SET 3 -->
+  <div class="music-item">
+    <div class="music-info">
+      <h2>Sommerrauschen</h2>
+      <p>Sonnige Vibes, warme Grooves – perfekt für Open Air & Sundowner.</p>
+    </div>
+
+    <div class="music-player">
+      <iframe
+        width="100%" height="180"
+        scrolling="no" frameborder="no"
+        allow="autoplay"
+        src="https://w.soundcloud.com/player/?url=https://soundcloud.com/yv3sk/sommerrauschen&color=%23ff0099&inverse=false&auto_play=false&show_user=true">
+      </iframe>
+    </div>
+  </div>
+
+  <!-- SET 4 -->
+  <div class="music-item">
+    <div class="music-info">
+      <h2>Muttersprache</h2>
+      <p>Ein Set mit Charakter – direkt, ehrlich und auf den Punkt.</p>
+    </div>
+
+    <div class="music-player">
+      <iframe
+        width="100%" height="180"
+        scrolling="no" frameborder="no"
+        allow="autoplay"
+        src="https://w.soundcloud.com/player/?url=https://soundcloud.com/yv3sk/muttersprache&color=%23ff0099&inverse=false&auto_play=false&show_user=true">
+      </iframe>
+    </div>
+  </div>
+
+  <!-- BUTTON: Mehr auf SoundCloud -->
+  <div class="music-more">
+    <a href="https://soundcloud.com/yv3sk"
+       class="btn-under-construction"
+       target="_blank" rel="noopener noreferrer">
+      Alle Sets auf SoundCloud
+    </a>
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 DJ YvesK – All Rights Reserved</p>
 </footer>
+
 </body>
 </html>
