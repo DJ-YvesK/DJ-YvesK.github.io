@@ -310,19 +310,20 @@ body {
 }
 
 /* MOBILE VERSION */
+/* =========================
+   MOBILE: QUOTE TIEFER SETZEN
+========================= */
 @media (max-width: 768px) {
 
-  /* FIX: Quote auf Mobile sauber umbrechen */
-  .hero-quote {
-    font-size: 1.4rem !important;   /* kleineren Text für Mobile */
-    line-height: 1.4 !important;    /* sauberen Abstand schaffen */
-    text-align: center;             /* mittig */
-    max-width: 80%;                 /* weniger Platz, mehr Übersicht */
+  .quote-section {
+    top: 58%;  /* Etwas tiefer für Mobile */
   }
 
-  /* Zitat auf Mobile tiefer setzen */
-  .quote-section {
-    top: 58%;   /* weiter nach unten, damit es besser passt */
+  .hero-quote {
+    font-size: 1.5rem !important;   /* Schriftgröße weiter anpassen */
+    line-height: 1.4 !important;
+    white-space: normal !important; /* Sauberer Zeilenumbruch */
+    text-align: center;             /* Sicherstellen, dass der Text mittig bleibt */
   }
 
 }
