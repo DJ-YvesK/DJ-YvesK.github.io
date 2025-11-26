@@ -174,20 +174,18 @@ body {
 }
 
 /* =========================
-   TEXT INSIDE HERO — Smooth Slide
-========================= */
-/* =========================
    PC: QUOTE ZENTRIEREN
 ========================= */
 .quote-section {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);  /* Perfekte mittige Ausrichtung */
+  transform: translate(-50%, -50%);  /* Perfekte Zentrierung */
   width: 100%;
   text-align: center;
   pointer-events: none;
 }
+
 /* Smooth-Slide + Fade, synchron mit der hellen Welle */
 .hero-quote {
   font-size: 2.6rem;
@@ -311,27 +309,24 @@ body {
   border-radius: 40px;
 }
 
-/* MOBILE VERSION */
-/* =========================
-   MOBILE: QUOTE TIEFER SETZEN
-========================= */
 /* =========================
    MOBILE: QUOTE TIEFER SETZEN
 ========================= */
 @media (max-width: 768px) {
 
   .quote-section {
-    top: 65%;  /* Weiter nach unten verschoben */
+    top: 60%;  /* Etwas weiter nach unten verschieben */
   }
 
   .hero-quote {
-    font-size: 1.4rem !important;   /* Schriftgröße für Mobile anpassen */
-    line-height: 1.4 !important;
-    text-align: center;             /* Sicherstellen, dass der Text mittig bleibt */
+    font-size: 1.6rem !important;   /* Schriftgröße für Mobile weiter anpassen */
+    line-height: 1.4 !important;    /* Bessere Zeilenhöhe für Mobile */
+    text-align: center;             /* Text bleibt mittig */
     white-space: normal !important; /* Sauberer Zeilenumbruch */
   }
 
 }
+
   .music-title {
     font-size: 2.4rem;
     margin-bottom: 40px;
