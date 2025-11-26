@@ -318,15 +318,16 @@ body {
   }
 
   .hero-quote {
-    font-size: 1.5rem !important;  /* Schriftgröße anpassen */
-    line-height: 1.4 !important;   /* Optimale Zeilenhöhe */
+    font-size: 1.6rem !important;  /* Schriftgröße anpassen */
+    line-height: 1.5 !important;   /* Optimale Zeilenhöhe */
     white-space: normal !important; /* Sauberer Umbruch */
     text-align: center;             /* Text bleibt mittig */
+    max-width: 90%;                 /* Etwas weniger Platz, um saubere Umbrüche zu gewährleisten */
   }
 
 }
 
-  .music-title {
+   .music-title {
     font-size: 2.4rem;
     margin-bottom: 40px;
   }
