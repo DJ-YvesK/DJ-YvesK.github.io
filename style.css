@@ -177,9 +177,9 @@ body {
 ========================= */
 .quote-section {
   position: absolute;
-  top: 50%; /* zentriert vertikal */
-  left: 50%; /* zentriert horizontal */
-  transform: translate(-50%, -50%); /* perfekter Fix */
+  top: 50%; /* Vertikal zentriert */
+  left: 50%; /* Horizontal zentriert */
+  transform: translate(-50%, -50%); /* Perfekte Ausrichtung */
   width: 100%;
   text-align: center;
   pointer-events: none;
@@ -314,15 +314,15 @@ body {
 @media (max-width: 768px) {
 
   .quote-section {
-    top: 58% !important;  /* Position weiter nach unten verschieben */
+    top: 58%;  /* Position nach unten verschieben */
   }
 
   .hero-quote {
-    font-size: 1.6rem !important;  /* Schriftgröße anpassen für mobile */
-    line-height: 1.4 !important;   /* Saubere Zeilenhöhe */
-    white-space: normal !important; /* Sauberer Umbruch */
+    font-size: 1.6rem !important;  /* Schriftgröße auf Mobile anpassen */
+    line-height: 1.5 !important;   /* Saubere Zeilenhöhe */
+    white-space: normal !important; /* Zeilenumbruch sauber */
     text-align: center;             /* Text bleibt mittig */
-    max-width: 90%;                 /* Weniger Platz, um saubere Umbrüche zu gewährleisten */
+    max-width: 90%;                 /* Weniger Platz für saubere Umbrüche */
   }
 
 }
