@@ -311,16 +311,20 @@ body {
 
 /* MOBILE VERSION */
 @media (max-width: 768px) {
-/* FIX: Quote auf Mobile sauber umbrechen */
-.hero-quote {
-    font-size: 1.8rem !important;   /* etwas kleiner = perfekte 2 Zeilen */
-    line-height: 1.25;              /* kompakter wirkt edler */
-    white-space: normal !important; /* erlaubt saubereren Zeilenumbruch */
-}
+@media (max-width: 768px) {
 
-/* Zitat leicht tiefer setzen */
-.quote-section {
+  /* FIX: Quote auf Mobile sauber umbrechen und etwas kleiner */
+  .hero-quote {
+    font-size: 1.6rem !important;  /* etwas kleiner */
+    line-height: 1.3 !important;   /* Zeilenhöhe erhöhen */
+    white-space: normal !important; /* sauberer Zeilenumbruch */
+  }
+
+  /* Zitat im Mobile tiefer setzen */
+  .quote-section {
     top: 62%;  /* vorher 50% */
+  }
+
 }
 
   .music-title {
