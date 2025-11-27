@@ -164,6 +164,11 @@ body {
   );
   background-size: 220% 220%;
   animation: heroWave 8s infinite ease-in-out;
+
+  /* NEU: Text wirklich mittig */
+  display: flex;
+  align-items: center;    /* vertikal zentrieren */
+  justify-content: center;/* horizontal zentrieren */
 }
 
 @keyframes heroWave {
