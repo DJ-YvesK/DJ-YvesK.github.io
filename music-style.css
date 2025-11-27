@@ -23,13 +23,14 @@
 ========================= */
 
 .soundcloud-follow {
-  margin: 40px auto 50px auto;
-  padding: 18px 26px;
-  max-width: 340px;
+  margin: 40px auto 60px auto;
+  padding: 16px 26px;
+  max-width: 360px;
 
-  background: rgba(255, 0, 153, 0.15);
-  border: 1px solid rgba(255, 0, 153, 0.35);
-  border-radius: 18px;
+  /* Neu: dunkles Glas statt pinker Fläche */
+  background: rgba(0, 0, 0, 0.75);
+  border: 1px solid rgba(255, 0, 153, 0.7);
+  border-radius: 999px;
 
   display: flex;
   align-items: center;
@@ -39,13 +40,14 @@
   cursor: pointer;
   text-decoration: none;
 
-  box-shadow: 0 0 20px rgba(255, 0, 153, 0.2);
-  transition: 0.3s ease;
+  box-shadow: 0 0 26px rgba(255, 0, 153, 0.35);
+  backdrop-filter: blur(8px);
+  transition: 0.25s ease;
 }
 
 .soundcloud-follow:hover {
   transform: translateY(-2px);
-  box-shadow: 0 0 35px rgba(255, 0, 153, 0.35);
+  box-shadow: 0 0 38px rgba(255, 0, 153, 0.6);
 }
 
 /* Logo */
@@ -59,8 +61,8 @@
 .soundcloud-follow span {
   font-size: 1.1rem;
   letter-spacing: 1px;
-  color: #fff;
-  text-shadow: 0 0 6px rgba(255, 0, 153, 0.4);
+  color: #fdfdfd;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.9);
 }
 
 /* =========================
