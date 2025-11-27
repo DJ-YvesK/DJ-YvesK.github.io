@@ -75,7 +75,6 @@ body {
   text-shadow: 0 0 15px #ff0099;
 }
 
-/* Besserer NEON-GLOW */
 .dj-name.logo-visible {
   animation: neonPulse 1.4s infinite ease-in-out alternate;
 }
@@ -95,7 +94,6 @@ body {
   }
 }
 
-/* LOGO hinter dem Namen, keine schwarzen Kanten */
 .hover-logo {
   position: absolute;
   width: 200px;
@@ -110,34 +108,6 @@ body {
 }
 
 .dj-name.logo-visible .hover-logo { opacity: 1; }
-
-.location { font-size: 2rem; margin-top: 6px; color: #ddd; }
-.description { font-size: 1.6rem; margin-top: 10px; }
-
-/* =========================
-   BUTTON UNDER CONSTRUCTION
-========================= */
-.btn-under-construction {
-  display: inline-block;
-  margin-top: 40px;
-  padding: 15px 40px;
-  font-size: 1.2rem;
-  color: white;
-  background: #ff0099;
-  border-radius: 40px;
-  text-decoration: none;
-  box-shadow: 0 0 20px #ff0099;
-  transition: 0.3s;
-}
-
-.btn-under-construction:hover {
-  animation: pulseBtn 1.2s infinite alternate ease-in-out;
-}
-
-@keyframes pulseBtn {
-  0% { box-shadow: 0 0 20px #ff0099; transform: scale(1); }
-  100% { box-shadow: 0 0 40px #ff0099; transform: scale(1.03); }
-}
 
 /* =========================
    HERO SECTION — Dynamic Wave
@@ -170,9 +140,9 @@ body {
 ========================= */
 .quote-section {
   position: absolute;
-  top: 50%; /* Vertikal zentriert */
-  left: 50%; /* Horizontal zentriert */
-  transform: translate(-50%, -50%); /* Perfekte Ausrichtung */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 100%;
   text-align: center;
   pointer-events: none;
@@ -182,7 +152,7 @@ body {
   font-size: 2.6rem;
   color: #000;
   opacity: 0;
-  transform: translateY(20px); /* Startposition weiter unten */
+  transform: translateY(20px);
   -webkit-text-stroke: 0.8px rgba(255,255,255,0.12);
   text-shadow: 1px 1px 2px rgba(0,0,0,0.9), 0px 0px 4px rgba(0,0,0,0.7);
   animation: textSmoothSlide 8s infinite ease-in-out;
@@ -212,126 +182,20 @@ body {
 }
 
 /* =========================
-   MUSIC CARD
-========================= */
-.music-section { padding: 40px 20px 60px; }
-
-.music-card {
-  width: 100%;
-  max-width: 900px;
-  background: #050505;
-  border-radius: 24px;
-  padding: 30px 24px;
-  border: 1px solid rgba(255,0,153,0.45);
-  box-shadow: 0 0 25px rgba(255,0,153,0.25);
-}
-
-/* =======================================
-   CLEAN MUSIC PAGE – APPLE STYLE
-======================================= */
-.music-wrapper {
-  max-width: 900px;
-  margin: 140px auto 80px auto;
-  padding: 0 20px;
-}
-
-.music-title {
-  font-size: 3rem;
-  text-align: center;
-  margin-bottom: 50px;
-  font-weight: 600;
-  letter-spacing: 2px;
-  color: #fff;
-  text-shadow: 0 0 20px rgba(255,0,153,0.3);
-}
-
-/* Mix Card */
-.music-item {
-  background: rgba(255,255,255,0.05);
-  backdrop-filter: blur(8px);
-  border-radius: 22px;
-  padding: 35px 30px;
-  margin-bottom: 40px;
-  border: 1px solid rgba(255,0,153,0.25);
-  box-shadow: 0 0 30px rgba(255,0,153,0.15);
-  transition: transform 0.25s ease;
-}
-
-.music-item:hover {
-  transform: translateY(-4px);
-}
-
-.music-info h2 {
-  font-size: 1.8rem;
-  margin-bottom: 8px;
-  font-weight: 600;
-}
-
-.music-info p {
-  font-size: 1rem;
-  opacity: 0.85;
-  margin-bottom: 18px;
-}
-
-/* SoundCloud Player */
-.music-player iframe {
-  width: 100%;
-  height: 180px;
-  border-radius: 16px;
-}
-
-/* Button für "Mehr" */
-.music-more {
-  text-align: center;
-  margin-top: 40px;
-}
-
-.music-more .btn-under-construction {
-  display: inline-block;
-  font-size: 1.1rem;
-  padding: 14px 28px;
-  border-radius: 40px;
-}
-
-/* =========================
    MOBILE: QUOTE TIEFER SETZEN
 ========================= */
 @media (max-width: 768px) {
-
   .quote-section {
-    top: 60%;  /* Position nach unten verschieben */
+    top: 60%; /* Position nach unten verschieben */
   }
 
   .hero-quote {
-    font-size: 1.6rem !important;  /* Schriftgröße auf Mobile anpassen */
-    line-height: 1.5 !important;   /* Saubere Zeilenhöhe */
-    white-space: normal !important; /* Umbruch sauber */
-    text-align: center;             /* Text bleibt mittig */
-    max-width: 90%;                 /* Weniger Platz für saubere Umbrüche */
+    font-size: 1.6rem !important;
+    line-height: 1.5 !important;
+    white-space: normal !important;
+    text-align: center;
+    max-width: 90%;
   }
-
-}
-
-.music-title {
-  font-size: 2.4rem;
-  margin-bottom: 40px;
-}
-
-.music-item {
-  padding: 26px 18px;
-  border-radius: 18px;
-}
-
-.music-info h2 {
-  font-size: 1.5rem;
-}
-
-.music-info p {
-  font-size: 0.95rem;
-}
-
-.music-player iframe {
-  height: 170px;
 }
 
 /* =========================
@@ -364,7 +228,6 @@ footer {
    MOBILE VERSION
 ========================= */
 @media (max-width: 768px) {
-
   .dj-name { font-size: 3.2rem; }
   .location { font-size: 1.7rem; }
   .description { font-size: 1.3rem; }
