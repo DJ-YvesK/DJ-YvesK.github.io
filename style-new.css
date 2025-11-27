@@ -197,6 +197,11 @@ body {
   opacity: 0;
   transform: translateY(20px);
 
+  /* NEU: wirklich mittig + nicht abgeschnitten */
+  text-align: center;
+  max-width: 90%;
+  margin: 0 auto;
+
   /* 3D effect */
   -webkit-text-stroke: 0.8px rgba(255,255,255,0.1);
   text-shadow:
