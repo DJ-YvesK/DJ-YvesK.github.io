@@ -44,10 +44,10 @@ body {
 }
 
 .navbar a:hover,
-.navbar .active {
+/* Aktiver Menüpunkt (z.B. MUSIC auf music.html) */
+.navbar a.active {
   color: #ff0099;
   text-shadow: 0 0 10px #ff0099;
-  transform: translateY(-1px);
 }
 
 /* =========================
