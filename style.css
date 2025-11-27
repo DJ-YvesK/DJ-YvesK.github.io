@@ -7,9 +7,7 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 body {
   background: #000;
@@ -26,7 +24,7 @@ body {
   top: 0;
   width: 100%;
   padding: 20px 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0,0,0,0.7);
   backdrop-filter: blur(8px);
   z-index: 100;
 }
@@ -63,10 +61,7 @@ body {
 }
 
 @keyframes introFade {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .dj-name {
@@ -86,10 +81,16 @@ body {
 
 @keyframes neonPulse {
   0% {
-    text-shadow: 0 0 20px #ff0099, 0 0 40px #ff0099, 0 0 60px #ff33cc;
+    text-shadow:
+      0 0 20px #ff0099,
+      0 0 40px #ff0099,
+      0 0 60px #ff33cc;
   }
   100% {
-    text-shadow: 0 0 35px #ff33cc, 0 0 70px #ff0099, 0 0 90px #ff33cc;
+    text-shadow:
+      0 0 35px #ff33cc,
+      0 0 70px #ff0099,
+      0 0 90px #ff33cc;
   }
 }
 
@@ -130,31 +131,21 @@ body {
 }
 
 @keyframes heroWave {
-  0% {
-    background-position: 0% 40%;
-  }
-  30% {
-    background-position: 50% 60%;
-  }
-  55% {
-    background-position: 100% 50%;
-  }
-  80% {
-    background-position: 50% 40%;
-  }
-  100% {
-    background-position: 0% 40%;
-  }
+  0%   { background-position: 0% 40%; }
+  30%  { background-position: 50% 60%; }
+  55%  { background-position: 100% 50%; }
+  80%  { background-position: 50% 40%; }
+  100% { background-position: 0% 40%; }
 }
 
 /* =========================
-   PC: QUOTE ZENTRIEREN
+   TEXT INSIDE HERO — Smooth Slide
 ========================= */
 .quote-section {
   position: absolute;
-  top: 50%; /* Vertikal zentriert */
-  left: 50%; /* Horizontal zentriert */
-  transform: translate(-50%, -50%); /* Perfekte Ausrichtung */
+  top: 50%; /* zentriert vertikal */
+  left: 50%; /* zentriert horizontal */
+  transform: translate(-50%, -50%); /* perfekter Fix */
   width: 100%;
   text-align: center;
   pointer-events: none;
@@ -164,9 +155,9 @@ body {
   font-size: 2.6rem;
   color: #000;
   opacity: 0;
-  transform: translateY(20px);
-  -webkit-text-stroke: 0.8px rgba(255, 255, 255, 0.12);
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9), 0px 0px 4px rgba(0, 0, 0, 0.7);
+  transform: translateY(20px); /* Startposition weiter unten */
+  -webkit-text-stroke: 0.8px rgba(255,255,255,0.12);
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.9), 0px 0px 4px rgba(0,0,0,0.7);
   animation: textSmoothSlide 8s infinite ease-in-out;
 }
 
@@ -190,23 +181,6 @@ body {
   100% {
     opacity: 0;
     transform: translateY(-10px);
-  }
-}
-
-/* =========================
-   MOBILE: QUOTE TIEFER SETZEN
-========================= */
-@media (max-width: 768px) {
-  .quote-section {
-    top: 60%; /* Position nach unten verschieben */
-  }
-
-  .hero-quote {
-    font-size: 1.6rem !important;
-    line-height: 1.5 !important;
-    white-space: normal !important;
-    text-align: center;
-    max-width: 90%;
   }
 }
 
@@ -240,34 +214,16 @@ footer {
    MOBILE VERSION
 ========================= */
 @media (max-width: 768px) {
-  .dj-name {
-    font-size: 3.2rem;
-  }
-  .location {
-    font-size: 1.7rem;
-  }
-  .description {
-    font-size: 1.3rem;
-  }
-  .hover-logo {
-    width: 140px;
+
+  .quote-section {
+    top: 60%; /* Position nach unten verschieben */
   }
 
   .hero-quote {
-    font-size: 2.2rem;
-  }
-
-  .music-card {
-    padding: 24px 16px;
-  }
-  .music-embed iframe {
-    height: 360px;
-  }
-
-  .navbar a {
-    font-size: 1.1rem;
-  }
-  .nav-center {
-    gap: 20px;
+    font-size: 1.6rem !important;
+    line-height: 1.5 !important;
+    white-space: normal !important;
+    text-align: center;
+    max-width: 90%;
   }
 }
