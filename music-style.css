@@ -1,99 +1,108 @@
 /* =========================
-   MUSIC PAGE BASE
+   GLOBAL
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  padding-top: 90px;
+}
+
+/* =========================
+   WRAPPER
 ========================= */
 .music-wrapper {
-  max-width: 900px;
+  max-width: 960px;
   margin: 140px auto 80px auto;
   padding: 0 20px;
-  text-align: center;
 }
 
 /* =========================
    TITLE
 ========================= */
 .music-title {
+  text-align: center;
   font-size: 3rem;
-  margin-bottom: 10px;
-  color: #fff;
-  text-shadow: 0 0 20px rgba(255, 0, 153, 0.3);
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  text-shadow: 0 0 20px rgba(255,0,153,0.4);
+  font-weight: 600;
 }
 
 /* =========================
-   FOLLOW ME ON SOUNDCLOUD – BANNER
+   FOLLOW BANNER
 ========================= */
-
-.soundcloud-follow {
-  margin: 40px auto 60px auto;
-  padding: 16px 26px;
-  max-width: 360px;
-
-  /* Neu: dunkles Glas statt pinker Fläche */
-  background: rgba(0, 0, 0, 0.75);
-  border: 1px solid rgba(255, 0, 153, 0.7);
-  border-radius: 999px;
-
+.follow-banner {
   display: flex;
   align-items: center;
   gap: 14px;
   justify-content: center;
-
-  cursor: pointer;
-  text-decoration: none;
-
-  box-shadow: 0 0 26px rgba(255, 0, 153, 0.35);
-  backdrop-filter: blur(8px);
+  background: linear-gradient(145deg, #b4b4b4, #8f8f8f);
+  color: #000;
+  padding: 16px 26px;
+  border-radius: 18px;
+  margin: 35px auto 55px auto;
+  width: fit-content;
+  box-shadow:
+    0 0 20px rgba(255,0,153,0.18),
+    inset 0 0 12px rgba(255,255,255,0.4);
   transition: 0.25s ease;
 }
 
-.soundcloud-follow:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 0 38px rgba(255, 0, 153, 0.6);
+.follow-banner img {
+  width: 28px;
+  height: 28px;
 }
 
-/* Logo */
-.soundcloud-follow img {
-  width: 26px;
-  height: 26px;
-  border-radius: 6px;
-}
-
-/* Text */
-.soundcloud-follow span {
-  font-size: 1.1rem;
-  letter-spacing: 1px;
-  color: #fdfdfd;
-  text-shadow: 0 0 8px rgba(0, 0, 0, 0.9);
+.follow-banner:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    0 0 30px rgba(255,0,153,0.35),
+    inset 0 0 12px rgba(255,255,255,0.6);
 }
 
 /* =========================
-   MIX CARDS
+   MUSIC CARD
 ========================= */
 .music-item {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  border-radius: 22px;
+  background: linear-gradient(135deg, #b2b2b2, #8d8d8d);
   padding: 35px 30px;
+  border-radius: 22px;
   margin-bottom: 40px;
-  border: 1px solid rgba(255, 0, 153, 0.25);
-  box-shadow: 0 0 30px rgba(255, 0, 153, 0.15);
-  transition: 0.25s ease;
+  color: #000;
+  border: 1px solid rgba(255,0,153,0.2);
+  box-shadow: 0 0 25px rgba(255,0,153,0.15);
+  backdrop-filter: blur(4px);
+  transition: 0.3s ease;
 }
 
 .music-item:hover {
   transform: translateY(-4px);
+  box-shadow: 0 0 40px rgba(255,0,153,0.35);
 }
 
+/* TEXT */
 .music-info h2 {
   font-size: 1.8rem;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #000;
 }
 
 .music-info p {
   font-size: 1rem;
-  opacity: 0.85;
-  margin-bottom: 20px;
+  opacity: 0.8;
+  margin-bottom: 16px;
+  color: #111;
 }
 
+/* PLAYER */
 .music-player iframe {
   width: 100%;
   height: 180px;
@@ -106,21 +115,20 @@
 @media (max-width: 768px) {
 
   .music-title {
-    font-size: 2.4rem;
+    font-size: 2.3rem;
   }
 
-  .soundcloud-follow {
-    max-width: 300px;
-    padding: 16px 20px;
-    gap: 10px;
-  }
-
-  .soundcloud-follow span {
-    font-size: 1rem;
+  .follow-banner {
+    padding: 14px 20px;
+    font-size: 0.95rem;
   }
 
   .music-item {
     padding: 26px 18px;
+  }
+
+  .music-info h2 {
+    font-size: 1.45rem;
   }
 
   .music-player iframe {
