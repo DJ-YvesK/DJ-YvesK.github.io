@@ -3,88 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Booking – DJ YvesK.</title>
+  <title>Booking – DJ YvesK</title>
 
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <!-- Favicon -->
-<link rel="icon" type="image/png" sizes="32x32" href="yvesk-favicon-32.png">
-<link rel="icon" type="image/png" sizes="512x512" href="yvesk-favicon-512.png">
+  <!-- Haupt-CSS -->
+  <link rel="stylesheet" href="style-new.css">
+  
+  <!-- Booking-spezifischer Style -->
+  <link rel="stylesheet" href="booking-style.css">
 
-<!-- Optional für Handy-Homebildschirm -->
-<link rel="apple-touch-icon" href="yvesk-favicon-512.png">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="yvesk-favicon-32.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="yvesk-favicon-512.png">
+  <link rel="apple-touch-icon" href="yvesk-favicon-512.png">
 </head>
 
 <body>
 
-  <!-- NAVIGATION -->
-  <header class="navbar">
-    <nav class="nav-center">
-      <a href="index.html">HOME</a>
-      <a href="music.html">MUSIC</a>
-      <a href="booking.html">BOOKING</a>
-    </nav>
-  </header>
+<!-- NAVIGATION -->
+<header class="navbar">
+  <nav class="nav-center">
+    <a href="index.html">HOME</a>
+    <a href="music.html">MUSIC</a>
+    <a class="active" href="booking.html">BOOKING</a>
+  </nav>
+</header>
 
-  <main>
-    <!-- PAGE HEADER -->
-    <section class="page-header">
-      <h2 class="page-title-text">BOOKING</h2>
-      <p class="page-subtitle">Anfragen für Clubs, Events & private Veranstaltungen.</p>
-    </section>
+<main>
 
-    <!-- BOOKING FORM -->
-    <section class="booking">
-      <form action="https://formspree.io/f/xyzzzz" method="POST">
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input id="name" type="text" name="name" required>
-        </div>
+  <!-- HEADER -->
+  <section class="page-header">
+    <h1 class="page-title">BOOKING</h1>
+    <p class="page-subtitle">Anfragen für Clubs, Events & private Veranstaltungen.</p>
+  </section>
 
-        <div class="form-group">
-          <label for="email">E-Mail</label>
-          <input id="email" type="email" name="email" required>
-        </div>
+  <!-- BOOKING FORM -->
+  <section class="booking-wrapper">
+    <form action="https://formspree.io/f/xyzzzz" method="POST" class="booking-form">
 
-        <div class="form-group">
-          <label for="message">Nachricht</label>
-          <textarea id="message" name="message" required></textarea>
-        </div>
+      <div class="form-group">
+        <label for="name">Name *</label>
+        <input id="name" type="text" name="name" required>
+      </div>
 
-        <button type="submit" class="btn-glow">Absenden</button>
-      </form>
-    </section>
-  </main>
+      <div class="form-group">
+        <label for="email">E-Mail *</label>
+        <input id="email" type="email" name="email" required>
+      </div>
 
+      <div class="form-group">
+        <label for="message">Nachricht *</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+
+      <button type="submit" class="btn-send">Absenden</button>
+
+    </form>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
 <footer>
-  <div class="footer-inner">
-    <p>© 2025 DJ YvesK. – All Rights Reserved</p>
+  <p>© 2025 DJ YvesK – All Rights Reserved</p>
 
-   <div class="footer-social">
-  <!-- Instagram -->
-  <a href="https://www.instagram.com/dj.yvesk/?hl=de"
-     class="instagram"
-     target="_blank" rel="noopener" aria-label="Instagram">
-    <i class="fab fa-instagram"></i>
-  </a>
-
-  <!-- Facebook -->
-  <a href="https://www.facebook.com/profile.php?id=100089274927366"
-     class="facebook"
-     target="_blank" rel="noopener" aria-label="Facebook">
-    <i class="fab fa-facebook-f"></i>
-  </a>
-
-  <!-- SoundCloud -->
-  <a href="https://soundcloud.com/yv3sk"
-     class="soundcloud"
-     target="_blank" rel="noopener" aria-label="SoundCloud">
-    <i class="fab fa-soundcloud"></i>
-  </a>
-</div>
-</div>
+  <div class="footer-social">
+    <a href="https://www.instagram.com/dj.yvesk/?hl=de" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.facebook.com/profile.php?id=100089274927366" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://soundcloud.com/yv3sk" target="_blank"><i class="fab fa-soundcloud"></i></a>
+  </div>
 </footer>
 
 </body>
