@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Booking – DJ YvesK</title>
-  <link rel="stylesheet" href="style-new.css">
-  <link rel="stylesheet" href="booking-style.css">
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/png" href="yvesk-favicon-32.png" />
+
+  <!-- MAIN STYLE -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
+<!-- NAVBAR -->
 <nav class="navbar">
   <div class="nav-center">
     <a href="index.html">Home</a>
@@ -18,38 +23,48 @@
   </div>
 </nav>
 
+<!-- PAGE HEADER -->
+<section class="page-header">
+  <h1 class="page-title-text">Booking</h1>
+  <p class="page-subtitle">Dein Event – Dein Sound – Dein DJ YvesK.</p>
+</section>
+
+<!-- BOOKING CARD -->
 <section class="booking-wrapper">
-
-  <h1 class="booking-title">Booking Anfrage</h1>
-
   <div class="booking-card">
 
-    <p class="booking-text">
-      Du möchtest DJ <strong>YvesK</strong> für dein Event buchen?  
-      Fülle einfach die Anfrage aus – ich melde mich persönlich.
-    </p>
+    <h2>Buchungsanfrage</h2>
 
-    <form 
-      action="https://formspree.io/f/mwkzkkzw"
-      method="POST"
-      class="booking-form">
+    <form action="https://formspree.io/f/mnnqvgne" method="POST">
 
-      <label>Name</label>
-      <input type="text" name="name" required>
+      <label>Name *</label>
+      <input type="text" name="name" required />
 
-      <label>E-Mail</label>
-      <input type="email" name="email" required>
+      <label>E-Mail *</label>
+      <input type="email" name="_replyto" required />
 
-      <label>Event Details</label>
-      <textarea name="details" rows="5" required></textarea>
+      <label>Event-Datum *</label>
+      <input type="date" name="date" required />
 
-      <button type="submit" class="booking-btn">Anfrage senden</button>
+      <label>Event-Art</label>
+      <select name="event">
+        <option>Geburtstag</option>
+        <option>Hochzeit</option>
+        <option>Club / Bar</option>
+        <option>Private Party</option>
+        <option>Firmenfeier</option>
+      </select>
+
+      <label>Nachricht *</label>
+      <textarea name="message" rows="5" required></textarea>
+
+      <button type="submit" class="btn-submit">Anfrage senden</button>
 
     </form>
   </div>
-
 </section>
 
+<!-- FOOTER -->
 <footer>
   <p>© 2025 DJ YvesK – All Rights Reserved</p>
 </footer>
