@@ -4,76 +4,54 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Booking – DJ YvesK</title>
-
-  <!-- Haupt-CSS -->
   <link rel="stylesheet" href="style-new.css">
-  
-  <!-- Booking-spezifischer Style -->
   <link rel="stylesheet" href="booking-style.css">
-
-  <!-- Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-  <!-- Favicons -->
-  <link rel="icon" type="image/png" sizes="32x32" href="yvesk-favicon-32.png">
-  <link rel="icon" type="image/png" sizes="512x512" href="yvesk-favicon-512.png">
-  <link rel="apple-touch-icon" href="yvesk-favicon-512.png">
 </head>
 
 <body>
 
-<!-- NAVIGATION -->
-<header class="navbar">
-  <nav class="nav-center">
-    <a href="index.html">HOME</a>
-    <a href="music.html">MUSIC</a>
-    <a class="active" href="booking.html">BOOKING</a>
-  </nav>
-</header>
+<nav class="navbar">
+  <div class="nav-center">
+    <a href="index.html">Home</a>
+    <a href="music.html">Music</a>
+    <a href="booking.html" class="active">Booking</a>
+  </div>
+</nav>
 
-<main>
+<section class="booking-wrapper">
 
-  <!-- HEADER -->
-  <section class="page-header">
-    <h1 class="page-title">BOOKING</h1>
-    <p class="page-subtitle">Anfragen für Clubs, Events & private Veranstaltungen.</p>
-  </section>
+  <h1 class="booking-title">Booking Anfrage</h1>
 
-  <!-- BOOKING FORM -->
-  <section class="booking-wrapper">
-    <form action="https://formspree.io/f/xyzzzz" method="POST" class="booking-form">
+  <div class="booking-card">
 
-      <div class="form-group">
-        <label for="name">Name *</label>
-        <input id="name" type="text" name="name" required>
-      </div>
+    <p class="booking-text">
+      Du möchtest DJ <strong>YvesK</strong> für dein Event buchen?  
+      Fülle einfach die Anfrage aus – ich melde mich persönlich.
+    </p>
 
-      <div class="form-group">
-        <label for="email">E-Mail *</label>
-        <input id="email" type="email" name="email" required>
-      </div>
+    <form 
+      action="https://formspree.io/f/mwkzkkzw"
+      method="POST"
+      class="booking-form">
 
-      <div class="form-group">
-        <label for="message">Nachricht *</label>
-        <textarea id="message" name="message" required></textarea>
-      </div>
+      <label>Name</label>
+      <input type="text" name="name" required>
 
-      <button type="submit" class="btn-send">Absenden</button>
+      <label>E-Mail</label>
+      <input type="email" name="email" required>
+
+      <label>Event Details</label>
+      <textarea name="details" rows="5" required></textarea>
+
+      <button type="submit" class="booking-btn">Anfrage senden</button>
 
     </form>
-  </section>
+  </div>
 
-</main>
+</section>
 
-<!-- FOOTER -->
 <footer>
   <p>© 2025 DJ YvesK – All Rights Reserved</p>
-
-  <div class="footer-social">
-    <a href="https://www.instagram.com/dj.yvesk/?hl=de" target="_blank"><i class="fab fa-instagram"></i></a>
-    <a href="https://www.facebook.com/profile.php?id=100089274927366" target="_blank"><i class="fab fa-facebook-f"></i></a>
-    <a href="https://soundcloud.com/yv3sk" target="_blank"><i class="fab fa-soundcloud"></i></a>
-  </div>
 </footer>
 
 </body>
