@@ -1,0 +1,102 @@
+/* =========================
+   BOOKING – PAGE HEADER
+========================= */
+.page-header {
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 40px;
+}
+
+.page-title {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #ff0099;
+  text-shadow: 0 0 12px #ff0099;
+}
+
+.page-subtitle {
+  font-size: 1.2rem;
+  opacity: 0.85;
+  margin-top: 10px;
+}
+
+/* =========================
+   BOOKING FORM
+========================= */
+.booking-wrapper {
+  max-width: 650px;
+  margin: 0 auto 80px auto;
+  padding: 20px;
+}
+
+.booking-form {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,0,153,0.35);
+  box-shadow: 0 0 25px rgba(255,0,153,0.2);
+  padding: 40px 35px;
+  border-radius: 20px;
+  backdrop-filter: blur(6px);
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  border: none;
+  padding: 14px 16px;
+  border-radius: 12px;
+  font-size: 1rem;
+  background: rgba(255,255,255,0.08);
+  color: #fff;
+  outline: none;
+}
+
+.form-group textarea {
+  height: 140px;
+  resize: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  box-shadow: 0 0 10px #ff0099;
+}
+
+/* =========================
+   BUTTON
+========================= */
+.btn-send {
+  width: 100%;
+  padding: 16px;
+  font-size: 1.2rem;
+  background: #ff0099;
+  color: #fff;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 18px #ff0099;
+}
+
+.btn-send:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 30px #ff33cc;
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 768px) {
+  .page-title { font-size: 2.4rem; }
+  .booking-form { padding: 28px; }
+}
