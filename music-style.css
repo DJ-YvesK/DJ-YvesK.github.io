@@ -1,14 +1,4 @@
 /* =========================
-   GLOBAL
-========================= */
-
-body {
-  background: #000;
-  font-family: Arial, sans-serif;
-  color: white;
-}
-
-/* =========================
    WRAPPER
 ========================= */
 
@@ -18,66 +8,70 @@ body {
   padding: 0 20px;
 }
 
-/* =========================
-   FOLLOW BANNER
-========================= */
-
-.follow-banner-wrapper {
-  text-decoration: none !important;
-}
-
-.follow-banner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 14px;
-
-  background: linear-gradient(135deg, #1a1a1a, #333);
-  padding: 16px 26px;
-  border-radius: 14px;
-
-  box-shadow: 0 0 22px rgba(255,0,153,0.25);
-  border: 1px solid rgba(255,0,153,0.4);
-
-  transition: 0.3s ease;
-}
-
-.follow-banner img {
-  width: 32px;
-  height: 32px;
-}
-
-.follow-banner span {
-  font-size: 1.3rem;
-  color: #fff;
-  font-weight: 500;
-  letter-spacing: 1px;
-  text-decoration: none !important;
-}
-
-.follow-banner:hover {
-  transform: scale(1.04);
-  box-shadow: 0 0 35px rgba(255,0,153,0.45);
-}
 
 /* =========================
-   TITLE – METALLIC 3D (Variante B)
+   TITLE – Variante B
 ========================= */
 
 .music-title {
   font-size: 3rem;
   font-weight: 600;
   text-align: center;
-  margin: 50px 0 50px 0;
+  margin: 0 0 30px 0;
 
-  color: #e5e5e5; /* silber */
+  color: #d9d9d9;  /* elegantes Silber */
   letter-spacing: 2px;
 
   text-shadow:
-    2px 2px 6px rgba(0,0,0,0.7),
-    0 0 12px rgba(255,255,255,0.3),
-    0 0 18px rgba(255,255,255,0.15);
+    2px 2px 5px rgba(0,0,0,0.7),
+    0 0 10px rgba(255,255,255,0.25),
+    0 0 15px rgba(255,255,255,0.1);
 }
+
+
+/* =========================
+   FOLLOW BANNER
+========================= */
+
+.follow-banner-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  text-decoration: none !important;
+}
+
+.follow-banner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  background: linear-gradient(135deg, #1c1c1c, #2e2e2e);
+  padding: 12px 18px;
+  border-radius: 12px;
+
+  border: 1px solid rgba(255,0,153,0.35);
+  box-shadow: 0 0 15px rgba(255,0,153,0.18);
+
+  transition: 0.3s ease;
+}
+
+.follow-banner img {
+  width: 26px;
+  height: 26px;
+}
+
+.follow-banner span {
+  font-size: 1.15rem;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.follow-banner:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 22px rgba(255,0,153,0.35);
+}
+
 
 /* =========================
    MIX CARD
@@ -119,6 +113,7 @@ body {
   border-radius: 16px;
 }
 
+
 /* =========================
    MOBILE VERSION
 ========================= */
@@ -127,16 +122,16 @@ body {
 
   .music-title {
     font-size: 2.4rem;
-    margin-top: 40px;
+    margin-top: 10px;
   }
 
   .follow-banner {
-    padding: 14px 20px;
+    padding: 10px 16px;
     gap: 10px;
   }
 
   .follow-banner span {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .music-item {
