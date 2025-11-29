@@ -5,9 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Booking – DJ YvesK.</title>
 
-  <!-- Haupt-Style deiner Seite -->
   <link rel="stylesheet" href="style-new.css">
-  <!-- Spezieller Booking-Style -->
   <link rel="stylesheet" href="booking-style.css">
 
   <link rel="icon" type="image/png" href="yvesk-favicon-32.png">
@@ -29,13 +27,15 @@
 
     <h1 class="booking-title">Booking</h1>
 
-    <!-- Dein Spruch: Mix aus A + F -->
-    <p class="booking-subline">
-      Du planst ein Event?<br>
-      Hör auf zu überlegen – jede gute Feier beginnt mit einer Entscheidung.<br>
-      <strong>Man denkt zu viel. Und tanzt zu wenig.</strong><br>
-      Lass uns das ändern. Buche jetzt deinen DJ YvesK.
-    </p>
+    <!-- ⭐ WIEDERHERGESTELLTE BOX MIT GLOW -->
+    <div class="booking-textbox">
+      <p>
+        Du planst ein Event?<br>
+        Hör auf zu überlegen – jede gute Feier beginnt mit einer Entscheidung.<br>
+        <strong>Man denkt zu viel. Und tanzt zu wenig.</strong><br>
+        Lass uns das ändern. Buche jetzt deinen DJ YvesK.
+      </p>
+    </div>
 
     <!-- FORMULAR MIT FORMSPREE -->
     <form 
@@ -43,51 +43,43 @@
       method="POST"
       class="booking-form"
     >
-      <!-- Honeypot gegen Spam (unsichtbares Feld) -->
-      <input type="text" name="_honeypot" style="display:none">
 
-      <!-- Optional: Betreff in der Mail -->
+      <input type="text" name="_honeypot" style="display:none">
       <input type="hidden" name="_subject" value="Neue Booking-Anfrage über dj-yvesk.github.io">
 
-      <!-- Name -->
       <div class="form-field">
         <label for="name">Dein Name</label>
         <input id="name" type="text" name="name" required placeholder="Max Mustermann">
       </div>
 
-      <!-- E-Mail -->
       <div class="form-field">
         <label for="email">Deine E-Mail</label>
         <input id="email" type="email" name="email" required placeholder="deine@mail.de">
       </div>
 
-      <!-- Event-Art -->
       <div class="form-field">
         <label for="event">Art des Events</label>
         <input id="event" type="text" name="event" required placeholder="Hochzeit, Geburtstag, Club, Firmenfeier…">
       </div>
 
-      <!-- Datum -->
       <div class="form-field">
         <label for="datum">Datum</label>
         <input id="datum" type="date" name="datum" required>
       </div>
 
-      <!-- Nachricht -->
       <div class="form-field">
         <label for="message">Nachricht</label>
         <textarea id="message" name="message" rows="5" required placeholder="Erzähl mir kurz etwas über dein Event…"></textarea>
       </div>
 
-      <!-- Absende-Button -->
       <button type="submit" class="booking-btn">
         Anfrage senden
       </button>
+
     </form>
 
   </section>
 
-  <!-- FOOTER -->
   <footer>
     <p>© 2025 DJ YvesK. – All Rights Reserved</p>
   </footer>
