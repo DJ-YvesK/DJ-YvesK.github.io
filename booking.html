@@ -4,14 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Booking – DJ YvesK.</title>
-
   <link rel="stylesheet" href="style-new.css">
   <link rel="stylesheet" href="booking-style.css">
-  <link rel="icon" type="image/png" href="yvesk-favicon-32.png">
 </head>
 
 <body>
 
+<!-- NAVIGATION -->
 <nav class="navbar">
   <div class="nav-center">
     <a href="index.html">HOME</a>
@@ -20,40 +19,42 @@
   </div>
 </nav>
 
+<!-- BOOKING WRAPPER -->
 <section class="booking-wrapper">
 
   <h1 class="booking-title">Booking</h1>
 
-  <div class="booking-box">
-
-    <form action="https://formsubmit.co/yv3sk@icloud.com" method="POST">
-
-      <!-- Sicherheitsoptionen -->
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_template" value="table">
-
-      <div class="input-group">
-        <label>Dein Name</label>
-        <input type="text" name="name" placeholder="Max Mustermann" required>
-      </div>
-
-      <div class="input-group">
-        <label>Deine E-Mail</label>
-        <input type="email" name="email" placeholder="name@mail.de" required>
-      </div>
-
-      <div class="input-group">
-        <label>Nachricht</label>
-        <textarea name="message" rows="5" placeholder="Für welchen Anlass möchtest du buchen?" required></textarea>
-      </div>
-
-      <button class="booking-btn" type="submit">Anfrage senden</button>
-    </form>
-
+  <!-- NEUER BOOKING-SPRUCH -->
+  <div class="booking-intro">
+    <p>
+      Du planst ein Event?<br>
+      Hör auf zu überlegen — jede gute Feier beginnt mit einer Entscheidung.<br>
+      <strong>Man denkt zu viel. Und tanzt zu wenig.</strong><br>
+      Lass uns das ändern. Buche jetzt deinen DJ YvesK.
+    </p>
   </div>
+
+  <!-- BOOKING FORM -->
+  <form class="booking-form" action="https://formspree.io/f/xwpepdjp" method="POST">
+
+    <label for="name">Dein Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">E-Mail Adresse</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="event">Art des Events</label>
+    <input type="text" id="event" name="event" required>
+
+    <label for="message">Nachricht</label>
+    <textarea id="message" name="message" rows="6" required></textarea>
+
+    <button type="submit" class="booking-btn">Anfrage senden</button>
+  </form>
 
 </section>
 
+<!-- FOOTER -->
 <footer>
   <p>© 2025 DJ YvesK. – All Rights Reserved</p>
 </footer>
