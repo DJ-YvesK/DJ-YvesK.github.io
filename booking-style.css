@@ -1,6 +1,6 @@
-/* ======================================
-   BOOKING – DARK ELEGANT CLUB STYLE
-====================================== */
+/* ========================================
+   BOOKING STYLE – CLEAN DARK CARD
+======================================== */
 
 body {
   background: #000;
@@ -8,100 +8,69 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* HEADER */
-.booking-header {
-  text-align: center;
-  margin-top: 140px;
-  margin-bottom: 40px;
+/* WRAPPER */
+.booking-wrapper {
+  max-width: 900px;
+  margin: 140px auto 80px auto;
   padding: 0 20px;
+  text-align: center;
 }
 
+/* TITLE */
 .booking-title {
   font-size: 3rem;
-  letter-spacing: 3px;
-  font-weight: 700;
-  color: #cfcfcf; /* Silber / Platinum */
-  text-shadow: 0 0 18px rgba(255,255,255,0.15);
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #fff;
+  text-shadow: 0 0 20px rgba(255,0,153,0.3);
+  margin-bottom: 50px;
 }
 
-.booking-sub {
-  margin-top: 10px;
-  font-size: 1.3rem;
-  color: #a8a8a8;
-  text-shadow: 0 0 10px rgba(180,180,180,0.15);
+/* MAIN BOX */
+.booking-box {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  padding: 40px 30px;
+  border-radius: 24px;
+  border: 1px solid rgba(255,0,153,0.25);
+  box-shadow: 0 0 30px rgba(255,0,153,0.15);
 }
 
-/* BOOKING GRID */
-.booking-wrapper {
-  max-width: 1000px;
-  margin: 0 auto 80px auto;
-  padding: 0 20px;
+/* ROW STYLES */
+.booking-row {
+  margin-bottom: 40px;
 }
 
-.booking-card {
-  background: rgba(20,20,20,0.9);
-  border: 1px solid rgba(255,255,255,0.15);
-  padding: 30px;
-  border-radius: 20px;
-  margin-bottom: 30px;
-
-  box-shadow:
-    0 0 25px rgba(255,255,255,0.05),
-    inset 0 0 12px rgba(255,255,255,0.06);
-}
-
-.booking-card h2 {
+.booking-row h2 {
   font-size: 1.8rem;
-  margin-bottom: 10px;
-  color: #dcdcdc;
-  text-shadow: 0 0 8px rgba(255,255,255,0.2);
+  margin-bottom: 8px;
+  color: #fff;
+  text-shadow: 0 0 12px rgba(255,0,153,0.25);
 }
 
-.booking-card p {
+.booking-row p {
   font-size: 1.1rem;
-  color: #bdbdbd;
+  color: #ddd;
   line-height: 1.5;
 }
 
-/* CONTACT BOX */
-.booking-contact {
-  margin-top: 50px;
-  background: rgba(30,30,30,0.9);
-  padding: 40px;
-  border-radius: 22px;
-  text-align: center;
-  border: 1px solid rgba(255,255,255,0.2);
-  box-shadow: 0 0 35px rgba(255,255,255,0.07);
-}
-
-.booking-contact h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-  color: #e6e6e6;
-}
-
-.booking-contact p {
-  font-size: 1.1rem;
-  color: #c8c8c8;
-  margin-bottom: 25px;
-}
-
+/* BUTTON */
 .booking-btn {
   display: inline-block;
-  padding: 14px 34px;
-  border-radius: 40px;
-  background: #fff;
-  color: #000;
+  margin-top: 20px;
   font-size: 1.2rem;
+  padding: 14px 30px;
+  border-radius: 40px;
+  background: #ff0099;
+  color: #fff;
   text-decoration: none;
-  font-weight: bold;
+  box-shadow: 0 0 20px #ff0099;
   transition: 0.25s ease;
-  box-shadow: 0 0 15px rgba(255,255,255,0.25);
 }
 
 .booking-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 0 25px rgba(255,255,255,0.45);
+  box-shadow: 0 0 35px #ff0099;
 }
 
 /* MOBILE */
@@ -109,13 +78,7 @@ body {
   .booking-title {
     font-size: 2.4rem;
   }
-
-  .booking-card h2 {
+  .booking-row h2 {
     font-size: 1.6rem;
-  }
-
-  .booking-btn {
-    font-size: 1.1rem;
-    padding: 12px 28px;
   }
 }
