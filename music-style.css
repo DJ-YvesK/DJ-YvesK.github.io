@@ -1,109 +1,99 @@
 /* =========================
-   GLOBAL RESET
+   GLOBAL
 ========================= */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 body {
   background: #000;
-  color: #fff;
   font-family: Arial, sans-serif;
-  padding-top: 90px;
+  color: white;
 }
 
 /* =========================
-   NAV-LINK ACTIVE FIX
+   WRAPPER
 ========================= */
-.navbar a.active {
-  color: #ff0099;
-  text-shadow: 0 0 10px #ff0099;
-}
 
-/* =========================
-   MUSIC WRAPPER
-========================= */
 .music-wrapper {
   max-width: 900px;
-  margin: 120px auto 60px auto;
+  margin: 140px auto 80px auto;
   padding: 0 20px;
 }
 
 /* =========================
-   PAGE TITLE – LEIPZIG STYLE
+   FOLLOW BANNER
 ========================= */
-.music-title {
-  text-align: center;
-  font-size: 3rem;
-  font-weight: 600;
-  letter-spacing: 3px;
 
-  /* Farbcode wie "LEIPZIG" */
-  color: #dcdcdc;
-
-  /* 3D / Tiefen-Look */
-  text-shadow:
-    0 2px 0 #000,
-    0 4px 4px rgba(0, 0, 0, 0.8),
-    0 0 20px rgba(255, 255, 255, 0.15);
-  
-  margin-bottom: 55px;
+.follow-banner-wrapper {
+  text-decoration: none !important;
 }
 
-/* =========================
-   FOLLOW ME ON SOUNDCLOUD BANNER
-========================= */
 .follow-banner {
-  margin: 0 auto 50px auto;
-  padding: 18px 26px;
-  width: fit-content;
-  border-radius: 18px;
-
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(8px);
-
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 14px;
 
-  cursor: pointer;
+  background: linear-gradient(135deg, #1a1a1a, #333);
+  padding: 16px 26px;
+  border-radius: 14px;
+
+  box-shadow: 0 0 22px rgba(255,0,153,0.25);
+  border: 1px solid rgba(255,0,153,0.4);
+
   transition: 0.3s ease;
 }
 
 .follow-banner img {
-  width: 28px;
-  height: 28px;
-  border-radius: 6px;
+  width: 32px;
+  height: 32px;
 }
 
 .follow-banner span {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  color: #fff;
+  font-weight: 500;
   letter-spacing: 1px;
-  color: #e5e5e5;
+  text-decoration: none !important;
 }
 
 .follow-banner:hover {
-  transform: translateY(-3px);
-  background: rgba(255, 255, 255, 0.12);
+  transform: scale(1.04);
+  box-shadow: 0 0 35px rgba(255,0,153,0.45);
 }
 
 /* =========================
-   MUSIC ITEM CARD
+   TITLE – METALLIC 3D (Variante B)
 ========================= */
+
+.music-title {
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 50px 0 50px 0;
+
+  color: #e5e5e5; /* silber */
+  letter-spacing: 2px;
+
+  text-shadow:
+    2px 2px 6px rgba(0,0,0,0.7),
+    0 0 12px rgba(255,255,255,0.3),
+    0 0 18px rgba(255,255,255,0.15);
+}
+
+/* =========================
+   MIX CARD
+========================= */
+
 .music-item {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255,255,255,0.05);
   backdrop-filter: blur(8px);
   border-radius: 22px;
-  padding: 32px 28px;
+  padding: 35px 30px;
   margin-bottom: 40px;
 
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  box-shadow: 0 0 24px rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,0,153,0.25);
+  box-shadow: 0 0 30px rgba(255,0,153,0.15);
 
-  transition: 0.25s ease;
+  transition: transform 0.25s ease;
 }
 
 .music-item:hover {
@@ -111,50 +101,53 @@ body {
 }
 
 .music-info h2 {
-  font-size: 1.8rem;
-  margin-bottom: 6px;
+  font-size: 1.7rem;
+  margin-bottom: 8px;
   font-weight: 600;
-  color: #fff;
 }
 
 .music-info p {
-  font-size: 1rem;
   opacity: 0.85;
-  margin-bottom: 16px;
+  font-size: 1rem;
+  margin-bottom: 18px;
 }
 
-/* =========================
-   SOUNDCLOUD PLAYER
-========================= */
+/* PLAYER */
 .music-player iframe {
   width: 100%;
   height: 180px;
-  border-radius: 14px;
+  border-radius: 16px;
 }
 
 /* =========================
    MOBILE VERSION
 ========================= */
+
 @media (max-width: 768px) {
 
   .music-title {
     font-size: 2.4rem;
-    margin-bottom: 45px;
+    margin-top: 40px;
+  }
+
+  .follow-banner {
+    padding: 14px 20px;
+    gap: 10px;
+  }
+
+  .follow-banner span {
+    font-size: 1.1rem;
   }
 
   .music-item {
-    padding: 24px 18px;
+    padding: 26px 18px;
   }
 
   .music-info h2 {
     font-size: 1.5rem;
   }
 
-  .follow-banner {
-    padding: 14px 20px;
-  }
-
   .music-player iframe {
-    height: 160px;
+    height: 170px;
   }
 }
