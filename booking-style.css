@@ -131,7 +131,7 @@
     font-size: 1.1rem;
   }
 /* =========================
-   ERFOLGSMELDUNG
+   ERFOLGSMELDUNG (unsichtbar bis AJAX)
 ========================= */
 .booking-success {
   display: none;
@@ -145,26 +145,14 @@
   box-shadow: 0 0 18px rgba(0, 255, 128, 0.25);
 }
 
-.booking-success h2 {
-  font-size: 1.6rem;
-  margin-bottom: 8px;
-  color: #bfffd5;
-}
-
-.booking-success p {
-  font-size: 1.05rem;
-  color: #e6ffe9;
-}
-
-/* sichtbar wenn erfolgreich gesendet */
+/* sichtbarer Zustand */
 .booking-success.visible {
   display: block;
 }
 
-/* Mobile Feinjustierung */
+/* Mobile */
 @media (max-width: 768px) {
   .booking-success {
     padding: 20px 16px;
   }
 }
-
