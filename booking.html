@@ -22,26 +22,33 @@
 
 <section class="booking-wrapper">
 
-  <h1 class="booking-title">Booking</h1>
+  <h1 class="booking-title">BOOKING</h1>
 
   <div class="booking-box">
-    
-    <div class="booking-row">
-      <h2>Private Events</h2>
-      <p>Geburtstage, Hochzeiten, Firmenfeiern & Lounges — individuell abgestimmte House-Sets.</p>
-    </div>
 
-    <div class="booking-row">
-      <h2>Clubs & Bars</h2>
-      <p>Energetische Clubsets mit House, Techhouse & elektronischen Grooves.</p>
-    </div>
+    <form action="https://formsubmit.co/yv3sk@icloud.com" method="POST">
 
-    <div class="booking-row">
-      <h2>Festivals</h2>
-      <p>Treibende Drops & moderne elektronische Sounds für große Bühnen.</p>
-    </div>
+      <!-- Sicherheitsoptionen -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
 
-    <a class="booking-btn" href="mailto:yv3sk@icloud.com">Booking Anfrage senden</a>
+      <div class="input-group">
+        <label>Dein Name</label>
+        <input type="text" name="name" placeholder="Max Mustermann" required>
+      </div>
+
+      <div class="input-group">
+        <label>Deine E-Mail</label>
+        <input type="email" name="email" placeholder="name@mail.de" required>
+      </div>
+
+      <div class="input-group">
+        <label>Nachricht</label>
+        <textarea name="message" rows="5" placeholder="Für welchen Anlass möchtest du buchen?" required></textarea>
+      </div>
+
+      <button class="booking-btn" type="submit">Anfrage senden</button>
+    </form>
 
   </div>
 
