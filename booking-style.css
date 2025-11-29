@@ -5,102 +5,116 @@
   max-width: 900px;
   margin: 140px auto 80px auto;
   padding: 0 20px;
+  text-align: center;
 }
 
 /* =========================
-   TITEL (grau + leichter 3D-Glow)
+   TITLE
 ========================= */
 .booking-title {
   font-size: 3rem;
-  text-align: center;
-  margin-bottom: 40px;
   font-weight: 600;
   letter-spacing: 2px;
-  color: #cfcfcf;
-  text-shadow: 0 0 12px rgba(255,255,255,0.15);
+  color: #d9d9d9;              /* wie "Leipzig" */
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+  margin-bottom: 25px;
 }
 
-/* =========================
-   BOOKING INTRO TEXT
-========================= */
-.booking-intro {
-  background: rgba(255,255,255,0.04);
-  padding: 28px 25px;
-  border-radius: 16px;
-  border: 1px solid rgba(255,255,255,0.1);
-  backdrop-filter: blur(10px);
-  text-align: center;
-  margin-bottom: 40px;
-  box-shadow: 0 0 20px rgba(255,255,255,0.05);
-}
-
-.booking-intro p {
+/* SUBLINE */
+.booking-subline {
   font-size: 1.2rem;
+  color: #e6e6e6;
   line-height: 1.6;
+  margin-bottom: 40px;
   opacity: 0.9;
 }
 
-.booking-intro strong {
-  color: #ff0099;
-  text-shadow: 0 0 12px #ff0099;
+/* =========================
+   FORM BOX
+========================= */
+.booking-form {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(8px);
+  padding: 35px 30px;
+  border-radius: 22px;
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 25px rgba(0,0,0,0.25);
 }
 
 /* =========================
-   FORMULAR
+   FORM FIELDS
 ========================= */
-.booking-form {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+.form-field {
+  text-align: left;
+  margin-bottom: 22px;
 }
 
-.booking-form label {
-  font-size: 1.1rem;
-  opacity: 0.85;
-}
-
-.booking-form input,
-.booking-form textarea {
-  width: 100%;
-  padding: 14px;
-  border-radius: 12px;
-  border: 1px solid rgba(255,255,255,0.2);
-  background: rgba(255,255,255,0.05);
-  color: white;
+.form-field label {
+  display: block;
   font-size: 1rem;
+  margin-bottom: 6px;
+  color: #ddd;
+}
+
+.form-field input,
+.form-field textarea {
+  width: 100%;
+  padding: 14px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.07);
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+  border-color: #ff0099;
+  box-shadow: 0 0 10px rgba(255,0,153,0.3);
 }
 
 /* =========================
    BUTTON
 ========================= */
 .booking-btn {
-  margin-top: 20px;
-  padding: 14px 30px;
+  width: 100%;
+  padding: 16px;
+  margin-top: 10px;
+  font-size: 1.2rem;
   border-radius: 40px;
   border: none;
-  background: #ff0099;
-  color: white;
-  font-size: 1.2rem;
   cursor: pointer;
-  box-shadow: 0 0 20px #ff0099;
-  transition: 0.2s ease;
+  background: #ff0099;
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 0 20px rgba(255,0,153,0.4);
+  transition: 0.25s ease;
 }
 
 .booking-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 0 30px #ff33cc;
+  box-shadow: 0 0 35px rgba(255,0,153,0.55);
 }
 
 /* =========================
    MOBILE
 ========================= */
 @media (max-width: 768px) {
-
   .booking-title {
     font-size: 2.4rem;
   }
 
-  .booking-intro p {
+  .booking-subline {
+    font-size: 1.05rem;
+    margin-bottom: 30px;
+  }
+
+  .booking-form {
+    padding: 26px 22px;
+  }
+
+  .booking-btn {
     font-size: 1.1rem;
   }
 }
