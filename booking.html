@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Booking – DJ YvesK.</title>
 
-  <!-- Main Style -->
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="booking-style.css" />
+  <!-- Haupt-Styles -->
+  <link rel="stylesheet" href="style-new.css">
+  <link rel="stylesheet" href="booking-style.css">
 
   <!-- Icons -->
   <link rel="stylesheet"
@@ -20,7 +20,7 @@
 
 <body>
 
-  <!-- NAV -->
+  <!-- NAVIGATION -->
   <header class="navbar">
     <nav class="nav-center">
       <a href="index.html">HOME</a>
@@ -31,10 +31,9 @@
 
   <main class="booking-wrapper">
 
-    <!-- Titel -->
     <h1 class="booking-title">BOOKING</h1>
 
-    <!-- Intro Box -->
+    <!-- TEXT-BOX -->
     <div class="booking-textbox">
       <p>
         Man denkt zu viel. Und tanzt zu wenig.<br>
@@ -44,39 +43,33 @@
       </p>
     </div>
 
-    <!-- Formular -->
+    <!-- FORMULAR -->
     <div class="booking-form">
-      <form action="https://formspree.io/f/mjkqnoja"
-            method="POST">
+      <form action="https://formspree.io/f/mjkqnoja" method="POST">
 
         <div class="form-field">
           <label for="name">Dein Name</label>
-          <input id="name" name="name" type="text"
-                 placeholder="Max Mustermann" required>
+          <input id="name" name="name" type="text" placeholder="Max Mustermann" required>
         </div>
 
         <div class="form-field">
           <label for="email">Deine E-Mail</label>
-          <input id="email" name="email" type="email"
-                 placeholder="deine@mail.de" required>
+          <input id="email" name="email" type="email" placeholder="deine@mail.de" required>
         </div>
 
         <div class="form-field">
           <label for="event">Art des Events</label>
-          <input id="event" name="event" type="text"
-                 placeholder="Hochzeit, Geburtstag, Firmenfeier …">
+          <input id="event" name="event" type="text" placeholder="Hochzeit, Geburtstag …">
         </div>
 
         <div class="form-field">
           <label for="date">Datum</label>
-          <input id="date" name="date" type="text"
-                 placeholder="z.B. 21.09.2025">
+          <input id="date" name="date" type="text" placeholder="21.09.2025">
         </div>
 
         <div class="form-field">
           <label for="location">Ort / Location</label>
-          <input id="location" name="location" type="text"
-                 placeholder="Stadt, Locationname">
+          <input id="location" name="location" type="text" placeholder="Stadt, Locationname">
         </div>
 
         <div class="form-field">
@@ -86,7 +79,7 @@
             required></textarea>
         </div>
 
-        <!-- Erfolg: Weiterleitung auf thank-you.html -->
+        <!-- Weiterleitung -->
         <input type="hidden" name="_redirect" value="https://dj-yvesk.github.io/thank-you.html">
 
         <button type="submit" class="booking-btn">Anfrage senden</button>
@@ -95,7 +88,6 @@
 
   </main>
 
-  <!-- FOOTER -->
   <footer>
     <div class="footer-social">
       <a href="https://www.instagram.com/dj.yvesk" target="_blank"><i class="fab fa-instagram"></i></a>
