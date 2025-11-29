@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Booking – DJ YvesK</title>
 
-  <!-- FAVICON -->
-  <link rel="icon" type="image/png" href="yvesk-favicon-32.png" />
+  <!-- Hauptdesign -->
+  <link rel="stylesheet" href="style-new.css">
 
-  <!-- MAIN STYLE -->
-  <link rel="stylesheet" href="style.css" />
+  <!-- Booking Design -->
+  <link rel="stylesheet" href="booking-style.css">
+
+  <link rel="icon" type="image/png" href="yvesk-favicon-32.png">
 </head>
 
 <body>
 
-<!-- NAVBAR -->
+<!-- NAVIGATION -->
 <nav class="navbar">
   <div class="nav-center">
     <a href="index.html">HOME</a>
@@ -23,45 +25,43 @@
   </div>
 </nav>
 
-<!-- PAGE HEADER -->
-<section class="page-header">
-  <h1 class="page-title-text">Booking</h1>
-  <p class="page-subtitle">Dein Event – Dein Sound – Dein DJ YvesK.</p>
+<!-- BOOKING HEADER -->
+<section class="booking-header">
+  <h1 class="booking-title">Booking</h1>
+  <p class="booking-sub">DJ • House & Electronic • Events • Clubs • Private Shows</p>
 </section>
 
-<!-- BOOKING CARD -->
+<!-- BOOKING GRID -->
 <section class="booking-wrapper">
+
+  <!-- CARD 1 -->
   <div class="booking-card">
-
-    <h2>Buchungsanfrage</h2>
-
-    <form action="https://formspree.io/f/mnnqvgne" method="POST">
-
-      <label>Name *</label>
-      <input type="text" name="name" required />
-
-      <label>E-Mail *</label>
-      <input type="email" name="_replyto" required />
-
-      <label>Event-Datum *</label>
-      <input type="date" name="date" required />
-
-      <label>Event-Art</label>
-      <select name="event">
-        <option>Geburtstag</option>
-        <option>Hochzeit</option>
-        <option>Club / Bar</option>
-        <option>Private Party</option>
-        <option>Firmenfeier</option>
-      </select>
-
-      <label>Nachricht *</label>
-      <textarea name="message" rows="5" required></textarea>
-
-      <button type="submit" class="btn-submit">Anfrage senden</button>
-
-    </form>
+    <h2>Private Events</h2>
+    <p>Geburtstage, Hochzeiten, Firmenfeiern oder stilvolle Lounges.  
+       Feinster House-Sound, perfekt abgestimmt auf deine Crowd.</p>
   </div>
+
+  <!-- CARD 2 -->
+  <div class="booking-card">
+    <h2>Clubs & Bars</h2>
+    <p>Energetische, moderne Clubsets.  
+       Perfekter Mix aus House, Techhouse & elektronischen Grooves.</p>
+  </div>
+
+  <!-- CARD 3 -->
+  <div class="booking-card">
+    <h2>Festivals</h2>
+    <p>Treibende Sets, klare Drops, ein Sound, der hängen bleibt.  
+       Ideal für Tages- oder Night-Stage.</p>
+  </div>
+
+  <!-- CONTACT BLOCK -->
+  <div class="booking-contact">
+    <h2>Buchungsanfrage</h2>
+    <p>Schreib mir deine Event-Details und ich melde mich innerhalb von 24 Stunden.</p>
+    <a href="mailto:yv3sk@icloud.com" class="booking-btn">Booking Anfrage senden</a>
+  </div>
+
 </section>
 
 <!-- FOOTER -->
