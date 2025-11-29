@@ -1,158 +1,108 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Booking – DJ YvesK.</title>
 
   <!-- Main Style -->
-  <link rel="stylesheet" href="style.css">
-  <!-- Font Awesome für Icons -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="booking-style.css" />
+
+  <!-- Icons -->
   <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="32x32" href="yvesk-favicon-32.png">
-  <link rel="icon" type="image/png" sizes="512x512" href="yvesk-favicon-512.png">
-  <link rel="apple-touch-icon" href="yvesk-favicon-512.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="yvesk-favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="yvesk-favicon-512.png" />
 </head>
 
 <body>
 
-  <!-- NAVIGATION -->
+  <!-- NAV -->
   <header class="navbar">
     <nav class="nav-center">
       <a href="index.html">HOME</a>
       <a href="music.html">MUSIC</a>
-      <a href="booking.html">BOOKING</a>
+      <a href="booking.html" class="active">BOOKING</a>
     </nav>
   </header>
 
-  <main>
+  <main class="booking-wrapper">
 
-    <!-- PAGE HEADER -->
-    <section class="page-header">
-      <h2 class="page-title-text">BOOKING</h2>
-      <p class="page-subtitle">
-        Man denkt zu viel. Und tanzt zu wenig.  
-        Lass uns das für dein Event ändern.
+    <!-- Titel -->
+    <h1 class="booking-title">BOOKING</h1>
+
+    <!-- Intro Box -->
+    <div class="booking-textbox">
+      <p>
+        Man denkt zu viel. Und tanzt zu wenig.<br>
+        Lass uns das für dein Event ändern.<br><br>
+        Ob Hochzeit, Geburtstag, Firmenfeier oder Clubnacht –
+        erzähl mir kurz, was du planst. Ich bringe den Sound mit.
       </p>
-    </section>
+    </div>
 
-    <!-- BOOKING SECTION -->
-    <section class="booking">
-      <div class="music-card">
-        <p class="booking-text">
-          Du planst eine Hochzeit, einen runden Geburtstag, eine Firmenfeier
-          oder einfach eine Nacht, in der niemand früh nach Hause geht?
-          Schreib mir kurz, was du vorhast – den passenden Sound bringe ich mit.
-        </p>
+    <!-- Formular -->
+    <div class="booking-form">
+      <form action="https://formspree.io/f/mjkqnoja"
+            method="POST">
 
-        <form action="https://formspree.io/f/mjkqnoja" method="POST">
-          <!-- Name -->
-          <div class="form-group">
-            <label for="name">Dein Name</label>
-            <input
-              id="name"
-              type="text"
-              name="name"
-              required
-              placeholder="Max Mustermann">
-          </div>
+        <div class="form-field">
+          <label for="name">Dein Name</label>
+          <input id="name" name="name" type="text"
+                 placeholder="Max Mustermann" required>
+        </div>
 
-          <!-- E-Mail -->
-          <div class="form-group">
-            <label for="email">Deine E-Mail</label>
-            <input
-              id="email"
-              type="email"
-              name="email"
-              required
-              placeholder="deine@mail.de">
-          </div>
+        <div class="form-field">
+          <label for="email">Deine E-Mail</label>
+          <input id="email" name="email" type="email"
+                 placeholder="deine@mail.de" required>
+        </div>
 
-          <!-- Event-Art -->
-          <div class="form-group">
-            <label for="event">Art des Events</label>
-            <input
-              id="event"
-              type="text"
-              name="event"
-              placeholder="Hochzeit, Geburtstag, Firmenfeier …">
-          </div>
+        <div class="form-field">
+          <label for="event">Art des Events</label>
+          <input id="event" name="event" type="text"
+                 placeholder="Hochzeit, Geburtstag, Firmenfeier …">
+        </div>
 
-          <!-- Datum -->
-          <div class="form-group">
-            <label for="date">Datum</label>
-            <input
-              id="date"
-              type="text"
-              name="date"
-              placeholder="z.B. 21.09.2025">
-          </div>
+        <div class="form-field">
+          <label for="date">Datum</label>
+          <input id="date" name="date" type="text"
+                 placeholder="z.B. 21.09.2025">
+        </div>
 
-          <!-- Ort -->
-          <div class="form-group">
-            <label for="location">Ort / Location</label>
-            <input
-              id="location"
-              type="text"
-              name="location"
-              placeholder="Stadt, Locationname">
-          </div>
+        <div class="form-field">
+          <label for="location">Ort / Location</label>
+          <input id="location" name="location" type="text"
+                 placeholder="Stadt, Locationname">
+        </div>
 
-          <!-- Nachricht -->
-          <div class="form-group">
-            <label for="message">Deine Nachricht</label>
-            <textarea
-              id="message"
-              name="message"
-              rows="5"
-              placeholder="Erzähl mir kurz, was du planst – Stimmung, Musikrichtung, Besonderheiten …"
-              required></textarea>
-          </div>
+        <div class="form-field">
+          <label for="message">Nachricht</label>
+          <textarea id="message" name="message" rows="5"
+            placeholder="Erzähl mir kurz, was du planst – Stimmung, Musikrichtung, Besonderheiten …"
+            required></textarea>
+        </div>
 
-          <!-- optionaler Betreff für deine E-Mail -->
-          <input type="hidden" name="_subject" value="Neue Booking-Anfrage über dj-yvesk.github.io">
+        <!-- Erfolg: Weiterleitung auf thank-you.html -->
+        <input type="hidden" name="_redirect" value="https://dj-yvesk.github.io/thank-you.html">
 
-          <!-- Absenden -->
-          <button type="submit" class="btn-glow">
-            Anfrage senden
-          </button>
-        </form>
-      </div>
-    </section>
+        <button type="submit" class="booking-btn">Anfrage senden</button>
+      </form>
+    </div>
 
   </main>
 
   <!-- FOOTER -->
   <footer>
-    <div class="footer-inner">
-      <p>© 2025 DJ YvesK. – All Rights Reserved</p>
-
-      <div class="footer-social">
-        <!-- Instagram -->
-        <a href="https://www.instagram.com/dj.yvesk/?hl=de"
-          class="instagram"
-          target="_blank" rel="noopener" aria-label="Instagram">
-          <i class="fab fa-instagram"></i>
-        </a>
-
-        <!-- Facebook -->
-        <a href="https://www.facebook.com/profile.php?id=100089274927366"
-          class="facebook"
-          target="_blank" rel="noopener" aria-label="Facebook">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-
-        <!-- SoundCloud -->
-        <a href="https://soundcloud.com/yv3sk"
-          class="soundcloud"
-          target="_blank" rel="noopener" aria-label="SoundCloud">
-          <i class="fab fa-soundcloud"></i>
-        </a>
-      </div>
+    <div class="footer-social">
+      <a href="https://www.instagram.com/dj.yvesk" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=100089274927366" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://soundcloud.com/yv3sk" target="_blank"><i class="fab fa-soundcloud"></i></a>
     </div>
+    <p>© 2025 DJ YvesK. – All Rights Reserved</p>
   </footer>
 
 </body>
