@@ -1,5 +1,5 @@
 /* =========================
-   BOOKING WRAPPER
+   BOOKING LAYOUT
 ========================= */
 .booking-wrapper {
   max-width: 900px;
@@ -13,15 +13,15 @@
 .booking-title {
   font-size: 3rem;
   font-weight: 600;
-  letter-spacing: 2px;
-  color: #d9d9d9;
   text-align: center;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+  color: #d9d9d9;
+  letter-spacing: 2px;
+  text-shadow: 0 0 12px rgba(255,0,153,0.4);
   margin-bottom: 30px;
 }
 
 /* =========================
-   TEXT BOX
+   TEXTBOX
 ========================= */
 .booking-textbox {
   background: rgba(255,255,255,0.05);
@@ -60,10 +60,10 @@
 }
 
 .form-field label {
-  display: block;
-  font-size: 1rem;
   color: #ddd;
+  font-size: 1rem;
   margin-bottom: 6px;
+  display: block;
 }
 
 .form-field input,
@@ -75,13 +75,12 @@
   background: rgba(255,255,255,0.08);
   color: #fff;
   font-size: 1rem;
-  outline: none;
 }
 
 .form-field input:focus,
 .form-field textarea:focus {
   border-color: #ff0099;
-  box-shadow: 0 0 10px rgba(255,0,153,0.5);
+  box-shadow: 0 0 14px rgba(255,0,153,0.6);
 }
 
 /* =========================
@@ -90,13 +89,13 @@
 .booking-btn {
   width: 100%;
   padding: 16px;
-  font-size: 1.2rem;
-  border-radius: 40px;
-  border: none;
-  cursor: pointer;
+  font-size: 1.25rem;
+  font-weight: 600;
   background: #ff0099;
   color: #fff;
-  font-weight: 600;
+  border-radius: 40px;
+  cursor: pointer;
+  border: none;
   box-shadow: 0 0 20px rgba(255,0,153,0.4);
   transition: 0.25s ease;
 }
@@ -121,7 +120,7 @@
   }
 
   .booking-textbox p {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
   }
 
   .booking-btn {
