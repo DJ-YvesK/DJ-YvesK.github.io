@@ -107,6 +107,27 @@
 }
 
 /* =========================
+   ERFOLGSMELDUNG — STANDARD: UNSICHTBAR
+========================= */
+.booking-success {
+  display: none;
+  margin-top: 30px;
+  padding: 24px 20px;
+  border-radius: 18px;
+  text-align: center;
+  background: rgba(0, 128, 0, 0.1);
+  border: 1px solid rgba(0, 255, 128, 0.4);
+  box-shadow: 0 0 18px rgba(0, 255, 128, 0.25);
+  color: #c4ffc4;
+  font-size: 1.2rem;
+}
+
+/* sichtbarer Zustand */
+.booking-success.visible {
+  display: block;
+}
+
+/* =========================
    MOBILE
 ========================= */
 @media (max-width: 768px) {
@@ -130,29 +151,9 @@
   .booking-btn {
     font-size: 1.1rem;
   }
-/* =========================
-   ERFOLGSMELDUNG (unsichtbar bis AJAX)
-========================= */
-.booking-success {
-  display: none;
-  margin-top: 30px;
-  padding: 24px 20px;
-  border-radius: 18px;
-  text-align: center;
 
-  background: rgba(0, 128, 0, 0.1);
-  border: 1px solid rgba(0, 255, 128, 0.4);
-  box-shadow: 0 0 18px rgba(0, 255, 128, 0.25);
-}
-
-/* sichtbarer Zustand */
-.booking-success.visible {
-  display: block;
-}
-
-/* Mobile */
-@media (max-width: 768px) {
   .booking-success {
     padding: 20px 16px;
+    font-size: 1.1rem;
   }
 }
