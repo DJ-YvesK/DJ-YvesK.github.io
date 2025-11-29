@@ -1,0 +1,133 @@
+/* =========================
+   THANK YOU PAGE BASE
+========================= */
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  animation: fadeInBody 1s ease forwards;
+}
+
+@keyframes fadeInBody {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.thankyou-wrapper {
+  max-width: 600px;
+  padding: 20px;
+  animation: fadeUp 1.2s ease forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.thank-logo {
+  width: 180px;
+  margin-bottom: 20px;
+  animation: neonGlow 2s infinite alternate ease-in-out;
+  user-select: none;
+}
+
+@keyframes neonGlow {
+  0% {
+    filter: drop-shadow(0 0 10px #ff0099)
+            drop-shadow(0 0 20px #ff0099);
+  }
+  100% {
+    filter: drop-shadow(0 0 25px #ff33cc)
+            drop-shadow(0 0 45px #ff0099);
+  }
+}
+
+/* =========================
+   TITLE
+========================= */
+
+.thanks-title {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+  text-shadow: 
+    0 0 12px #ff0099,
+    0 0 25px rgba(255,0,153,0.6);
+}
+
+/* =========================
+   TEXT
+========================= */
+
+.thanks-text {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  color: #ddd;
+  margin-bottom: 40px;
+}
+
+.thanks-text span {
+  color: #ff0099;
+  text-shadow: 0 0 15px rgba(255,0,153,0.6);
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.back-btn {
+  display: inline-block;
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  background: #ff0099;
+  border-radius: 40px;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 0 20px #ff0099;
+  transition: 0.3s ease;
+}
+
+.back-btn:hover {
+  box-shadow: 0 0 35px #ff33cc;
+  transform: translateY(-2px);
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .thank-logo {
+    width: 140px;
+  }
+
+  .thanks-title {
+    font-size: 2.2rem;
+  }
+
+  .thanks-text {
+    font-size: 1.15rem;
+  }
+
+  .back-btn {
+    padding: 12px 30px;
+    font-size: 1.1rem;
+  }
+}
