@@ -44,9 +44,14 @@
       class="booking-form"
     >
 
-      <input type="text" name="_honeypot" style="display:none">
-      <input type="hidden" name="_subject" value="Neue Booking-Anfrage über dj-yvesk.github.io">
+     <!-- Honeypot gegen Spam -->
+  <input type="text" name="_honeypot" style="display:none">
 
+  <!-- Nach erfolgreichem Senden hierhin weiterleiten -->
+  <input type="hidden" name="_next" value="https://dj-yvesk.github.io/thank-you.html">
+
+  <input type="hidden" name="_subject" value="Neue Booking-Anfrage über dj-yvesk.github.io">
+  <!-- … der Rest deines Formulars bleibt gleich … -->
       <div class="form-field">
         <label for="name">Dein Name</label>
         <input id="name" type="text" name="name" required placeholder="Max Mustermann">
