@@ -35,41 +35,73 @@
   </div>
 
   <div class="booking-form">
-    <form id="bookingForm">
+    <form id="booking-form">
 
-      <div class="form-field">
-        <label for="name">Dein Name</label>
-        <input id="name" name="name" type="text" required>
-      </div>
+  <!-- NAME -->
+  <label for="name">Dein Name</label>
+  <input 
+    id="name" 
+    name="name" 
+    type="text" 
+    placeholder="Wie dürfen wir dich ansprechen?" 
+    required>
 
-      <div class="form-field">
-        <label for="email">Deine E-Mail</label>
-        <input id="email" name="email" type="email" required>
-      </div>
+  <!-- EMAIL -->
+  <label for="email">E-Mail-Adresse</label>
+  <input 
+    id="email" 
+    name="email" 
+    type="email" 
+    placeholder="Wohin soll die Antwort gehen?" 
+    required>
 
-      <div class="form-field">
-        <label for="event">Art des Events</label>
-        <input id="event" name="event" type="text" placeholder="Geburtstag, Firmenfeier, Club, Privatparty …">
-      </div>
+  <!-- TELEFON -->
+  <label for="phone">Telefonnummer (optional)</label>
+  <input 
+    id="phone" 
+    name="phone" 
+    type="text" 
+    placeholder="Für Rückfragen – nicht Pflicht">
 
-      <div class="form-field">
-        <label for="date">Datum</label>
-        <input id="date" name="date" type="text">
-      </div>
+  <!-- EVENT-ART -->
+  <label for="event">Art des Events</label>
+  <input 
+    id="event" 
+    name="event" 
+    type="text" 
+    placeholder="Geburtstag, Firmenfeier, Club-Night, Privatparty …" 
+    required>
 
-      <div class="form-field">
-        <label for="location">Ort / Location</label>
-        <input id="location" name="location" type="text">
-      </div>
+  <!-- DATUM -->
+  <label for="date">Datum des Events</label>
+  <input 
+    id="date" 
+    name="date" 
+    type="date"
+    required>
 
-      <div class="form-field">
-        <label for="message">Nachricht</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-      </div>
+  <!-- ORT -->
+  <label for="location">Ort / Location</label>
+  <input 
+    id="location" 
+    name="location" 
+    type="text" 
+    placeholder="Ort, Adresse oder Locationname" 
+    required>
 
-      <button type="submit" class="booking-btn">Anfrage senden</button>
+  <!-- NACHRICHT -->
+  <label for="message">Deine Nachricht</label>
+  <textarea 
+    id="message" 
+    name="message" 
+    placeholder="Was soll ich über das Event wissen? Stimmung, Musik, Dauer …" 
+    required></textarea>
 
-    </form>
+  <!-- BUTTON -->
+  <button type="submit" class="btn-send">Anfrage senden</button>
+
+</form>
+
   </div>
 
 </main>
