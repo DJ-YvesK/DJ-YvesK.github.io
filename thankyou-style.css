@@ -1,154 +1,109 @@
-/* =========================
-   THANK YOU PAGE – BASE
-========================= */
+/* THANK YOU STYLE FIXED */
 
 body {
   margin: 0;
   padding: 0;
   background: #000;
-  color: #fff;
   font-family: Arial, sans-serif;
-  text-align: center;
-
-  /* WICHTIG: Scroll erlauben, falls Inhalt höher ist als der Screen */
-  overflow-y: auto;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
 }
 
-/* Wrapper um den Inhalt der Thank-You-Seite */
 .thankyou-wrapper {
-  max-width: 700px;
-  margin: 120px auto 60px auto;
-  padding: 0 20px;
+  text-align: center;
+  padding: 40px 20px;
+  max-width: 600px;
+  width: 100%;
 }
 
-/* =========================
-   LOGO – kleiner + Rand kaschieren
-========================= */
-
-.thank-logo,
-.thankyou-logo {
-  /* egal ob deine Klasse thank-logo oder thankyou-logo heißt – einer von beiden trifft */
-  width: 140px;          /* Desktop-Größe */
-  max-width: 45vw;
-  margin: 0 auto 18px auto;
-  display: block;
-
-  /* macht den „Kasten“ unsichtbarer auf Schwarz */
+/* LOGO FIX — wie Startseite, kein schwarzer Rand */
+.thank-logo {
+  width: 180px;
+  max-width: 80%;
+  margin-bottom: 20px;
   mix-blend-mode: screen;
-  border-radius: 999px;  /* rundet harte Ecken weg */
-  filter:
-    drop-shadow(0 0 12px #ff0099)
-    drop-shadow(0 0 22px #ff0099);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* =========================
-   TEXTE
-========================= */
-
-.thankyou-wrapper h1,
 .thanks-title {
-  font-size: 2.3rem;
-  margin-bottom: 10px;
-  text-shadow:
-    0 0 12px #ff0099,
-    0 0 24px rgba(255,0,153,0.6);
+  font-size: 2.4rem;
+  margin-bottom: 15px;
+  text-shadow: 0 0 20px rgba(255,0,153,0.4);
 }
 
-.thankyou-wrapper p,
 .thanks-text {
-  font-size: 1.15rem;
+  font-size: 1.3rem;
   line-height: 1.6;
-  color: #ddd;
-  margin-bottom: 24px;
+  margin-bottom: 25px;
+  opacity: 0.9;
 }
 
-/* =========================
-   BUTTON ZURÜCK
-========================= */
-
-.back-btn a,
-.thank-back,
-.thank-back a {
+.back-btn {
   display: inline-block;
-  padding: 12px 32px;
-  font-size: 1.1rem;
+  margin-top: 10px;
+  padding: 14px 32px;
   border-radius: 40px;
   background: #ff0099;
-  color: #fff;
+  color: white;
   text-decoration: none;
-  box-shadow: 0 0 20px #ff0099;
-  transition: 0.25s ease;
+  font-size: 1.1rem;
+  box-shadow: 0 0 25px #ff0099;
+  transition: 0.2s ease;
 }
 
-.back-btn a:hover,
-.thank-back:hover,
-.thank-back a:hover {
+.back-btn:hover {
+  box-shadow: 0 0 35px #ff33cc;
   transform: translateY(-2px);
-  box-shadow: 0 0 32px #ff33cc;
 }
 
-/* =========================
-   SOCIAL ICONS / LINKS
-========================= */
-
-.social-thanks,
+/* SOCIAL SECTION */
 .social-follow {
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
-.social-thanks p,
 .social-follow p {
-  font-size: 0.95rem;
-  color: #ccc;
-  margin-bottom: 10px;
-}
-
-.social-thanks a,
-.social-follow a {
-  color: #ffffff;
   font-size: 1.2rem;
-  text-decoration: none;
-  margin: 0 10px;
-  transition: 0.25s ease;
+  margin-bottom: 12px;
 }
 
-.social-thanks a:hover,
-.social-follow a:hover {
-  text-shadow: 0 0 14px #ff0099;
-  transform: translateY(-2px);
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
 }
 
-/* =========================
-   MOBILE
-========================= */
+.social-icons a {
+  font-size: 1.9rem;
+  color: white;
+  transition: 0.2s;
+}
 
+.social-icons a:hover {
+  transform: translateY(-3px);
+  text-shadow: 0 0 15px currentColor;
+}
+
+/* MOBILE FIX */
 @media (max-width: 768px) {
 
-  .thankyou-wrapper {
-    margin: 100px auto 40px auto;
-    padding: 0 16px;
+  .thank-logo {
+    width: 150px;
   }
 
-  .thank-logo,
-  .thankyou-logo {
-    width: 110px;       /* kleiner auf Handy */
-    max-width: 40vw;
-    margin-bottom: 14px;
-  }
-
-  .thankyou-wrapper h1,
   .thanks-title {
     font-size: 2rem;
   }
 
-  .thankyou-wrapper p,
   .thanks-text {
-    font-size: 1.05rem;
-    margin-bottom: 20px;
+    font-size: 1.15rem;
   }
 
-  .social-thanks a,
-  .social-follow a {
-    font-size: 1.15rem;
+  .social-icons a {
+    font-size: 1.7rem;
   }
 }
