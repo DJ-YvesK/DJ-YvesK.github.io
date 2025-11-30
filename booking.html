@@ -1,100 +1,84 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Booking – DJ YvesK.</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking – DJ YvesK</title>
 
-  <!-- Haupt-Styles -->
   <link rel="stylesheet" href="style-new.css">
   <link rel="stylesheet" href="booking-style.css">
 
-  <!-- Icons -->
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="32x32" href="yvesk-favicon-32.png" />
-  <link rel="icon" type="image/png" sizes="512x512" href="yvesk-favicon-512.png" />
+  <link rel="icon" type="image/png" href="yvesk-favicon-32.png">
 </head>
 
 <body>
 
-  <!-- NAVIGATION -->
-  <header class="navbar">
-    <nav class="nav-center">
-      <a href="index.html">HOME</a>
-      <a href="music.html">MUSIC</a>
-      <a href="booking.html" class="active">BOOKING</a>
-    </nav>
-  </header>
+<!-- NAVIGATION -->
+<header class="navbar">
+  <nav class="nav-center">
+    <a href="index.html">HOME</a>
+    <a href="music.html">MUSIC</a>
+    <a href="booking.html" class="active">BOOKING</a>
+  </nav>
+</header>
 
-  <main class="booking-wrapper">
+<main class="booking-wrapper">
 
-    <h1 class="booking-title">BOOKING</h1>
+  <h1 class="booking-title">BOOKING</h1>
 
-    <!-- TEXT-BOX -->
-   <div class="booking-textbox">
-  <p>
-    Du planst ein Event?<br>
-    Hör auf zu überlegen – jede gute Feier beginnt mit einer Entscheidung.<br>
-    <strong>Man denkt zu viel. Und tanzt zu wenig.</strong><br>
-    Lass uns das ändern. Buche jetzt deinen DJ YvesK.
-  </p>
-</div>
-    <!-- FORMULAR -->
-    <div class="booking-form">
-      <form action="https://formspree.io/f/mjkqnoja" method="POST">
+  <div class="booking-textbox">
+    <p>
+      Du planst ein Event? Hör auf zu überlegen – jede gute Feier beginnt mit einer Entscheidung.<br>
+      <strong>Man denkt zu viel. Und tanzt zu wenig.</strong><br>
+      Lass uns das ändern. Buche jetzt deinen DJ YvesK.
+    </p>
+  </div>
 
-        <div class="form-field">
-          <label for="name">Dein Name</label>
-          <input id="name" name="name" type="text" placeholder="Dein Name hier" required>
-        </div>
+  <div class="booking-form">
+    <form id="bookingForm">
 
-        <div class="form-field">
-          <label for="email">Deine E-Mail</label>
-          <input id="email" name="email" type="email" placeholder="deine@mail.de" required>
-        </div>
+      <div class="form-field">
+        <label for="name">Dein Name</label>
+        <input id="name" name="name" type="text" required>
+      </div>
 
-        <div class="form-field">
-          <label for="event">Art des Events</label>
-          <input id="event" name="event" type="text" placeholder="Geburtstag, Private Party, Firmenfeier, Club ...">
-        </div>
+      <div class="form-field">
+        <label for="email">Deine E-Mail</label>
+        <input id="email" name="email" type="email" required>
+      </div>
 
-        <div class="form-field">
-          <label for="date">Datum</label>
-          <input id="date" name="date" type="text" placeholder="21.09.2025">
-        </div>
+      <div class="form-field">
+        <label for="event">Art des Events</label>
+        <input id="event" name="event" type="text" placeholder="Geburtstag, Firmenfeier, Club, Privatparty …">
+      </div>
 
-        <div class="form-field">
-          <label for="location">Ort / Location</label>
-          <input id="location" name="location" type="text" placeholder="Stadt, Locationname">
-        </div>
+      <div class="form-field">
+        <label for="date">Datum</label>
+        <input id="date" name="date" type="text">
+      </div>
 
-        <div class="form-field">
-          <label for="message">Nachricht</label>
-          <textarea id="message" name="message" rows="5"
-            placeholder="Erzähl mir kurz, was du planst – Stimmung, Musikrichtung, Besonderheiten …"
-            required></textarea>
-        </div>
+      <div class="form-field">
+        <label for="location">Ort / Location</label>
+        <input id="location" name="location" type="text">
+      </div>
 
-        <!-- Weiterleitung -->
-        <input type="hidden" name="_redirect" value="https://dj-yvesk.github.io/thank-you.html">
+      <div class="form-field">
+        <label for="message">Nachricht</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
 
-        <button type="submit" class="booking-btn">Anfrage senden</button>
-      </form>
-    </div>
+      <button type="submit" class="booking-btn">Anfrage senden</button>
 
-  </main>
+    </form>
+  </div>
 
-  <footer>
-    <div class="footer-social">
-      <a href="https://www.instagram.com/dj.yvesk" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://www.facebook.com/profile.php?id=100089274927366" target="_blank"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://soundcloud.com/yv3sk" target="_blank"><i class="fab fa-soundcloud"></i></a>
-    </div>
-    <p>© 2025 DJ YvesK. – All Rights Reserved</p>
-  </footer>
+</main>
+
+<footer>
+  <p>© 2025 DJ YvesK. – All Rights Reserved</p>
+</footer>
+
+<script src="booking.js"></script>
 
 </body>
 </html>
