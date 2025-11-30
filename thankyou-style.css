@@ -1,0 +1,109 @@
+/* THANK YOU STYLE FIXED */
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  font-family: Arial, sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.thankyou-wrapper {
+  text-align: center;
+  padding: 40px 20px;
+  max-width: 600px;
+  width: 100%;
+}
+
+/* LOGO FIX — wie Startseite, kein schwarzer Rand */
+.thank-logo {
+  width: 180px;
+  max-width: 80%;
+  margin-bottom: 20px;
+  mix-blend-mode: screen;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.thanks-title {
+  font-size: 2.4rem;
+  margin-bottom: 15px;
+  text-shadow: 0 0 20px rgba(255,0,153,0.4);
+}
+
+.thanks-text {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  opacity: 0.9;
+}
+
+.back-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 14px 32px;
+  border-radius: 40px;
+  background: #ff0099;
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  box-shadow: 0 0 25px #ff0099;
+  transition: 0.2s ease;
+}
+
+.back-btn:hover {
+  box-shadow: 0 0 35px #ff33cc;
+  transform: translateY(-2px);
+}
+
+/* SOCIAL SECTION */
+.social-follow {
+  margin-top: 40px;
+}
+
+.social-follow p {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+}
+
+.social-icons a {
+  font-size: 1.9rem;
+  color: white;
+  transition: 0.2s;
+}
+
+.social-icons a:hover {
+  transform: translateY(-3px);
+  text-shadow: 0 0 15px currentColor;
+}
+
+/* MOBILE FIX */
+@media (max-width: 768px) {
+
+  .thank-logo {
+    width: 150px;
+  }
+
+  .thanks-title {
+    font-size: 2rem;
+  }
+
+  .thanks-text {
+    font-size: 1.15rem;
+  }
+
+  .social-icons a {
+    font-size: 1.7rem;
+  }
+}
