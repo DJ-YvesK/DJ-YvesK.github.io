@@ -1,89 +1,189 @@
-/* GLOBAL */
+/* =========================
+   THANK YOU PAGE BASE
+========================= */
+
 body {
   margin: 0;
+  padding: 0;
   background: #000;
+  color: #fff;
   font-family: Arial, sans-serif;
-  color: white;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  text-align: center;
+  min-height: 100vh;
+  overflow: hidden;
+  animation: fadeInBody 1s ease forwards;
 }
 
-/* MAIN CONTAINER */
-.container {
-  padding: 40px 20px;
-  max-width: 500px;
-  animation: fadeIn 0.8s ease-out forwards;
-  opacity: 0;
-}
-
-/* LOGO */
-.logo {
-  width: 130px;
-  margin-bottom: 25px;
-  filter: drop-shadow(0 0 15px #ff0099);
-  animation: float 3s infinite ease-in-out;
-}
-
-/* HEADLINE */
-.title {
-  font-size: 2.6rem;
-  margin-bottom: 10px;
-  text-shadow: 0 0 15px #ff0099;
-}
-
-/* SUBTITLE */
-.subtitle {
-  font-size: 1.2rem;
-  opacity: 0.9;
-  margin-bottom: 40px;
-  line-height: 1.5;
-}
-
-/* QUOTE */
-.quote {
-  font-size: 1.4rem;
-  font-weight: bold;
-  margin-bottom: 40px;
-  line-height: 1.4;
-  text-shadow: 0 0 10px rgba(255,0,153,0.5);
-}
-
-/* BUTTON */
-.back-btn {
-  display: inline-block;
-  padding: 14px 35px;
-  font-size: 1.2rem;
-  color: white;
-  border-radius: 35px;
-  background: #ff0099;
-  text-decoration: none;
-  box-shadow: 0 0 20px #ff0099;
-  transition: 0.25s ease;
-}
-
-.back-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 0 30px #ff33cc;
-}
-
-/* ANIMATIONS */
-@keyframes fadeIn {
+@keyframes fadeInBody {
+  from { opacity: 0; }
   to { opacity: 1; }
 }
 
-@keyframes float {
-  0%   { transform: translateY(0); }
-  50%  { transform: translateY(-8px); }
-  100% { transform: translateY(0); }
+.thankyou-wrapper {
+  max-width: 600px;
+  padding: 20px;
+  animation: fadeUp 1.2s ease forwards;
+  opacity: 0;
+  transform: translateY(20px);
 }
 
-/* MOBILE */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================
+   LOGO – größer + wie Startseite
+========================= */
+
+.thank-logo {
+  width: 230px;              /* größer wie gewünscht */
+  max-width: 75vw;
+  margin-bottom: 24px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  /* schwarzer Rand verschwindet optisch auf Schwarz */
+  mix-blend-mode: screen;
+
+  /* kräftiger Neon-Glow */
+  animation: neonGlow 2s infinite alternate ease-in-out;
+  user-select: none;
+}
+
+@keyframes neonGlow {
+  0% {
+    filter:
+      drop-shadow(0 0 12px #ff0099)
+      drop-shadow(0 0 24px #ff0099);
+  }
+  100% {
+    filter:
+      drop-shadow(0 0 28px #ff33cc)
+      drop-shadow(0 0 50px #ff0099);
+  }
+}
+
+/* =========================
+   TITLE & TEXT
+========================= */
+
+.thanks-title {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+  text-shadow:
+    0 0 12px #ff0099,
+    0 0 25px rgba(255,0,153,0.6);
+}
+
+.thanks-text {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  color: #ddd;
+  margin-bottom: 28px;
+}
+
+.thanks-text span {
+  color: #ff0099;
+  text-shadow: 0 0 15px rgba(255,0,153,0.6);
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.back-btn {
+  display: inline-block;
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  background: #ff0099;
+  border-radius: 40px;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 0 20px #ff0099;
+  transition: 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.back-btn:hover {
+  box-shadow: 0 0 35px #ff33cc;
+  transform: translateY(-2px);
+}
+
+/* =========================
+   SOCIAL FOLLOW
+========================= */
+
+.social-follow {
+  margin-top: 10px;
+}
+
+.social-follow p {
+  font-size: 1.05rem;
+  color: #ccc;
+  margin-bottom: 12px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+}
+
+.social-icons a {
+  font-size: 1.7rem;
+  color: #ffffff;
+  transition: 0.25s ease;
+}
+
+.social-icons a:hover {
+  transform: translateY(-2px);
+  text-shadow: 0 0 14px currentColor;
+}
+
+/* Farben je Netzwerk */
+.social-icons a.instagram:hover {
+  color: #E4405F;
+}
+
+.social-icons a.facebook:hover {
+  color: #1877F2;
+}
+
+.social-icons a.soundcloud:hover {
+  color: #ff5500;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
 @media (max-width: 768px) {
-  .title { font-size: 2.2rem; }
-  .subtitle { font-size: 1.1rem; }
-  .quote { font-size: 1.3rem; }
-  .logo { width: 110px; }
+
+  .thank-logo {
+    width: 190px;
+  }
+
+  .thanks-title {
+    font-size: 2.2rem;
+  }
+
+  .thanks-text {
+    font-size: 1.15rem;
+  }
+
+  .back-btn {
+    padding: 12px 30px;
+    font-size: 1.1rem;
+  }
+
+  .social-icons a {
+    font-size: 1.6rem;
+  }
 }
