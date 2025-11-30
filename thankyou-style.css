@@ -1,5 +1,5 @@
 /* =========================
-   THANK YOU PAGE BASE
+   THANK YOU PAGE – BASE
 ========================= */
 
 body {
@@ -9,155 +9,113 @@ body {
   color: #fff;
   font-family: Arial, sans-serif;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  overflow: hidden;
-  animation: fadeInBody 1s ease forwards;
+
+  /* WICHTIG: Scroll erlauben, falls Inhalt höher ist als der Screen */
+  overflow-y: auto;
 }
 
-@keyframes fadeInBody {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
+/* Wrapper um den Inhalt der Thank-You-Seite */
 .thankyou-wrapper {
-  max-width: 600px;
-  padding: 20px;
-  animation: fadeUp 1.2s ease forwards;
-  opacity: 0;
-  transform: translateY(20px);
-}
-
-@keyframes fadeUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  max-width: 700px;
+  margin: 120px auto 60px auto;
+  padding: 0 20px;
 }
 
 /* =========================
-   LOGO – größer + wie Startseite
+   LOGO – kleiner + Rand kaschieren
 ========================= */
 
-.thank-logo {
-  width: 170px;              /* größer wie gewünscht */
-  max-width: 55vw;
-  margin-bottom: 24px;
+.thank-logo,
+.thankyou-logo {
+  /* egal ob deine Klasse thank-logo oder thankyou-logo heißt – einer von beiden trifft */
+  width: 140px;          /* Desktop-Größe */
+  max-width: 45vw;
+  margin: 0 auto 18px auto;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
 
-  /* schwarzer Rand verschwindet optisch auf Schwarz */
+  /* macht den „Kasten“ unsichtbarer auf Schwarz */
   mix-blend-mode: screen;
-
-  /* kräftiger Neon-Glow */
-  animation: neonGlow 2s infinite alternate ease-in-out;
-  user-select: none;
-}
-
-@keyframes neonGlow {
-  0% {
-    filter:
-      drop-shadow(0 0 12px #ff0099)
-      drop-shadow(0 0 24px #ff0099);
-  }
-  100% {
-    filter:
-      drop-shadow(0 0 28px #ff33cc)
-      drop-shadow(0 0 50px #ff0099);
-  }
+  border-radius: 999px;  /* rundet harte Ecken weg */
+  filter:
+    drop-shadow(0 0 12px #ff0099)
+    drop-shadow(0 0 22px #ff0099);
 }
 
 /* =========================
-   TITLE & TEXT
+   TEXTE
 ========================= */
 
+.thankyou-wrapper h1,
 .thanks-title {
-  font-size: 2.8rem;
-  margin-bottom: 15px;
+  font-size: 2.3rem;
+  margin-bottom: 10px;
   text-shadow:
     0 0 12px #ff0099,
-    0 0 25px rgba(255,0,153,0.6);
+    0 0 24px rgba(255,0,153,0.6);
 }
 
+.thankyou-wrapper p,
 .thanks-text {
-  font-size: 1.3rem;
+  font-size: 1.15rem;
   line-height: 1.6;
   color: #ddd;
-  margin-bottom: 28px;
-}
-
-.thanks-text span {
-  color: #ff0099;
-  text-shadow: 0 0 15px rgba(255,0,153,0.6);
+  margin-bottom: 24px;
 }
 
 /* =========================
-   BUTTON
+   BUTTON ZURÜCK
 ========================= */
 
-.back-btn {
+.back-btn a,
+.thank-back,
+.thank-back a {
   display: inline-block;
-  padding: 15px 40px;
-  font-size: 1.2rem;
-  background: #ff0099;
+  padding: 12px 32px;
+  font-size: 1.1rem;
   border-radius: 40px;
+  background: #ff0099;
   color: #fff;
   text-decoration: none;
   box-shadow: 0 0 20px #ff0099;
-  transition: 0.3s ease;
-  margin-bottom: 30px;
-}
-
-.back-btn:hover {
-  box-shadow: 0 0 35px #ff33cc;
-  transform: translateY(-2px);
-}
-
-/* =========================
-   SOCIAL FOLLOW
-========================= */
-
-.social-follow {
-  margin-top: 10px;
-}
-
-.social-follow p {
-  font-size: 1.05rem;
-  color: #ccc;
-  margin-bottom: 12px;
-}
-
-.social-icons {
-  display: flex;
-  justify-content: center;
-  gap: 22px;
-}
-
-.social-icons a {
-  font-size: 1.7rem;
-  color: #ffffff;
   transition: 0.25s ease;
 }
 
-.social-icons a:hover {
+.back-btn a:hover,
+.thank-back:hover,
+.thank-back a:hover {
   transform: translateY(-2px);
-  text-shadow: 0 0 14px currentColor;
+  box-shadow: 0 0 32px #ff33cc;
 }
 
-/* Farben je Netzwerk */
-.social-icons a.instagram:hover {
-  color: #E4405F;
+/* =========================
+   SOCIAL ICONS / LINKS
+========================= */
+
+.social-thanks,
+.social-follow {
+  margin-top: 30px;
 }
 
-.social-icons a.facebook:hover {
-  color: #1877F2;
+.social-thanks p,
+.social-follow p {
+  font-size: 0.95rem;
+  color: #ccc;
+  margin-bottom: 10px;
 }
 
-.social-icons a.soundcloud:hover {
-  color: #ff5500;
+.social-thanks a,
+.social-follow a {
+  color: #ffffff;
+  font-size: 1.2rem;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: 0.25s ease;
+}
+
+.social-thanks a:hover,
+.social-follow a:hover {
+  text-shadow: 0 0 14px #ff0099;
+  transform: translateY(-2px);
 }
 
 /* =========================
@@ -166,24 +124,31 @@ body {
 
 @media (max-width: 768px) {
 
-  .thank-logo {
-    width: 150px;
+  .thankyou-wrapper {
+    margin: 100px auto 40px auto;
+    padding: 0 16px;
   }
 
+  .thank-logo,
+  .thankyou-logo {
+    width: 110px;       /* kleiner auf Handy */
+    max-width: 40vw;
+    margin-bottom: 14px;
+  }
+
+  .thankyou-wrapper h1,
   .thanks-title {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
+  .thankyou-wrapper p,
   .thanks-text {
+    font-size: 1.05rem;
+    margin-bottom: 20px;
+  }
+
+  .social-thanks a,
+  .social-follow a {
     font-size: 1.15rem;
-  }
-
-  .back-btn {
-    padding: 12px 30px;
-    font-size: 1.1rem;
-  }
-
-  .social-icons a {
-    font-size: 1.6rem;
   }
 }
