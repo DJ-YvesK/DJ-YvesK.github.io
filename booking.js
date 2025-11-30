@@ -1,23 +1,18 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const form = document.querySelector("form");
-  const successBox = document.getElementById("success-message");
+document.getElementById("bookingForm").addEventListener("submit", async function(e) {
+    e.preventDefault(); // Verhindert Formspree-Standardseite
 
-  form.addEventListener("submit", function (e) {
-    e.preventDefault(); // verhindert Redirect
-
+    const form = e.target;
     const data = new FormData(form);
 
-    fetch(form.action, {
-      method: "POST",
-      body: data,
-      headers: { Accept: "application/json" }
-    })
-      .then(() => {
-        form.reset();
-        successBox.style.display = "block";
-      })
-      .catch(() => {
-        alert("Fehler – bitte später nochmal versuchen.");
-      });
-  });
+    // An Formspree senden
+    await fetch("https://formspree.io/f/mjkqnoja", {
+        method: "POST",
+        body: data,
+        headers: {
+            "Accept": "application/json"
+        }
+    });
+
+    // Weiterleiten auf deine eigene Seite
+    window.location.href = "thank-you.html";
 });
