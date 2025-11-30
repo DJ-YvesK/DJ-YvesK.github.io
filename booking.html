@@ -3,114 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Booking – DJ YvesK</title>
+  <title>Booking – DJ YvesK.-Official</title>
 
   <link rel="stylesheet" href="style-new.css">
   <link rel="stylesheet" href="booking-style.css">
 
-  <link rel="icon" type="image/png" href="yvesk-favicon-32.png">
+  <!-- Script für Weiterleitung nach Erfolg -->
+  <script defer src="booking.js"></script>
 </head>
-
 <body>
 
 <!-- NAVIGATION -->
-<header class="navbar">
-  <nav class="nav-center">
+<nav class="navbar">
+  <div class="nav-center">
     <a href="index.html">HOME</a>
     <a href="music.html">MUSIC</a>
     <a href="booking.html" class="active">BOOKING</a>
-  </nav>
-</header>
+  </div>
+</nav>
 
-<main class="booking-wrapper">
+<section class="booking-wrapper">
 
-  <h1 class="booking-title">BOOKING</h1>
+  <h1 class="booking-title">Booking</h1>
 
-  <div class="booking-textbox">
-    <p>
-      Du planst ein Event? Hör auf zu überlegen – jede gute Feier beginnt mit einer Entscheidung.<br>
-      <strong>Man denkt zu viel. Und tanzt zu wenig.</strong><br>
-      Lass uns das ändern. Buche jetzt deinen DJ YvesK.
+  <div class="booking-box">
+
+    <p class="booking-text">
+      Du planst ein Event? Perfekt – und denk dran: <br>
+      <strong>Man denkt zu viel und tanzt zu wenig!</strong><br>
+      Lass uns zusammen dafür sorgen, dass dein Event genau das Gegenteil wird.
     </p>
-  </div>
 
-  <div class="booking-form">
-    <form id="booking-form">
+    <form id="booking-form" action="https://formspree.io/f/mjkqnoja" method="POST">
 
-  <!-- NAME -->
-  <label for="name">Dein Name</label>
-  <input 
-    id="name" 
-    name="name" 
-    type="text" 
-    placeholder="Wie dürfen wir dich ansprechen?" 
-    required>
+      <label for="name">Dein Name</label>
+      <input id="name" name="name" type="text" placeholder="Max Mustermann" required>
 
-  <!-- EMAIL -->
-  <label for="email">E-Mail-Adresse</label>
-  <input 
-    id="email" 
-    name="email" 
-    type="email" 
-    placeholder="Wohin soll die Antwort gehen?" 
-    required>
+      <label for="email">E-Mail</label>
+      <input id="email" name="email" type="email" placeholder="deine@email.de" required>
 
-  <!-- TELEFON -->
-  <label for="phone">Telefonnummer (optional)</label>
-  <input 
-    id="phone" 
-    name="phone" 
-    type="text" 
-    placeholder="Für Rückfragen – nicht Pflicht">
+      <label for="event">Event-Art</label>
+      <input id="event" name="event" type="text" placeholder="Geburtstag, Firmenfeier, Club-Night, Privatparty…" required>
 
-  <!-- EVENT-ART -->
-  <label for="event">Art des Events</label>
-  <input 
-    id="event" 
-    name="event" 
-    type="text" 
-    placeholder="Geburtstag, Firmenfeier, Club-Night, Privatparty …" 
-    required>
+      <label for="date">Datum</label>
+      <input id="date" name="date" type="date" required>
 
-  <!-- DATUM -->
-  <label for="date">Datum des Events</label>
-  <input 
-    id="date" 
-    name="date" 
-    type="date"
-    required>
+      <label for="location">Ort</label>
+      <input id="location" name="location" type="text" placeholder="Veranstaltungsort / Adresse" required>
 
-  <!-- ORT -->
-  <label for="location">Ort / Location</label>
-  <input 
-    id="location" 
-    name="location" 
-    type="text" 
-    placeholder="Ort, Adresse oder Locationname" 
-    required>
+      <label for="message">Nachricht</label>
+      <textarea id="message" name="message" placeholder="Was soll ich über dein Event wissen?" required></textarea>
 
-  <!-- NACHRICHT -->
-  <label for="message">Deine Nachricht</label>
-  <textarea 
-    id="message" 
-    name="message" 
-    placeholder="Was soll ich über das Event wissen? Stimmung, Musik, Dauer …" 
-    required></textarea>
-
-  <!-- BUTTON -->
-  <button type="submit" class="btn-send">Anfrage senden</button>
-
-</form>
+      <button type="submit" class="booking-btn">Anfrage senden</button>
+    </form>
 
   </div>
 
-</main>
+</section>
 
 <footer>
   <p>© 2025 DJ YvesK. – All Rights Reserved</p>
 </footer>
-
-<script src="booking.js"></script>
 
 </body>
 </html>
