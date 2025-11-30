@@ -268,12 +268,5 @@ footer {
 
   .navbar a { font-size: 1.1rem; }
   .nav-center { gap: 20px; }
-
-   /* THANK-YOU PAGE FIXES */
-.thank-logo {
-  width: 220px;             /* etwas kleiner damit mobile nicht zu lang wird */
-  display: block;
-  margin: 40px auto 20px auto;
-  mix-blend-mode: screen;   /* entfernt schwarzen Bildrand */
 }
 
