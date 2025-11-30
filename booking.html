@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="style-new.css">
   <link rel="stylesheet" href="booking-style.css">
 
-  <!-- Script für Weiterleitung nach Erfolg -->
   <script defer src="booking.js"></script>
 </head>
 <body>
@@ -26,43 +25,57 @@
 
   <h1 class="booking-title">Booking</h1>
 
-  <div class="booking-box">
-
-    <p class="booking-text">
-      Du planst ein Event? Perfekt – und denk dran: <br>
-      <strong>Man denkt zu viel und tanzt zu wenig!</strong><br>
-      Lass uns zusammen dafür sorgen, dass dein Event genau das Gegenteil wird.
+  <!-- TEXTBOX -->
+  <div class="booking-textbox">
+    <p>
+      Du planst ein Event? Perfekt – und denk dran:<br>
+      <strong>Man denkt zu viel und tanzt zu wenig!</strong><br><br>
+      Lass uns gemeinsam dafür sorgen, dass dein Event alles andere als langweilig wird.
     </p>
+  </div>
 
-    <form id="booking-form" action="https://formspree.io/f/mjkqnoja" method="POST">
+  <!-- FORM -->
+  <form id="booking-form" class="booking-form" action="https://formspree.io/f/mjkqnoja" method="POST">
 
+    <div class="form-field">
       <label for="name">Dein Name</label>
       <input id="name" name="name" type="text" placeholder="Max Mustermann" required>
+    </div>
 
+    <div class="form-field">
       <label for="email">E-Mail</label>
       <input id="email" name="email" type="email" placeholder="deine@email.de" required>
+    </div>
 
+    <div class="form-field">
       <label for="event">Event-Art</label>
-      <input id="event" name="event" type="text" placeholder="Geburtstag, Firmenfeier, Club-Night, Privatparty…" required>
+      <input id="event" name="event" type="text"
+             placeholder="Firmenfeier, Geburtstag, Club-Night, Privatparty …"
+             required>
+    </div>
 
+    <div class="form-field">
       <label for="date">Datum</label>
       <input id="date" name="date" type="date" required>
+    </div>
 
+    <div class="form-field">
       <label for="location">Ort</label>
       <input id="location" name="location" type="text" placeholder="Veranstaltungsort / Adresse" required>
+    </div>
 
+    <div class="form-field">
       <label for="message">Nachricht</label>
       <textarea id="message" name="message" placeholder="Was soll ich über dein Event wissen?" required></textarea>
+    </div>
 
-      <button type="submit" class="booking-btn">Anfrage senden</button>
-    </form>
-
-  </div>
+    <button type="submit" class="booking-btn">Anfrage senden</button>
+  </form>
 
 </section>
 
 <footer>
-  <p>© 2025 DJ YvesK. – All Rights Reserved</p>
+  <p>© 2025 DJ YvesK – All Rights Reserved</p>
 </footer>
 
 </body>
