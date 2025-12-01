@@ -50,6 +50,7 @@
 .logo-box img {
   width: 240px;
   filter: drop-shadow(0 0 30px #ff0099);
+  mix-blend-mode: screen;
 }
 
 /* BUTTONS */
