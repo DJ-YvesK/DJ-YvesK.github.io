@@ -1,102 +1,339 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Press • Info – DJ YvesK. - Official</title>
-
-  <!-- GLOBAL STYLE -->
-  <link rel="stylesheet" href="style-new.css">
-
-  <!-- PRESS PAGE STYLE -->
-  <link rel="stylesheet" href="press-style.css">
-
-  <link rel="icon" type="image/png" href="yvesk-favicon-32.png">
+  <meta charset="UTF-8" />
+  <title>Press • Info – DJ YvesK. – Official</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Offizielles Presskit von DJ YvesK. Bio, Referenzen, Technik, Logo-Download und Booking-Infos." />
+  <!-- eigene Styles -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
-<body>
-
-<!-- NAVIGATION -->
-<nav class="navbar">
-  <div class="nav-center">
-    <a href="index.html">HOME</a>
-    <a href="music.html">MUSIC</a>
-    <a href="booking.html">BOOKING</a>
-    <a href="press.html" class="active">PRESS • INFO</a>
-  </div>
-</nav>
-
-
-<!-- PAGE WRAPPER -->
-<section class="press-wrapper">
-
-  <!-- TITLE -->
-  <h1 class="press-title">Press • Info</h1>
-
-
-  <!-- BIO BLOCK -->
-  <div class="press-block">
-    <h2>Bio</h2>
-    <p>
-      DJ YvesK steht für treibende House-Sets, elegante Übergänge und die Fähigkeit,
-      jede Tanzfläche zum Glühen zu bringen. Egal ob Club-Night, Privatparty, Firmenfeier –
-      YvesK. liefert immer ein energiegeladenes Set, das man nicht nur hört, sondern fühlt.
-    </p>
-  </div>
-
-  <!-- GENRES -->
-  <div class="press-block">
-    <h2>Genres</h2>
-    <p>EDM-Vibes, treibender House, grooviges Tech House, Oldschool-Classics, deeper Sound, melodic Atmosphere & funky Disco.</p>
-  </div>
-
-  <!-- LOGO DOWNLOAD -->
-  <div class="press-block">
-    <h2>Logo Download</h2>
-
-    <div class="logo-box">
-      <img src="yvesk-logo-glow.png" alt="YvesK Logo">
+<body class="theme-dark">
+  <header class="site-header">
+    <div class="container nav-container">
+      <div class="logo-text">
+        <span>DJ</span> <strong>YvesK.</strong>
+      </div>
+      <nav class="main-nav">
+        <a href="/">Home</a>
+        <a href="music.html">Music</a>
+        <a href="booking.html">Booking</a>
+        <a href="press.html" class="active">Press • Info</a>
+      </nav>
     </div>
+  </header>
 
-    <a class="press-btn" href="yvesk-logo-glow.png" download>Logo herunterladen</a>
-  </div>
+  <main>
+    <!-- HERO -->
+    <section class="hero hero-press">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Press • Info • EPK</p>
+          <h1>DJ YvesK – House, Groove & gute Energie.</h1>
+          <p class="hero-sub">
+            Moderne House-Sounds, treibende Grooves und emotionale Sets – 
+            YvesK. sorgt für Nächte, an die man sich erinnert. 
+            Perfekt für Clubs, Firmenfeiern und private Events.
+          </p>
+          <div class="hero-actions">
+            <a href="booking.html" class="btn btn-primary">Jetzt Booking anfragen</a>
+            <a href="assets/YvesK_EPK.pdf" class="btn btn-outline" target="_blank" rel="noopener">
+              EPK als PDF herunterladen
+            </a>
+          </div>
+          <div class="hero-meta">
+            <span>Based in Leipzig</span>
+            <span>House • Vocal House • Tech House</span>
+          </div>
+        </div>
 
-  <!-- EQUIPMENT -->
-  <div class="press-block">
-    <h2>Equipment</h2>
-    <p>
-      Pioneer XDJ-RX2 • Rekordbox Performance Setup • Funkmikrofon für Moderation & Ansagen • Hochwertige Lichttechnik (LED-Spots, Moving Heads, Effekte)
-      • Vollständige mobile DJ-Technik für Events bis zu 150 Personen
-    </p>
-  </div>
+        <div class="hero-media">
+          <!-- Platzhalter: Ersetze src durch dein echtes Bild -->
+          <div class="hero-photo-card">
+            <img src="assets/yvesk-press-photo.jpg" alt="DJ YvesK live an den Decks" />
+          </div>
+          <div class="hero-logo-card">
+            <!-- Platzhalter: Logo -->
+            <img src="assets/yvesk-logo.png" alt="DJ YvesK Logo" class="hero-logo-img" />
+            <a href="assets/yvesk-logo.png" class="link-small" download>Logo herunterladen (PNG)</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- SOCIALS -->
-  <div class="press-block">
-    <h2>Social Media</h2>
-    <div class="social-icons">
-        <a href="https://www.instagram.com/dj.yvesk" target="_blank" rel="noopener noreferrer">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://soundcloud.com/yv3sk" target="_blank" rel="noopener noreferrer">
-          <i class="fab fa-soundcloud"></i>
-        </a>
-        <a href="https://www.facebook.com/profile.php?id=100089274927366"
-           target="_blank" rel="noopener noreferrer">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-  </div>
+    <!-- BIO -->
+    <section class="section" id="bio">
+      <div class="container section-grid">
+        <div>
+          <h2>Bio</h2>
+          <p>
+            <strong>DJ YvesK.</strong> steht für treibende House-Sets, elegante Übergänge 
+            und die Fähigkeit, jede Tanzfläche zum Glühen zu bringen. Egal ob Club-Night, 
+            Privatparty oder Firmenfeier – seine Sets sind energiegeladen, emotional und 
+            immer auf den Moment abgestimmt.
+          </p>
+          <p>
+            Mit seiner Leidenschaft für House, Groove und gute Energie schafft YvesK. 
+            einen Sound, den man nicht nur hört, sondern fühlt. 
+            Dabei vereint er moderne Vocal-House-Elemente mit deepen und techigen Grooves 
+            sowie ausgewählten Classics.
+          </p>
+          <p>
+            Als mobiler DJ bringt er nicht nur Musik, sondern auch die passende Technik 
+            und Erfahrung mit – für Events, die professionell klingen und sich 
+            noch besser anfühlen.
+          </p>
+        </div>
 
-  <div class="booking-btn-wrap">
-    <a class="press-btn" href="booking.html">Jetzt Booking anfragen</a>
-  </div>
+        <aside class="info-card">
+          <h3>Facts auf einen Blick</h3>
+          <ul class="data-list">
+            <li><span>Artist Name</span><strong>DJ YvesK.</strong></li>
+            <li><span>Base</span><strong>Leipzig, Deutschland</strong></li>
+            <li><span>Sprachen</span><strong>Deutsch, Englisch</strong></li>
+            <li><span>Einsatzgebiete</span><strong>Clubs, Firmenfeiern, Hochzeiten, Privat-Events</strong></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
 
-</section>
+    <!-- MUSIC / MIXES -->
+    <section class="section section-alt" id="music">
+      <div class="container">
+        <div class="section-header-inline">
+          <div>
+            <h2>Hör rein</h2>
+            <p class="section-sub">
+              Ein Eindruck von dem, was dich auf der Tanzfläche erwartet.
+            </p>
+          </div>
+          <a href="https://soundcloud.com/yv3sk" target="_blank" rel="noopener" class="link-ghost">
+            Zu allen Mixes auf SoundCloud →
+          </a>
+        </div>
 
+        <div class="audio-grid">
+          <div class="audio-card">
+            <h3>Featured Mix</h3>
+            <p class="audio-text">
+              Aktueller House-Mix mit viel Energie – ideal für Clubs, Geburtstage und 
+              späte Stunden.
+            </p>
+            <!-- SoundCloud-Embed: URL nach Wunsch anpassen -->
+            <div class="audio-embed">
+              <iframe
+                width="100%"
+                height="166"
+                scrolling="no"
+                frameborder="no"
+                allow="autoplay"
+                src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/yv3sk&color=%23ff5500&inverse=false&auto_play=false&show_user=true">
+              </iframe>
+            </div>
+          </div>
 
-<!-- FOOTER -->
-<footer>
-  <p>© 2025 DJ YvesK. – All Rights Reserved</p>
-</footer>
+          <div class="audio-tags">
+            <h3>Sound in drei Worten</h3>
+            <ul class="tag-list">
+              <li>Vocal House</li>
+              <li>Groovy Club Energy</li>
+              <li>Deep & Melodic</li>
+              <li>Emotional Builds</li>
+              <li>Party Vibes</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- GENRES & STIL -->
+    <section class="section" id="genres">
+      <div class="container section-grid">
+        <div>
+          <h2>Genres & Stil</h2>
+          <p>
+            Im Zentrum steht House in all seinen Facetten – ergänzt durch 
+            handverlesene Klassiker und moderne Club-Sounds. 
+            Der Fokus: ein organischer Spannungsbogen, der die Crowd mitnimmt.
+          </p>
+          <ul class="bullet-list">
+            <li>House & Vocal House</li>
+            <li>Grooviger Tech House & Deep House</li>
+            <li>Funky & Disco-inspirierte Sounds</li>
+            <li>Ausgewählte Oldschool- & Club-Classics</li>
+          </ul>
+        </div>
+
+        <aside class="info-card">
+          <h3>Auf Anfrage</h3>
+          <p>
+            Für private Feiern und gemischte Events können zusätzlich 
+            andere Genres integriert werden:
+          </p>
+          <ul class="bullet-list">
+            <li>Charts & aktuelle Hits</li>
+            <li>90er / 2000er</li>
+            <li>Party- & Mashup-Sets</li>
+          </ul>
+          <p class="small">
+            Der Abend bleibt dabei immer stilvoll – keine Standard-Playlist, 
+            sondern individuell gemixte Sets.
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- EQUIPMENT & TECHNIK -->
+    <section class="section section-alt" id="tech">
+      <div class="container section-grid">
+        <div>
+          <h2>Technik & Setup</h2>
+          <p>
+            Professionelles DJ-Setup und mobiles Equipment – perfekt für Events, 
+            bei denen Sound und Licht stimmen sollen.
+          </p>
+
+          <h3>DJ-Setup</h3>
+          <ul class="bullet-list">
+            <li>Pioneer XDJ-RX2 (All-in-One DJ-System)</li>
+            <li>Rekordbox Performance Setup</li>
+            <li>Funkmikrofon für Moderation & Ansagen</li>
+          </ul>
+
+          <h3>Mobiles Setup</h3>
+          <ul class="bullet-list">
+            <li>Hochwertige Lichttechnik (LED-Spots, Moving Heads, Effekte)</li>
+            <li>Vollständige mobile DJ-Technik für Events bis ca. 150 Personen</li>
+            <li>Aufbau & Soundcheck rechtzeitig vor Beginn des Events</li>
+          </ul>
+        </div>
+
+        <aside class="info-card">
+          <h3>Für Veranstalter</h3>
+          <ul class="data-list">
+            <li><span>Strom</span><strong>1x 230V, eigene Absicherung empfohlen</strong></li>
+            <li><span>Fläche</span><strong>mind. 2 × 2 m für DJ-Setup</strong></li>
+            <li><span>Aufbauzeit</span><strong>ca. 60–90 Minuten</strong></li>
+            <li><span>Location</span><strong>Indoor & wettergeschützte Outdoor-Events</strong></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- REFERENZEN & STIMMEN -->
+    <section class="section" id="references">
+      <div class="container">
+        <h2>Referenzen & Stimmen</h2>
+        <p class="section-sub">
+          Eine kleine Auswahl von Events, bei denen YvesK. bereits 
+          für den Sound verantwortlich war.
+        </p>
+
+        <div class="ref-grid">
+          <div class="ref-card">
+            <h3>Hochzeiten & Privatfeiern</h3>
+            <p>
+              Individuelle Musikauswahl, fein abgestimmt auf Gäste, Alter und Stimmung –
+              vom entspannten Warm-up bis zur späten Peak-Time.
+            </p>
+            <blockquote>
+              „Die Tanzfläche war von Anfang bis Ende voll – genau so haben wir uns
+              unsere Feier vorgestellt.“
+              <span>– Hochzeitspaar</span>
+            </blockquote>
+          </div>
+
+          <div class="ref-card">
+            <h3>Firmen- & Business-Events</h3>
+            <p>
+              Dezente Hintergrundmusik zu Beginn, später clubbige Vibes für 
+              die After-Work- oder Party-Phase.
+            </p>
+            <blockquote>
+              „Professionell, zuverlässig und musikalisch on point – klare Empfehlung 
+              für Corporate Events.“
+              <span>– Veranstalter</span>
+            </blockquote>
+          </div>
+
+          <div class="ref-card">
+            <h3>Clubs & Nightlife</h3>
+            <p>
+              Treibende Sets mit Fokus auf House, Vocal- und Tech-Einflüssen – 
+              perfekt für Nächte, die bleiben.
+            </p>
+            <blockquote>
+              „Sehr gutes Gespür für das Publikum – die Energie hat den ganzen Abend 
+              gehalten.“
+              <span>– Club-Host</span>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOGO & MEDIA DOWNLOADS -->
+    <section class="section section-alt" id="media">
+      <div class="container section-grid">
+        <div>
+          <h2>Logo & Press-Fotos</h2>
+          <p>
+            Für Flyer, Social Media, Plakate oder Online-Promotion stehen 
+            Logo-Dateien und ausgewählte Pressebilder bereit.
+          </p>
+          <ul class="bullet-list">
+            <li>Logo als PNG (transparent, hell & dunkel)</li>
+            <li>Logo als SVG für hochwertigen Druck</li>
+            <li>Portrait- & Live-Fotos in Hoch- und Querformat</li>
+          </ul>
+        </div>
+
+        <aside class="info-card downloads">
+          <h3>Downloads</h3>
+          <ul class="link-list">
+            <li><a href="assets/yvesk-logo.png" download>Logo – PNG (transparent)</a></li>
+            <li><a href="assets/yvesk-logo-dark.svg" download>Logo – SVG (für Print)</a></li>
+            <li><a href="assets/yvesk-press-photo.jpg" download>Press-Foto – Portrait</a></li>
+            <li><a href="assets/YvesK_EPK.pdf" target="_blank" rel="noopener">EPK – PDF</a></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- SOCIAL & KONTAKT -->
+    <section class="section" id="contact">
+      <div class="container section-grid">
+        <div>
+          <h2>Kontakt & Booking</h2>
+          <p>
+            Für Anfragen zu Clubs, Events, Firmenfeiern oder privaten Veranstaltungen:
+          </p>
+          <ul class="bullet-list">
+            <li><strong>E-Mail:</strong> <a href="mailto:deine-mail@deine-domain.de">deine-mail@deine-domain.de</a></li>
+            <li><strong>Booking-Formular:</strong> <a href="booking.html">Direkt auf der Website ausfüllen</a></li>
+          </ul>
+          <a href="booking.html" class="btn btn-primary mt">
+            Booking jetzt anfragen
+          </a>
+        </div>
+
+        <aside class="info-card">
+          <h3>Social Media</h3>
+          <ul class="link-list">
+            <li><a href="https://soundcloud.com/yv3sk" target="_blank" rel="noopener">SoundCloud – YvesK.</a></li>
+            <li><a href="https://instagram.com/" target="_blank" rel="noopener">Instagram – Profil</a></li>
+            <li><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook – Page</a></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© 2025 DJ YvesK. – All Rights Reserved</span>
+      <span class="footer-quote">Man denkt zu viel. Und tanzt zu wenig.</span>
+    </div>
+  </footer>
 </body>
 </html>
