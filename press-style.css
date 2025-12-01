@@ -1,0 +1,118 @@
+/* ============================
+   PRESS • INFO PAGE DESIGN
+============================ */
+
+.press-wrapper {
+  max-width: 900px;
+  margin: 140px auto 80px auto;
+  padding: 0 20px;
+}
+
+.press-title {
+  font-size: 3rem;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 2px;
+  text-shadow: 0 0 20px rgba(255,0,153,0.25);
+  margin-bottom: 60px;
+}
+
+/* PRESS BLOCKS */
+.press-block {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,0,153,0.25);
+  border-radius: 20px;
+  padding: 32px;
+  margin-bottom: 40px;
+  box-shadow: 0 0 25px rgba(255,0,153,0.15);
+}
+
+.press-block h2 {
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+  color: #ff0099;
+  text-shadow: 0 0 12px rgba(255,0,153,0.4);
+}
+
+.press-block p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #e6e6e6;
+}
+
+/* LOGO BOX */
+.logo-box {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.logo-box img {
+  width: 240px;
+  filter: drop-shadow(0 0 30px #ff0099);
+}
+
+/* BUTTONS */
+.press-btn {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 14px 32px;
+  background: #ff0099;
+  color: white;
+  border-radius: 40px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  box-shadow: 0 0 20px #ff0099;
+  transition: 0.25s;
+}
+
+.press-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 35px #ff33cc;
+}
+
+/* SOCIAL LIST */
+.press-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.press-list li {
+  margin-bottom: 10px;
+}
+
+.press-list a {
+  color: #ff66cc;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.press-list a:hover {
+  text-shadow: 0 0 10px #ff0099;
+}
+
+/* BUTTON CENTER */
+.booking-btn-wrap {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .press-title {
+    font-size: 2.4rem;
+  }
+
+  .press-block {
+    padding: 26px;
+  }
+
+  .logo-box img {
+    width: 180px;
+  }
+
+  .press-btn {
+    font-size: 1rem;
+  }
+}
