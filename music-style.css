@@ -150,6 +150,14 @@
     font-size: 2.4rem;
     margin-top: 10px;
   }
+  .music-intro {
+    font-size: 0.88rem;
+    margin: 6px auto 14px auto;
+  }
+
+  .intro-divider {
+    margin-bottom: 26px;
+  }
 
   .follow-banner {
     padding: 10px 16px;
