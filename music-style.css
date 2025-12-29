@@ -27,6 +27,32 @@
     0 0 10px rgba(255,255,255,0.25),
     0 0 15px rgba(255,255,255,0.1);
 }
+/* =========================
+   INTRO (clean + elegant)
+========================= */
+
+.music-intro {
+  max-width: 720px;
+  margin: 8px auto 18px auto;
+  text-align: center;
+
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+  color: rgba(217,217,217,0.70);
+  opacity: 0.95;
+}
+
+.music-intro strong {
+  color: rgba(255,255,255,0.92);
+  font-weight: 600;
+}
+
+.intro-divider {
+  width: 44px;
+  height: 1px;
+  margin: 0 auto 34px auto;
+  background: rgba(255,255,255,0.18);
+}
 
 
 /* =========================
