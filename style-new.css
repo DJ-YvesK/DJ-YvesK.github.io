@@ -17,40 +17,6 @@ body {
 }
 
 /* =========================
-   NAVIGATION
-========================= */
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  padding: 20px 0;
-  background: rgba(0,0,0,0.7);
-  backdrop-filter: blur(8px);
-  z-index: 1000;
-}
-
-.nav-center {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-}
-
-.navbar a {
-  font-size: 1.3rem;
-  letter-spacing: 2px;
-  color: white;
-  text-decoration: none;
-  transition: 0.25s ease;
-}
-
-.navbar a:hover,
-/* Aktiver Menüpunkt (z.B. MUSIC auf music.html) */
-.navbar a.active {
-  color: #ff0099;
-  text-shadow: 0 0 10px #ff0099;
-}
-
-/* =========================
    INTRO — NAME + LOGO
 ========================= */
 .intro {
