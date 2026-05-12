@@ -1,93 +1,120 @@
 /* =========================
    THANK YOU PAGE
+   SoundCloud Style: Dark + Orange
 ========================= */
 
-body {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   background: #000;
   font-family: Arial, sans-serif;
   color: #fff;
 
+  min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  min-height: 100vh;
+  align-items: center;
+
+  padding: 30px 18px;
 }
 
-/* Wrapper zentriert alles in einer Spalte */
 .thankyou-wrapper {
-  text-align: center;
-  padding: 80px 20px 60px;
-  max-width: 600px;
   width: 100%;
+  max-width: 620px;
+  text-align: center;
+
+  background: rgba(255,255,255,0.045);
+  border: 1px solid rgba(255,85,0,0.28);
+  box-shadow: 0 0 18px rgba(255,85,0,0.10);
+  border-radius: 22px;
+  backdrop-filter: blur(8px);
+
+  padding: 42px 30px;
 }
 
-
-/* Hauptheadline */
 .thanks-title {
   font-size: 2.4rem;
-  margin-bottom: 18px;
-  text-shadow: 0 0 20px rgba(255,0,153,0.5);
+  font-weight: 600;
+  color: #d9d9d9;
+  letter-spacing: 1.5px;
+
+  text-shadow:
+    2px 2px 5px rgba(0,0,0,0.8),
+    0 0 8px rgba(255,255,255,0.12);
+
+  margin-bottom: 20px;
 }
 
-/* Texte */
 .thanks-text {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   line-height: 1.6;
+  color: #d6d6d6;
   margin-bottom: 18px;
 }
 
 .thanks-text span {
   display: inline-block;
+  color: #ffffff;
+  font-weight: 600;
 }
 
 /* Button zurück */
 .back-btn {
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 12px;
   padding: 14px 34px;
+
   border-radius: 40px;
-  background: #ff0099;
+  background: #ff5500;
   color: #fff;
-  font-size: 1.1rem;
+
+  font-size: 1.05rem;
+  font-weight: 600;
   text-decoration: none;
-  box-shadow: 0 0 22px #ff0099;
+
+  box-shadow: 0 0 18px rgba(255,85,0,0.28);
   transition: 0.25s ease;
 }
 
 .back-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 0 34px #ff33cc;
+  background: #ff6a1a;
+  box-shadow: 0 0 26px rgba(255,85,0,0.42);
 }
 
-/* SOCIAL BLOCK UNTER dem Button */
+/* Social Media */
 .social-follow {
-  margin-top: 32px;
+  margin-top: 34px;
+  padding-top: 26px;
+  border-top: 1px solid rgba(255,255,255,0.08);
 }
 
 .social-follow p {
-  font-size: 1.05rem;
-  color: #ddd;
-  margin-bottom: 12px;
+  font-size: 1rem;
+  color: #bdbdbd;
+  margin-bottom: 14px;
 }
 
 .social-icons {
   display: flex;
   justify-content: center;
-  gap: 22px;
+  gap: 24px;
 }
 
 .social-icons a {
-  color: #fff;
+  color: #d9d9d9;
   font-size: 1.8rem;
   text-decoration: none;
   transition: 0.25s ease;
 }
 
 .social-icons a:hover {
+  color: #ff5500;
   transform: translateY(-2px);
-  text-shadow: 0 0 14px currentColor;
 }
 
 /* =========================
@@ -96,21 +123,27 @@ body {
 
 @media (max-width: 768px) {
 
-  .thankyou-wrapper {
-    padding: 70px 18px 40px;
+  body {
+    align-items: flex-start;
+    padding-top: 45px;
   }
 
-  .thank-logo {
-    width: 140px;
-    margin-bottom: 18px;
+  .thankyou-wrapper {
+    padding: 34px 22px;
+    border-radius: 20px;
   }
 
   .thanks-title {
-    font-size: 2.1rem;
+    font-size: 2rem;
   }
 
   .thanks-text {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
+  }
+
+  .back-btn {
+    width: 100%;
+    text-align: center;
   }
 
   .social-icons a {
