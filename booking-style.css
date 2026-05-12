@@ -1,6 +1,8 @@
 /* =========================
    BOOKING LAYOUT
+   SoundCloud Style: Dark + Orange
 ========================= */
+
 .booking-wrapper {
   max-width: 900px;
   margin: 80px auto 80px auto;
@@ -10,23 +12,29 @@
 /* =========================
    TITLE
 ========================= */
+
 .booking-title {
   font-size: 3rem;
   font-weight: 600;
   text-align: center;
   color: #d9d9d9;
   letter-spacing: 2px;
-  text-shadow: 0 0 12px rgba(255,0,153,0.4);
+
+  text-shadow:
+    2px 2px 5px rgba(0,0,0,0.8),
+    0 0 8px rgba(255,255,255,0.12);
+
   margin-bottom: 30px;
 }
 
 /* =========================
    TEXTBOX
 ========================= */
+
 .booking-textbox {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,0,153,0.45);
-  box-shadow: 0 0 25px rgba(255,0,153,0.25);
+  background: rgba(255,255,255,0.045);
+  border: 1px solid rgba(255,85,0,0.28);
+  box-shadow: 0 0 18px rgba(255,85,0,0.10);
   padding: 35px 30px;
   border-radius: 22px;
   backdrop-filter: blur(8px);
@@ -36,17 +44,22 @@
 
 .booking-textbox p {
   font-size: 1.25rem;
-  color: #eee;
+  color: #d6d6d6;
   line-height: 1.6;
+}
+
+.booking-textbox strong {
+  color: #ffffff;
 }
 
 /* =========================
    FORM BOX
 ========================= */
+
 .booking-form {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,0,153,0.45);
-  box-shadow: 0 0 25px rgba(255,0,153,0.25);
+  background: rgba(255,255,255,0.045);
+  border: 1px solid rgba(255,85,0,0.28);
+  box-shadow: 0 0 18px rgba(255,85,0,0.10);
   padding: 35px 30px;
   border-radius: 22px;
   backdrop-filter: blur(8px);
@@ -55,12 +68,13 @@
 /* =========================
    FORM FIELDS
 ========================= */
+
 .form-field {
   margin-bottom: 22px;
 }
 
 .form-field label {
-  color: #ddd;
+  color: #d0d0d0;
   font-size: 1rem;
   margin-bottom: 6px;
   display: block;
@@ -71,56 +85,79 @@
   width: 100%;
   padding: 14px 12px;
   border-radius: 10px;
-  border: 1px solid rgba(255,0,153,0.35);
-  background: rgba(255,255,255,0.08);
-  color: #fff;
+  border: 1px solid rgba(255,85,0,0.25);
+  background: rgba(255,255,255,0.075);
+  color: #ffffff;
   font-size: 1rem;
+  outline: none;
+  transition: 0.25s ease;
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+  color: rgba(255,255,255,0.45);
+}
+
+.form-field textarea {
+  min-height: 130px;
+  resize: vertical;
 }
 
 .form-field input:focus,
 .form-field textarea:focus {
-  border-color: #ff0099;
-  box-shadow: 0 0 14px rgba(255,0,153,0.6);
+  border-color: #ff5500;
+  box-shadow: 0 0 14px rgba(255,85,0,0.28);
+  background: rgba(255,255,255,0.10);
 }
 
 /* =========================
    BUTTON
 ========================= */
+
 .booking-btn {
   width: 100%;
   padding: 16px;
   font-size: 1.25rem;
   font-weight: 600;
-  background: #ff0099;
-  color: #fff;
+  background: #ff5500;
+  color: #ffffff;
   border-radius: 40px;
   cursor: pointer;
   border: none;
-  box-shadow: 0 0 20px rgba(255,0,153,0.4);
+  box-shadow: 0 0 18px rgba(255,85,0,0.28);
   transition: 0.25s ease;
 }
 
 .booking-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 0 35px rgba(255,0,153,0.7);
+  background: #ff6a1a;
+  box-shadow: 0 0 26px rgba(255,85,0,0.42);
 }
 
 /* =========================
    MOBILE
 ========================= */
+
 @media (max-width: 768px) {
 
+  .booking-wrapper {
+    margin: 60px auto 60px auto;
+    padding: 0 18px;
+  }
+
   .booking-title {
-    font-size: 2.4rem;
+    font-size: 2.25rem;
+    letter-spacing: 1.5px;
   }
 
   .booking-textbox,
   .booking-form {
     padding: 26px 22px;
+    border-radius: 20px;
   }
 
   .booking-textbox p {
-    font-size: 1.15rem;
+    font-size: 1.12rem;
   }
 
   .booking-btn {
