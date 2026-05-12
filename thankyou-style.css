@@ -62,30 +62,6 @@ body {
   font-weight: 600;
 }
 
-/* Button zurück */
-.back-btn {
-  display: inline-block;
-  margin-top: 12px;
-  padding: 14px 34px;
-
-  border-radius: 40px;
-  background: #ff5500;
-  color: #fff;
-
-  font-size: 1.05rem;
-  font-weight: 600;
-  text-decoration: none;
-
-  box-shadow: 0 0 18px rgba(255,85,0,0.28);
-  transition: 0.25s ease;
-}
-
-.back-btn:hover {
-  transform: translateY(-2px);
-  background: #ff6a1a;
-  box-shadow: 0 0 26px rgba(255,85,0,0.42);
-}
-
 /* Social Media */
 .social-follow {
   margin-top: 34px;
