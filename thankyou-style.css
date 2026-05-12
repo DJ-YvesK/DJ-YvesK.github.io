@@ -23,14 +23,6 @@ body {
   width: 100%;
 }
 
-/* Logo – wie auf Startseite, ohne sichtbaren Rand */
-.thank-logo {
-  width: 170px;
-  max-width: 70vw;
-  margin: 0 auto 24px auto;
-  display: block;
-  mix-blend-mode: screen;
-}
 
 /* Hauptheadline */
 .thanks-title {
